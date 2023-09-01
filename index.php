@@ -42,7 +42,7 @@
                 <h1>Fecha de entrega: </h1>
                 <h2 class="tinom"> &nbsp;--/Sep/2023</h2>
             </div>
-            <h1 class="tportada">Lombardia, Mich.</h1>
+            <h1 class="tportada">Uruapan, Mich.</h1>
         </div>
         <br><br>
         <hr>
