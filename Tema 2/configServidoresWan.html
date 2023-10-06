@@ -54,7 +54,8 @@
             </div>
             <br><br>
 
-            <a href="#configServer" style="font-style: italic;font-size: large;"><b>2.7 Configuración de servidores WAN</b></a>
+            <a href="#configServer" style="font-style: italic;font-size: large;"><b>2.7 Configuración de servidores
+                    WAN</b></a>
             <br>
             <a href="#Proxy">&nbsp;&nbsp;&nbsp; 2.7.1 Configuración de proxy</a>
             <br><br>
@@ -66,8 +67,9 @@
             <br><br>
             <a href="#email" style="margin-top: -20px">&nbsp;&nbsp; 2.7.5 Servidor de correo</a>
             <br><br>
-            <a href="#IRC" style="margin-top: -20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.7.6 Servicios IRC</a>
-            
+            <a href="#IRC" style="margin-top: -20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.7.6 Servicios
+                IRC</a>
+
 
 
             <div style="display: flex; justify-content: space-between;">
@@ -83,7 +85,7 @@
                         << 2.6 </a>
 
                 </div>
-                
+
             </div>
 
 
@@ -115,14 +117,29 @@
             <h2 id="configServer" class="subtitulo">2.7 Configuración de servidores WAN</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Intro..
-            <p style="text-align: end;">(Cisco, 2022)</p>
+                &nbsp;&nbsp;&nbsp;Las redes WAN, acrónimo de Wide Area Network o "Red de Área Amplia", son sistemas de
+                interconexión de equipos informáticos que se extienden más allá de un territorio delimitado, abarcando
+                desde pueblos y ciudades hasta países enteros e incluso el mundo entero. Esto permite establecer
+                conexiones rápidas y directas entre terminales ubicados a miles de kilómetros de distancia. Estas redes
+                poseen características clave, como la asignación de máquinas dedicadas para ejecutar programas de
+                usuario, también conocidas como hosts, y la conexión de estos hosts a una subred a través de
+                enrutadores. Además, se produce una división entre las líneas de transmisión y los elementos de
+                conmutación. Por su naturaleza geográficamente dispersa, las redes WAN suelen utilizar redes públicas de
+                transmisión de datos y enlaces satelitales.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;Entre sus ventajas se incluye la capacidad de coexistir
+                entre mini y micro ordenadores gracias al uso de software especial, pero también presentan desventajas
+                como la necesidad de equipos con gran capacidad de memoria y preocupaciones en cuanto a la seguridad y
+                la exposición a virus. En términos de conexiones, las redes WAN pueden utilizar circuitos que requieren
+                llamadas, mensajes a través de equipos que evalúan la cabecera de los mensajes o paquetes que dividen y
+                reúne los datos enviados por los usuarios para su transmisión.
+            <p style="text-align: end;">(Juan Carlos, 2022)</p>
 
 
 
             </p>
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/t2-img1.jpg" alt="">
+                <img class="ajustePng" src="../imagenes/te2-img5.png" alt="">
             </nav>
 
             <br>
@@ -130,14 +147,67 @@
             <h2 id="Proxy" class="subtitulo">2.7.1 Configuración de proxy</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Intro..
-            <p style="text-align: end;">(Cisco, 2022)</p>
+                &nbsp;&nbsp;&nbsp;Según Polo Ortega y Molina Robles (2015), 'El equipo que desempeña la función de proxy
+                actúa de intermediario entre usuarios de una red local e Internet, atendiendo la demanda sobre otros
+                servicios a nivel de aplicación como HTTP que los clientes realizan'(p. 278). Pero su propósito
+                principal es ocultar tu dirección IP. Sin embargo esto no implica necesariamente que elimine cualquier
+                otro identificador adicional que exponga nuestra identidad. Es decir, aunque nuestra dirección IP esté
+                oculta, alguien con acceso a nuestra red y datos que están transitados pueden ser supervisados.
+
+
+            <p style="text-align: end;">(Fernández, 2017)</p>
+            <b>&nbsp;&nbsp;&nbsp;Respecto a cómo instalar un servidor proxy, varía dependiendo del servidor. Pero
+                generalmente es así:</b>
 
 
 
             </p>
+            <ul>
+                <li>
+                    <b>Elegir el tipo de proxy:</b> Determinar qué tipo de proxy utilizar según las necesidades.
+                </li>
+                <br>
+                <li>
+                    <b>Seleccionar el software de proxy:</b> Escoger el software de proxy adecuado según el sistema
+                    operativo y
+                    los requisitos.
+                </li>
+                <br>
+                <li>
+                    <b>Instalar el software:</b> Instalar el software de proxy en el servidor o dispositivo designado.
+                </li>
+                <br>
+                <li>
+                    <b>Configurar reglas y políticas:</b> Definir reglas y políticas para el proxy, incluyendo permisos
+                    y
+                    bloqueos.
+                </li>
+                <br>
+                <li>
+                    <b>Configurar en los clientes:</b> Configurar la información del proxy en los dispositivos de los
+                    usuarios
+                </li>
+                <br>
+                <li>
+                    <b> Probar y ajustar:</b> Verificar el funcionamiento del servidor proxy y realizar ajustes si es
+                    necesario.
+                </li>
+                <br>
+                <li>
+                    <b>Monitorear y mantener:</b> Establecer un monitoreo constante y llevar a cabo tareas de
+                    mantenimiento.
+                </li>
+                <br>
+                <li>
+                    <b>Considerar seguridad y privacidad:</b> Evaluar las implicaciones de seguridad y privacidad al
+                    utilizar
+                    un proxy y tomar medidas adecuadas para proteger los datos y la red.
+                </li>
+            </ul>
+            <p style="text-align: end;">(IBM, 2023)</p>
+
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/t2-img1.jpg" alt="">
+                <img class="ajustePng" src="../imagenes/te2-img6.jpg" alt="">
             </nav>
 
             <br>
@@ -145,14 +215,87 @@
             <h2 id="NAT" class="subtitulo">2.7.2 Configuración de NAT</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Intro..
-            <p style="text-align: end;">(Cisco, 2022)</p>
-
-
+                &nbsp;&nbsp;&nbsp;NAT, o Traducción de Direcciones de Red (por sus siglas en inglés, Network Address
+                Translation), es una técnica utilizada en redes de computadoras para modificar las direcciones IP de los
+                paquetes de datos mientras viajan a través de un dispositivo de red, como un enrutador o un firewall. El
+                propósito principal de NAT es permitir que múltiples dispositivos en una red privada compartan una única
+                dirección IP pública para acceder a Internet.
+            <p style="text-align: end;"> (Gutierrez, 2023)</p>
 
             </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;La configuración de NAT (Traducción de Direcciones de Red) varía según el dispositivo
+                y el sistema operativo
+                que se esté utilizando, pero generalmente se siguen estos pasos:
+            </p>
+            <ul>
+                <li>
+                    <b>Inicia sesión en el router:</b> Abre un navegador web e ingresa la dirección IP del router en la
+                    barra
+                    de direcciones. Por lo general, la dirección IP predeterminada del router es algo como "192.168.1.1"
+                    o "192.168.0.1". Deberás iniciar sesión con las credenciales de administrador del router.
+                </li>
+                <br>
+                <li>
+                    <b>Accede a la configuración NAT:</b> Una vez que hayas iniciado sesión en el enrutador, busca una
+                    sección
+                    relacionada con NAT o "Port Forwarding" (Reenvío de Puertos) en el menú de configuración. En algunos
+                    enrutadores, esto puede estar bajo la sección de "Firewall" o "Advanced Settings" (Configuraciones
+                    Avanzadas).
+                </li>
+                <br>
+                <li>
+                    <b>Habilita NAT:</b> En la sección de configuración NAT, generalmente encontrarás una opción para
+                    habilitar
+                    o deshabilitar NAT. Asegúrate de habilitarla.
+                </li>
+                <br>
+                <li>
+                    <b>Selecciona el tipo de NAT:</b> Si deseas configurar NAT unidireccional (One-to-One), deberás
+                    especificar
+                    las direcciones IP públicas y privadas que deseas asociar. Esto se utiliza cuando quieres asignar
+                    una dirección IP pública a un dispositivo específico en tu red privada.
+                </li>
+                <br>
+                <li>
+                    Si deseas configurar NAT bidireccional (Many-to-One), la mayoría de los enrutadores lo hacen de
+                    manera predeterminada. Esto permite que varios dispositivos compartan una única dirección IP
+                    pública.
+                </li>
+                <br>
+                <li>
+                    <b>Guardar configuraciones:</b> Después de habilitar y configurar NAT según tus necesidades,
+                    asegúrate de
+                    guardar las configuraciones. Esto generalmente se hace haciendo clic en un botón "Guardar" o "Apply"
+                    (Aplicar) en la interfaz de administración del router.
+                </li>
+                <br>
+                <li>
+                    <b>Reiniciar el enrutador (si es necesario):</b> Algunos enrutadores pueden requerir un reinicio
+                    para que
+                    los cambios en la configuración de NAT surtan efecto. Verifica si se necesita un reinicio y, de ser
+                    así, realiza uno.
+                </li>
+                <br>
+                <li>
+                    <b>Configuración de reenvío de puertos (si es necesario):</b> Si deseas permitir el acceso a
+                    servicios
+                    específicos en dispositivos internos desde Internet (por ejemplo, configurar un servidor web o de
+                    juegos), es posible que necesites configurar el reenvío de puertos (port forwarding) adicionalmente.
+                    Esto implica redirigir el tráfico entrante desde un puerto específico de tu dirección IP pública a
+                    un dispositivo interno en tu red privada.
+                </li>
+                <br>
+                <li>
+                    <b>Pruebas:</b> Una vez configurado NAT, verifica que el acceso a Internet desde los dispositivos en
+                    tu red
+                    privada sea exitoso y que cualquier reenvío de puertos funcione según lo previsto.
+                </li>
+
+            </ul>
+            <p style="text-align: end;"> (Cisco, 2022)</p>
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/t2-img1.jpg" alt="">
+                <img class="ajustePng" src="../imagenes/te2-img7.jpg" alt="">
             </nav>
 
             <br>
@@ -160,14 +303,106 @@
             <h2 id="WEB" class="subtitulo">2.7.3 Servidor WEB</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Intro..
-            <p style="text-align: end;">(Cisco, 2022)</p>
-
-
+                &nbsp;&nbsp;&nbsp;Un servidor de aplicaciones funciona con un servidor Web para gestionar solicitudes de
+                contenido dinámico, tales como servlets, realizadas desde aplicaciones Web. Un servidor web utiliza un
+                plug-in de servidor web para establecer y mantener conexiones HTTP y HTTPS persistentes con un servidor
+                de aplicaciones.
+            <p style="text-align: end;">(IBM, 2023a)</p>
 
             </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;A continuación se explicará en términos generales cómo es que se debe realizar una
+                configuración de un Servidor Web.
+            </p>
+            <ol>
+                <li>
+                    <b>Selección del Software del Servidor Web:</b> <br>
+                    El primer paso en la configuración de un servidor web implica la selección del software adecuado.
+                    Existen diversas opciones disponibles, cada una con sus características y ventajas específicas.
+                    Ejemplos comunes incluyen Apache, Nginx y Microsoft IIS. La elección depende de las necesidades y
+                    preferencias del proyecto.
+
+                </li>
+                <br>
+                <li>
+                    <b>Instalación del Software del Servidor Web:</b>
+                    Una vez seleccionado el software del servidor web, es necesario proceder con su instalación en la
+                    máquina designada como servidor. Este proceso varía según el sistema operativo y el software
+                    seleccionado. Las instrucciones proporcionadas por el software del servidor web deben seguirse
+                    meticulosamente para completar la instalación de manera adecuada.
+
+
+                </li>
+                <br>
+                <li>
+                    <b>Configuración del Servidor Web:</b>
+                    La configuración del servidor web se realiza mediante ajustes específicos que determinan su
+                    comportamiento y funcionalidad. Entre las configuraciones clave se incluyen:
+                    <ul><br>
+                        <li>
+                            Definición de la raíz del documento, que establece la carpeta donde se almacenarán los
+                            archivos web a ser servidos.
+                        </li>
+                        <br>
+                        <li>
+                            Especificación del puerto en el que el servidor web escuchará las solicitudes entrantes. El
+                            puerto 80 es el estándar para conexiones HTTP.
+                        </li>
+                        <br>
+                        <li>
+                            Configuración de aspectos relacionados con la seguridad y el acceso, como autenticación de
+                            usuarios y permisos de directorio.
+                        </li>
+                        <br>
+                        <li>
+                            Consideración de la implementación de conexiones seguras mediante HTTPS y la obtención de
+                            certificados SSL/TLS.
+                        </li>
+                        <br>
+                        <li>
+                            Incorporación de Contenido Web
+                        </li>
+
+                    </ul><br>
+                    Una vez configurado el servidor web, es necesario agregar el contenido web, que incluye archivos
+                    HTML, CSS, JavaScript, imágenes y otros recursos. Estos archivos se almacenan en la carpeta
+                    designada como la raíz del documento y serán accesibles para los visitantes del sitio web.
+
+                </li>
+                <br>
+                <li>
+                    <b>Pruebas y Verificación:</b>
+                    El proceso de configuración culmina con pruebas para asegurarse de que el servidor web funcione de
+                    manera adecuada. Esto se logra mediante la apertura de un navegador web y la navegación a la
+                    dirección IP del servidor o al nombre de dominio correspondiente para verificar la correcta
+                    visualización del sitio web.
+
+                </li>
+                <br>
+                <li>
+                    <b>Configuración Adicional (Opcional):</b>
+                    En esta etapa, es posible realizar configuraciones adicionales para mejorar el rendimiento y la
+                    funcionalidad del servidor web. Esto puede incluir redirecciones, reescritura de URL, compresión de
+                    contenido, ajustes de caché y otras opciones específicas.
+
+                </li>
+                <br>
+                <li>
+                    <b>Seguridad y Mantenimiento:</b>
+                    La seguridad es una consideración crítica en la configuración de un servidor web. La implementación
+                    de cortafuegos, listas de control de acceso y la monitorización de registros son medidas
+                    recomendadas para proteger el servidor contra posibles amenazas en línea. Además, se debe establecer
+                    un plan de mantenimiento regular, que incluya actualizaciones de seguridad y copias de seguridad,
+                    para garantizar el funcionamiento continuo y seguro del servidor web.
+
+                </li>
+
+
+            </ol>
+            <p style="text-align: end;">(IBM, 2023b) </p>
+            <br>
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/t2-img1.jpg" alt="">
+                <img class="ajustePng" src="../imagenes/te2-img8.png" alt="">
             </nav>
 
             <br>
@@ -175,14 +410,102 @@
             <h2 id="FTP" class="subtitulo">2.7.4 Servidor FTP</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Intro..
-            <p style="text-align: end;">(Cisco, 2022)</p>
-
-
+                &nbsp;&nbsp;&nbsp;Las siglas de FTP significan File Transfer Protocol, que se traduce como Protocolo de
+                Transferencia de Archivos. Como su nombre indica, se trata de un protocolo que permite transferir
+                archivos directamente de un dispositivo a otro.
+            <p style="text-align: end;">(Fernández, 2021)</p>
 
             </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;La configuración de un servicio FTP generalmente implica la instalación y
+                configuración de un servidor
+                FTP en un sistema.Sin embargo hay algunos pasos generales:
+            </p>
+            <ul>
+                <li>
+                    <b>Seleccionar un servidor FTP:</b> Hay varios servidores FTP disponibles, tanto comerciales como de
+                    código
+                    abierto. Algunos ejemplos populares incluyen FileZilla Server, vsftpd (Very Secure FTP Daemon) para
+                    sistemas Linux, y Microsoft FTP Server para Windows.
+                </li>
+                <br>
+                <li>
+                    <b>Instalar el servidor FTP:</b> Descarga e instala el software del servidor FTP en el sistema donde
+                    deseas alojar los archivos que se compartirán. Sigue las instrucciones de instalación proporcionadas
+                    por el servidor FTP específico que elijas.
+                </li>
+                <br>
+                <li>
+                    <b>Configurar el servidor FTP:</b> Especifica la configuración básica del servidor FTP, como el
+                    puerto en
+                    el que escuchará las conexiones entrantes (el puerto predeterminado es 21).
+                </li>
+                <br>
+                <li>
+                    Definir los directorios raíz y los directorios de inicio de sesión para los usuarios.
+                </li>
+                <br>
+                <li>
+                    Configurar las opciones de seguridad y autenticación, como el uso de conexiones seguras (FTP sobre
+                    TLS/SSL) y las políticas de contraseña.
+                </li>
+                <br>
+                <li>
+                    Establecer las restricciones de acceso a los directorios y los permisos de archivo según sea
+                    necesario.
+                </li>
+                <br>
+                <li>
+                    <b>Crear cuentas de usuario:</b> Crea cuentas de usuario para los usuarios que necesiten acceder al
+                    servidor FTP. Asigna nombres de usuario y contraseñas para autenticar a los usuarios durante la
+                    conexión.
+                </li>
+                <br>
+                <li>
+                    <b>Configurar el reenvío de puertos (si es necesario):</b> Si el servidor FTP está detrás de un
+                    enrutador o
+                    firewall, es posible que debas configurar el reenvío de puertos para permitir que el tráfico FTP
+                    llegue al servidor.
+                </li>
+                <br>
+                <li>
+                    <b>Habilitar el servicio FTP:</b> Inicia o habilita el servicio FTP en el servidor. Esto
+                    generalmente se
+                    hace a través de un panel de control o utilizando comandos específicos del sistema operativo.
+                </li>
+                <br>
+                <li>
+                    <b>Pruebas de conectividad:</b> Utiliza un cliente FTP, como FileZilla o el comando FTP incorporado
+                    en la
+                    mayoría de los sistemas operativos, para realizar pruebas de conectividad al servidor FTP. Asegúrate
+                    de poder conectarte correctamente usando las credenciales de usuario configuradas.
+                </li>
+                <br>
+                <li>
+                    <b>Configuración avanzada (opcional):</b> Personaliza la configuración del servidor FTP según tus
+                    necesidades específicas, como la cuota de almacenamiento para los usuarios, la configuración de
+                    registros de actividad (logs), y la configuración de límites de velocidad de transferencia.
+                </li>
+                <br>
+                <li>
+                    <b>Configurar la seguridad:</b> Siempre se recomienda habilitar la seguridad adecuada para proteger
+                    las
+                    transferencias de archivos. Esto incluye el uso de conexiones seguras (FTP sobre TLS/SSL) y
+                    configurar el servidor para bloquear IPs después de un número determinado de intentos fallidos de
+                    inicio de sesión (para prevenir ataques de fuerza bruta).
+                </li>
+                <br>
+                <li>
+                    <b>Documentación y soporte:</b> Realizar documentación detallada sobre la configuración del servidor
+                    FTP y
+                    el soporte necesario para resolver problemas y mantener el servidor.
+                </li>
+
+            </ul>
+
+            <p style="text-align: end;">(Anderson, 2023) </p>
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/t2-img1.jpg" alt="">
+                <img class="ajustePng" src="../imagenes/te2-img9.jpg" alt="">
             </nav>
 
             <br>
@@ -190,14 +513,97 @@
             <h2 id="email" class="subtitulo">2.7.5 Servidor de correo</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Intro..
-            <p style="text-align: end;">(Cisco, 2022)</p>
-
-
+                &nbsp;&nbsp;&nbsp;Según Polo Ortega y Molina Robles (2015), ‘Los servicios de correo electrónico son
+                plataformas y sistemas que permiten a los usuarios enviar, recibir y gestionar mensajes de correo
+                electrónico a través de Internet. Estos servicios facilitan la comunicación electrónica y la
+                correspondencia digital entre individuos, empresas y organizaciones en todo el mundo.’ (p. 320)
+                <br><br>
+                &nbsp;&nbsp;&nbsp;La estructura de un mensaje es sencilla y típicamente consta de varios campos, como el
+                destinatario (que
+                puede ser múltiple), el remitente, el asunto (que sirve como título del mensaje) y el contenido del
+                mensaje en sí. Por lo general, este contenido es conciso y no incluye elementos formales como
+                encabezados, direcciones físicas o fechas. Al final del mensaje, es posible agregar un archivo de firma
+                que contenga información personal. Además, se tiene la capacidad de adjuntar archivos de diversos tipos,
+                como texto, imágenes, audio, video o programas. Una de las ventajas del correo electrónico radica en su
+                fiabilidad, ya que si un mensaje no puede ser entregado correctamente (debido a una dirección
+                inexistente o incorrecta), se devuelve al remitente acompañado de una explicación.
+            <p style="text-align: end;">(Universidad
+                Veracruzana, 2014)</p>
 
             </p>
+            <p>
+                &nbsp;&nbsp;&nbsp; A continuación, se explicará generalmente los pasos generales para configurar un
+                servidor de correo:
+            <ul>
+                <li>
+                    <b>Elige un sistema operativo:</b> Decide qué sistema operativo utilizarás para alojar tu servidor
+                    de
+                    correo. Linux (por ejemplo, Ubuntu, CentOS) es una opción común debido a su estabilidad y seguridad.
+                </li>
+                <br>
+                <li>
+                    <b> Instala el software del servidor de correo:</b> Hay varios programas de servidor de correo
+                    disponibles,
+                    como Postfix, Exim, Sendmail y Microsoft Exchange (para Windows). Instala el software que mejor se
+                    adapte a tus necesidades y preferencias.
+                </li>
+                <br>
+                <li>
+                    <b> Configura los registros DNS:</b> Configura los registros DNS de tu dominio para que apunten a tu
+                    servidor de correo. Esto incluye registros MX (Mail Exchange) y registros SPF (Sender Policy
+                    Framework) para ayudar a prevenir el correo no deseado.
+                </li>
+                <br>
+                <li>
+                    <b> Configura el servidor de correo:</b> Edita los archivos de configuración del servidor de correo
+                    para
+                    especificar la configuración de tu servidor, como nombres de dominio, puertos, protocolos de
+                    seguridad (por ejemplo, SSL/TLS), buzones de correo y listas de acceso.
+                </li>
+                <br>
+                <li>
+                    <b>Configura la seguridad:</b> Implementa medidas de seguridad, como cortafuegos, para proteger tu
+                    servidor
+                    de correo de amenazas externas. Asegúrate de mantener el software actualizado y aplicar parches de
+                    seguridad.
+                </li>
+                <br>
+                <li>
+                    <b>Añade usuarios y buzones:</b> Crea cuentas de correo electrónico para los usuarios que utilizarán
+                    tu
+                    servidor. Configura sus buzones de correo y contraseñas.
+                </li>
+                <br>
+                <li>
+                    <b>Configura clientes de correo:</b> Configura los clientes de correo (como Outlook, Thunderbird o
+                    clientes
+                    de correo electrónico basados en web) para que se conecten al servidor utilizando IMAP o POP3 para
+                    recibir correo y SMTP para enviar correo.
+                </li>
+                <br>
+                <li>
+                    <b> Monitoreo y mantenimiento:</b> Establece un sistema de monitoreo para supervisar el rendimiento
+                    y la
+                    disponibilidad del servidor de correo. Realiza copias de seguridad periódicas y establece políticas
+                    de retención de datos
+                </li>
+                <br>
+                <li>
+                    <b>Pruebas:</b> Realiza pruebas exhaustivas para asegurarte de que el servidor de correo funcione
+                    correctamente y que los correos electrónicos se envíen y reciban sin problemas.
+                </li>
+                <br>
+                <li>
+                    <b>Optimización y escalabilidad:</b> A medida que tu servidor de correo crezca, considera la
+                    optimización y
+                    la escalabilidad para garantizar un rendimiento continuo.
+                </li>
+                <br>
+            </ul>
+            <p style="text-align: end;">(Oracle, 2011)</p>
+            </p>
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/t2-img1.jpg" alt="">
+                <img class="ajustePng" src="../imagenes/te2-img10.jpg" alt="">
             </nav>
 
             <br>
@@ -205,14 +611,33 @@
             <h2 id="IRC" class="subtitulo">2.7.6 Servicios IRC</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Intro..
-            <p style="text-align: end;">(Cisco, 2022)</p>
+                &nbsp;&nbsp;&nbsp;Los servicios IRC (Internet Relay Chat) representan un conjunto integral de
+                herramientas y aplicaciones diseñadas meticulosamente para mejorar, simplificar y administrar las
+                interacciones en el entorno de IRC.
+                <br><br>
+
+                &nbsp;&nbsp;&nbsp;En su esencia, el IRC se define como un protocolo de comunicación en tiempo real que posibilita a
+                individuos de diversas ubicaciones conectarse y dialogar en tiempo real a través de salas de chat en
+                línea. Los servicios IRC, que se basan en este sólido protocolo, van más allá de la simple conexión y
+                chat. Estos servicios desempeñan un papel crucial en la organización y gestión de comunidades en línea,
+                foros de discusión y canales temáticos, brindando una amplia gama de características esenciales. Entre
+                ellas se encuentran la capacidad de registrar canales para preservar su identidad y reglas, autenticar a
+                usuarios para garantizar la seguridad y la identidad, administrar usuarios y asignar privilegios,
+                establecer políticas y restricciones, implementar medidas de seguridad contra abusos y proporcionar un
+                seguimiento detallado de la actividad del canal.
+                <br><br>
+
+                &nbsp;&nbsp;Gracias a estas funcionalidades, los servicios IRC se han convertido en una piedra angular de las
+                comunidades en línea, facilitando la organización y el mantenimiento de entornos de chat ordenados,
+                amigables y seguros en la vastedad de Internet.
+
+            <p style="text-align: end;">(Fumero, 2011)</p>
 
 
 
             </p>
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/t2-img1.jpg" alt="">
+                <img class="ajustePng" src="../imagenes/te2-img11.jpg" alt="">
             </nav>
 
             <br>
@@ -230,6 +655,19 @@
 
             </li>
             <br>
+            <li>Amazon. (2016, 21 diciembre). ¿Qué es DNS? – Introducción a DNS - AWS. Amazon Web Services, Inc.
+                Recuperado 6 de octubre de 2023, de 
+                <a href="https://aws.amazon.com/es/route53/what-is-dns/">
+                    https://aws.amazon.com/es/route53/what-is-dns/
+                </a>
+            </li>
+            <br>
+            <li>Anderson Rick. (2023, 19 julio). Conexiones de configuración . Microsoft Learn. Recuperado 5 de octubre de 2023, de 
+                <a href="https://learn.microsoft.com/es-es/iis/configuration/system.applicationhost/sites/sitedefaults/ftpserver/connections ">
+                    https://learn.microsoft.com/es-es/iis/configuration/system.applicationhost/sites/sitedefaults/ftpserver/connections 
+                </a>
+            </li>
+            <br>
             <li>Arboledas Brihuega, D. (2015). Administración de redes telemáticas. Madrid, ra-ma editorial. Recuperado
                 de
                 <a href="https://elibro.net/es/ereader/tecuruapan/106471?page=144">
@@ -237,23 +675,64 @@
                 </a>
             </li>
             <br>
-            <li>Cisco. (2022, 15 marzo). Sistema de administración de red: informe oficial de mejores prácticas.
-                Recuperado 31 de agosto de 2023, de
+            <li> Cisco Systems. (2023). Ethernet. Cisco. Recuperado 03 de octubre de 2023, de
+                <a href="https://www.cisco.com/c/es_mx/tech/lan-switching/ethernet/index.html">
+                    https://www.cisco.com/c/es_mx/tech/lan-switching/ethernet/index.html
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2019, 20 agosto). Ethernet (IEEE 802.3). Cisco. Recuperado 04 de octubre de 2023, de
+                <a href="https://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/network/3-8/reference/guide/ethrnt.pdf ">
+                    https://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/network/3-8/reference/guide/ethrnt.pdf 
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2022, 12 marzo). Configurar NAT para habilitar la comunicación entre redes superpuestas. Recuperado 5 de octubre de 2023, de 
+                <a href="https://www.cisco.com/c/es_mx/support/docs/ip/network-address-translation-nat/200726-Configure-NAT-to-Enable-Communication-Be.html  ">
+                    https://www.cisco.com/c/es_mx/support/docs/ip/network-address-translation-nat/200726-Configure-NAT-to-Enable-Communication-Be.html 
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2022, 15 marzo). Sistema de administración de red: informe oficial de mejores prácticas. Recuperado 31 de agosto de 2023, de 
+                <a href="https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage">
+                    https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2022, 25 marzo). Fundamentals of (IPS) Intrusion Prevention System.
+                Recuperado 06 de octubre de 2023, de
                 <a
                     href="https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage ">https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage
                 </a>
             </li>
             <br>
-            <li>Cisco Systems. “sistema de administración de red: informe oficial de mejores prácticas.” cisco, 10
-                August 2018,
+            <li>Cisco. (2022c, marzo 13). Ejemplo de configuración de las funciones de seguridad de capa 2 en los switches de configuración fija de capa 3 de Cisco Catalyst. Recuperado 6 de octubre de 2023, de 
                 <a
-                    href="https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage">
-                    https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage
+                    href="https://www.cisco.com/c/es_mx/support/docs/switches/catalyst-3750-series-switches/72846-layer2-secftrs-catl3fixed.html ">
+                    https://www.cisco.com/c/es_mx/support/docs/switches/catalyst-3750-series-switches/72846-layer2-secftrs-catl3fixed.html
+                </a>
+            </li>
+
+            <br>
+            <li>Fernández, Y. (2017, 1 junio). Qué es un proxy y cómo puedes utilizarlo para navegar de forma más anónima. Xataka. Recuperado 5 de octubre de 2023, de 
+                <a
+                    href="https://www.xataka.com/basics/que-es-un-proxy-y-como-puedes-utilizarlo-para-navegar-de-forma-mas-anonima  ">
+                    https://www.xataka.com/basics/que-es-un-proxy-y-como-puedes-utilizarlo-para-navegar-de-forma-mas-anonima 
                 </a>
             </li>
             <br>
+            <li>Fernández, Y. (2021, 15 julio). FTP: qué es y cómo funciona. Xataka. Recuperado 5 de octubre de 2023, de 
+                <a
+                    href="https://www.xataka.com/basics/ftp-que-como-funciona ">
+                    https://www.xataka.com/basics/ftp-que-como-funciona 
+                </a>
+            </li>
+
+            <br>
+
             <li>Franganillo, J., & Catalán-Vega, M. A. (2005). Bitácoras y sindicación de contenidos: dos herramientas
                 para difundir información. BiD: textos universitaris de biblioteconomia y documentación, (15).
+                Recuperado 2 de septiembre de 2023, de
                 <a href="http://eprints.rclis.org/8397/">
                     http://eprints.rclis.org/8397/
                 </a>
@@ -266,43 +745,161 @@
                 </a>
             </li>
             <br>
+            <li>Fumero Reverón, A. (2011). IRC 2.0. Medios para la información, la relación y la comunicación en la web 2.0. El profesional de la información, 20(6), 605-609. Recuperado 5 de
+                octubree de 2023, de
+                <a href="https://oa.upm.es/11707/1/INVE_MEM_2011_106708.pdf">
+                    https://oa.upm.es/11707/1/INVE_MEM_2011_106708.pdf
+                </a>
+            </li>
+            <br>
+            <li>Gerend, J. (2023, 3 agosto). Protocolo de Configuración Dinámica de Host (DHCP). Microsoft Learn. Recuperado 6 de octubre de 2023, de 
+                <a href="https://learn.microsoft.com/es-es/windows-server/networking/technologies/dhcp/dhcp-top ">
+                    https://learn.microsoft.com/es-es/windows-server/networking/technologies/dhcp/dhcp-top  
+                </a>
+            </li>
+            <br>
+            <li>Gutierrez, W. (2023, 11 marzo). ¿Qué es NAT y cómo funciona? ManageEngine. Recuperado 5 de octubre de 2023, de 
+                <a href="https://blogs.manageengine.com/espanol/2023/03/11/nat-como-funciona.html ">
+                    https://blogs.manageengine.com/espanol/2023/03/11/nat-como-funciona.html 
+                </a>
+            </li>
+            <br>
+            <li>Herrera, A. (2022, August 30). SISTEMA DE COMUNICACION MEDIANTE PROTOCOLO ETHERNET (ESTÁNDAR 802.3(. YouTube. Consultado en 04 de Octubre 2023 en: 
+                <a href="https://repositorio.utp.edu.co/server/api/core/bitstreams/73bbedd9-33ba-4c36-a34e-7d8d01d68fb3/content">
+                    https://repositorio.utp.edu.co/server/api/core/bitstreams/73bbedd9-33ba-4c36-a34e-7d8d01d68fb3/content   
+                </a>
+            </li>
+            <br>
             <li>IBM. (2021, 20 abril). Redes y planificación de redes. Recuperado 31 de agosto de 2023, de
                 <a href="https://www.ibm.com/docs/es/ibm-mq/7.5?topic=ssfksj-7-5-0-com-ibm-mq-pla-doc-q004730--htm">
                     https://www.ibm.com/docs/es/ibm-mq/7.5?topic=ssfksj-7-5-0-com-ibm-mq-pla-doc-q004730--htm </a>
             </li>
             <br>
+            <li>IBM. (2021, 21 marzo). Servidor de impresión de red. Recuperado 6 de octubre de 2023, de 
+                <a href="https://www.ibm.com/docs/es/i/7.3?topic=programs-network-print-server">
+                    https://www.ibm.com/docs/es/i/7.3?topic=programs-network-print-server </a>
+            </li>
+            <br>
+            <li>IBM. (2023a, enero 23). IBM documentation. Introducción: servidores web. Recuperado 5 de octubre de 2023, de 
+                <a href="https://www.ibm.com/docs/es/was/9.0.5?topic=servers-introduction-web ">
+                    https://www.ibm.com/docs/es/was/9.0.5?topic=servers-introduction-web </a>
+            </li>
+            <br>
+            <li>IBM. (2023b, enero 26). IBM documentation. Configuración del servidor Web. Recuperado 5 de octubre de 2023, de 
+                <a href="https://www.ibm.com/docs/es/was/9.0.5?topic=console-web-server-configuration  ">
+                    https://www.ibm.com/docs/es/was/9.0.5?topic=console-web-server-configuration </a>
+            </li>
+            <br>
+            <li>IBM. (2023c, abril 4). IBM Documentación. Configuración del servidor proxy. Recuperado 5 de octubre de 2023, de 
+                <a href="https://www.ibm.com/docs/es/was-zos/9.0.5?topic=services-setting-up-proxy-server ">
+                    https://www.ibm.com/docs/es/was-zos/9.0.5?topic=services-setting-up-proxy-server</a>
+            </li>
+            <br>
+            <li>Juan Carlos. (2022, 18 febrero). Guía de Redes WAN: configuración y características. Tokio School. Recuperado 4 de octubre de 2023, de 
+                <a href="https://www.tokioschool.com/noticias/guia-de-redes-wan-configuracion-y-caracteristicas/ ">
+                    https://www.tokioschool.com/noticias/guia-de-redes-wan-configuracion-y-caracteristicas/ </a>
+
+            </li>
+            <br>
+            <li>Microsoft. (2023a, abril 12). Servicio de nombres internet de Windows (WINS). Microsoft Learn. Recuperado 6 de octubre de 2023, de 
+                <a href="https://learn.microsoft.com/es-es/windows-server/networking/technologies/wins/wins-top ">
+                    https://learn.microsoft.com/es-es/windows-server/networking/technologies/wins/wins-top </a>
+
+            </li>
+            <br>
+            <li>Microsoft. (2023b, julio 17). Instalación y configuración de un archivo y un servidor de impresión - Windows Server. Microsoft Learn. Recuperado 6 de octubre de 2023, de 
+                <a href="https://learn.microsoft.com/es-es/troubleshoot/windows-server/printing/install-configure-file-print-server ">
+                    https://learn.microsoft.com/es-es/troubleshoot/windows-server/printing/install-configure-file-print-server  </a>
+
+            </li>
+            <br>
             <li>Molina Robles, F. Planificación y administración de redes. ed. Madrid: ra-ma editorial, 2015. 632 p.
-                Disponible en:
-                <a href="https://elibro.net/es/ereader/tecuruapan/106392?page=586">
-                    https://elibro.net/es/ereader/tecuruapan/106392?page=586</a>
-                .Consultado en: 29 Aug 2023
+                Recuperado 29 de agosto de 2023, de
+                <a href="https://learn.microsoft.com/es-es/windows-server/networking/technologies/wins/wins-top ">
+                    https://learn.microsoft.com/es-es/windows-server/networking/technologies/wins/wins-top </a>
+
+            </li>
+            <br>
+            
+            <li>Oracle. (2011, 1 enero). Configuración de los servicios de correo - Guía de administración del sistema: Servicios de red. Recuperado 5 de octubre de 2023, de 
+                <a href="https://docs.oracle.com/cd/E24842_01/html/E22524/mailadmin-13.html ">
+                    https://docs.oracle.com/cd/E24842_01/html/E22524/mailadmin-13.html </a>
+
+            </li>
+            <br>
+            <li>Oracle. (2012, 1 enero). Configuración de contabilidad de red para el tráfico de red - uso de redes
+                virtuales en Oracle Solaris 11.1. Recuperado 1 de octubre de 2023, de
+                <a href="https://docs.oracle.com/cd/E37929_01/html/E36563/ghhde.html">
+                    https://docs.oracle.com/cd/E37929_01/html/E36563/ghhde.html</a>
+
+            </li>
+            <br>
+            <li>Oracle. (2023). Configuración de sistemas en la red local (Guía de Administración del Sistema: Servicios IP). Recuperado 6 de octubre de 2023, de
+                <a href="https://docs.oracle.com/cd/E19957-01/820-2981/ipconfig-63/index.html ">
+                    https://docs.oracle.com/cd/E19957-01/820-2981/ipconfig-63/index.html </a>
+
             </li>
             <br>
             <li>Quezada Castillo, A. Modelo de red para un centro de operaciones de seguridad (SOC). Recuperado 31 de
-                agosto de 2023, Disponible en: <a
+                agosto de 2023, de <a
                     href="https://tesis.ipn.mx/bitstream/handle/123456789/8543/112.pdf?sequence=1&isAllowed=y ">https://tesis.ipn.mx/bitstream/handle/123456789/8543/112.pdf?sequence=1&isAllowed=y
                 </a>
             </li>
             <br>
 
-            <li>Robles F., Molina. Planificación y administración de redes. Madrid, Molina Robles, F, 2015. Elibro,
+            <li>Robles F., Molina. Planificación y administración de redes. Madrid, Molina Robles, F, (2015). Elibro,
+                Recuperado 29 de agosto de 2023, de
                 <a href="https://elibro.net/es/ereader/tecuruapan/106392?page=586">
                     https://elibro.net/es/ereader/tecuruapan/106392?page=586
                 </a>
-                Accessed 29 agosto 2023
+            </li>
+            <br>
+            <li>Sánchez Rubio, M. Barchino Plata, R. y Martínez Herráiz, J. J. (2020). Redes de computadores. Alcalá de
+                Henares, editorial universidad de Alcalá. Recuperado 4 de octubre de 2023, de
+                <a href="https://elibro.net/es/ereader/tecuruapan/131606?page=107">
+                    https://elibro.net/es/ereader/tecuruapan/131606?page=107
+                </a>
+
+            </li>
+            <br>
+            <li>Servidor DHCP | Introducción al Protocolo de Configuración Dinámica de Host (DHCP). Recuperado 6 de octubre de 2023, de 
+                <a href="https://www.manageengine.com/latam/oputils/servidor-dhcp.html ">
+                    https://www.manageengine.com/latam/oputils/servidor-dhcp.html 
+                </a>
+
+            </li>
+            <br>
+            <li>Universidad Veracruzana. (2014, noviembre). Correo electrónico. UV MX. Recuperado 5 de octubre de 2023, de 
+                <a href="https://www.uv.mx/personal/rcordoba/files/2014/11/Correo_electronico.pdf  ">
+                    https://www.uv.mx/personal/rcordoba/files/2014/11/Correo_electronico.pdf 
+                </a>
+
             </li>
             <br>
 
             <li>Villacrés García, N. J. (2018). Esquema de seguridad perimetral para el monitoreo de eventos en el
-                Instituto Tecnológico Bolivariano (Bachelor's thesis).
+                Instituto Tecnológico Bolivariano (Bachelor's thesis). Recuperado 30 de agosto de 2023, de
                 <a href="https://dspace.uniandes.edu.ec/handle/123456789/8160">
                     https://dspace.uniandes.edu.ec/handle/123456789/8160
+                </a>
+            </li>
+            <br>
+            <li>Zoho Corporation. (2023). ¿Cómo configurar Switch Cisco? | Pasos para configurar Switch Cisco | Configuración básica de un Switch - ManageEngine Network Configuration Manager.  Recuperado 5 de octubre de 2023, de
+                <a href="https://www.manageengine.com/latam/network-configuration-manager/configuracion-de-cisco-switch.html ">
+                    https://www.manageengine.com/latam/network-configuration-manager/configuracion-de-cisco-switch.html 
+                </a>
+            </li>
+            <br>
+            <li>Zoho Corporation. (2022, 2 septiembre). Manage engine. Recuperado 1 de octubre de 2023, de
+                <a href="https://www.manageengine.com/es/network-monitoring/network-management.html ">
+                    https://www.manageengine.com/es/network-monitoring/network-management.html
                 </a>
             </li>
             <br>
 
         </ol>
     </footer>
+
 
 </body>
 

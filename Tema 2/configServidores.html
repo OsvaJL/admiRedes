@@ -114,14 +114,50 @@
             <h2 id="configServer" class="subtitulo">2.6 Configuración de servidores LAN</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Intro..
-            <p style="text-align: end;">(Cisco, 2022)</p>
-
-
-
+                &nbsp;&nbsp;&nbsp;La configuración de servidores LAN es un proceso crucial en la administración de redes locales. Define cómo los dispositivos en una red se comunican entre sí y acceden a recursos compartidos. Algunos aspectos clave de la configuración de servidores LAN incluyen:
+            
             </p>
+            <ul>
+                <li>
+                    <b>Topología de Red:</b> La elección de la topología de red, como estrella, bus o anillo, y la configuración física de los dispositivos y cables.
+                </li>
+                <br>
+                <li>
+                   <b> Direccionamiento IP:</b> La asignación y configuración de direcciones IP a dispositivos en la red, lo que permite la comunicación entre ellos.
+                </li>
+                <br>
+                <li>
+                   <b> Enrutamiento:</b> La configuración de rutas y tablas de enrutamiento para permitir que los datos se transmitan de manera eficiente entre las subredes de la LAN.
+                </li>
+                <br>
+                <li>
+                    <b>Protocolos de Red: </b>La selección y configuración de protocolos de red, como TCP/IP, para garantizar la comunicación adecuada entre los dispositivos.
+                </li>
+                <br>
+                <li>
+                    <b>Seguridad de la Red:</b> La implementación de medidas de seguridad, como cortafuegos, para proteger la LAN de amenazas externas e internas.
+                </li>
+                <br>
+                <li>
+                    <b>Servicios de Red:</b> La configuración de servicios esenciales, como DHCP para la asignación de direcciones IP y DNS para la resolución de nombres de dominio.
+                </li>
+                <br>
+                <li>
+                  <b>  Gestión de Usuarios y Grupos:</b> La administración de usuarios y grupos, junto con políticas de acceso, para garantizar la seguridad y la gestión adecuada de recursos compartidos.
+                </li>
+                <br>
+                <li>
+                    <b>Copias de Seguridad y Recuperación:</b> La implementación de políticas de copia de seguridad y recuperación de datos para proteger la integridad de la información almacenada en la LAN.
+                </li>
+                <br>
+                <li>
+                    <b>Monitoreo y Mantenimiento:</b> La supervisión constante de la red y la aplicación de actualizaciones y mantenimiento para garantizar un rendimiento óptimo. 
+                </li>
+
+            </ul>
+            <p style="text-align: end;">(Oracle, 2023)</p>
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/t2-img1.jpg" alt="">
+                <img class="ajustePng" src="../imagenes/te2-img17.png" alt="">
             </nav>
 
             <br>
@@ -129,14 +165,92 @@
             <h2 id="DHCP" class="subtitulo">2.6.1 Servicio DHCP</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Intro..
-            <p style="text-align: end;">(Cisco, 2022)</p>
-
-
+                &nbsp;&nbsp;&nbsp;El Protocolo de Configuración Dinámica de Host (DHCP) no se limita simplemente a la
+                asignación de direcciones IP, sino que también puede ser utilizado para proporcionar una serie de
+                servicios y configuraciones adicionales a los dispositivos de una red.
+            <p style="text-align: end;"> (ManageEngine, 2022) </p>
 
             </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;Gracias a esto se pueden tener varios servicios que usan DHCP, entre ellos:
+            </p>
+            <ol>
+                <li>
+                    <b>Asignación de Direcciones IP:</b> Este es el servicio principal de DHCP. Proporciona a los
+                    dispositivos direcciones IP automáticamente. Además de las direcciones IPv4 tradicionales, DHCPv6
+                    también admite la asignación de direcciones IPv6.
+                </li>
+                <br>
+                <li>
+                    <b>Máscara de Subred (Subnet Mask):</b> DHCP puede proporcionar la información de máscara de subred
+                    necesaria para que los dispositivos determinen qué parte de una dirección IP es la red y cuál es el
+                    host.
+                </li>
+                <br>
+                <li>
+                    <b>Puerta de Enlace Predeterminada (Default Gateway):</b> La configuración de la puerta de enlace es
+                    esencial para que los dispositivos puedan comunicarse con redes externas, como Internet. DHCP
+                    permite asignar la dirección de la puerta de enlace de manera automática.
+                </li>
+                <br>
+                <li>
+                    <b>Servidores DNS (Domain Name System):</b> DHCP puede configurar automáticamente las direcciones IP
+                    de los servidores DNS que los dispositivos deben utilizar para traducir nombres de dominio en
+                    direcciones IP.
+                </li>
+                <br>
+                <li>
+                    <b>Servidores WINS (Windows Internet Name Service):</b> En redes Windows, DHCP puede proporcionar
+                    información sobre servidores WINS para la resolución de nombres NetBIOS.
+                </li>
+                <br>
+                <li>
+                    <b>Configuración de Dominio:</b> DHCP puede configurar el nombre de dominio al que pertenece un
+                    dispositivo, lo que facilita la resolución de nombres locales.
+                </li>
+                <br>
+                <li>
+                    <b>Configuración de Sufijo DNS:</b> Se pueden proporcionar sufijos DNS específicos para facilitar la
+                    resolución de nombres de dominio locales.
+                </li>
+                <br>
+                <li>
+                    <b>Tiempo de Arrendamiento (Lease Time):</b> DHCP controla la duración durante la cual un
+                    dispositivo puede utilizar la dirección IP asignada. Esto permite una gestión eficiente de
+                    direcciones IP en la red.
+                </li>
+                <br>
+                <li>
+                    <b>Configuración de VLAN (Virtual LAN):</b> En redes más complejas, DHCP puede asignar dispositivos
+                    a VLAN específicas basadas en su dirección MAC u otros criterios.
+                </li>
+                <br>
+                <li>
+                    <b>Configuración de Calidad de Servicio (QoS):</b> DHCP puede proporcionar información de
+                    configuración de QoS para dispositivos, lo que permite priorizar el tráfico de red según la
+                    aplicación o el tipo de servicio.
+                </li>
+                <br>
+                <li>
+                    <b>Configuración de Tiempo (NTP - Network Time Protocol):</b> DHCP puede configurar automáticamente
+                    servidores de tiempo para garantizar que los dispositivos de la red estén sincronizados
+                    correctamente.
+                </li>
+                <br>
+                <li>
+                    <b> Configuración de Seguridad:</b> A través de opciones específicas de DHCP, se pueden aplicar
+                    políticas de seguridad, como la autenticación de dispositivos en la red.
+                </li>
+                <br>
+                <li>
+                    <b> Configuración de Proxy:</b> Se puede configurar información de proxy para permitir que los
+                    dispositivos accedan a recursos en Internet a través de un servidor proxy.
+                </li>
+
+            </ol>
+            <p style="text-align: end;">(Gerend, 2023)</p>
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/t2-img1.jpg" alt="">
+                <img class="ajustePng" src="../imagenes/te2-img14.png" alt="">
             </nav>
 
             <br>
@@ -144,14 +258,98 @@
             <h2 id="DNS" class="subtitulo">2.6.2 Servicio DNS y WINS</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Intro..
-            <p style="text-align: end;">(Cisco, 2022)</p>
-
-
-
+                &nbsp;&nbsp;&nbsp;El DNS, o Sistema de Nombres de Dominio, es un sistema fundamental en Internet que se
+                utiliza para traducir los nombres de dominio legibles por humanos en direcciones IP numéricas, que son
+                necesarias para la comunicación entre dispositivos en la red. Los servicios DNS son esenciales para
+                facilitar la navegación web y la comunicación en línea al asignar nombres de dominio a direcciones IP
+                correspondientes.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;Los servicios DNS funcionan en una jerarquía de servidores, desde servidores raíz
+                hasta servidores de
+                nivel superior, servidores de nombres de dominio autoritativos y servidores locales.
             </p>
+            <ul>
+                <li>
+                    <b>Solicitud de Resolución:</b> Cuando un usuario ingresa una URL en su navegador web, el sistema
+                    operativo del dispositivo envía una solicitud de resolución DNS al servidor DNS local o al servidor
+                    proporcionado por su proveedor de servicios de Internet (ISP).
+                </li>
+                <br>
+                <li>
+                    <b>Consulta de Servidores DNS Locales:</b> El servidor DNS local busca la respuesta en su caché
+                    local. Si la información está allí y es actual, se devuelve al usuario.
+                </li>
+                <br>
+                <li>
+                    <b>Búsqueda en la Jerarquía DNS:</b> Si el servidor DNS local no tiene la información en caché,
+                    realiza una consulta a los servidores DNS de nivel superior para buscar información sobre el
+                    dominio. Si es necesario, la consulta se propaga hacia arriba en la jerarquía hasta que se encuentre
+                    la respuesta.
+                </li>
+                <br>
+                <li>
+                    <b>Respuesta del Servidor Autoritativo:</b> Una vez que se encuentra el servidor DNS autoritativo
+                    para el dominio, este servidor responde con la dirección IP correspondiente.
+                </li>
+                <br>
+                <li>
+                    <b>Caché y Almacenamiento:</b> El servidor DNS local almacena la respuesta en su caché para futuros
+                    accesos, lo que mejora la velocidad de resolución para las consultas posteriores.
+                </li>
+
+            </ul>
+
+            <p>
+                &nbsp;&nbsp;&nbsp;A continuación se describirán algunos puntos de su importancia:
+            </p>
+            <ul>
+                <li>
+                    <b>Facilita la Navegación Web:</b> Los servicios DNS hacen que sea más fácil para las personas
+                    acceder a sitios web utilizando nombres de dominio en lugar de recordar direcciones IP numéricas.
+                </li>
+                <br>
+                <li>
+                    <b>Permite la Comunicación en Red:</b> Los servicios DNS son esenciales para que los dispositivos se
+                    encuentren y se comuniquen en una red utilizando nombres de host.
+                </li>
+                <br>
+                <li>
+                    <b> Soporte para Correo Electrónico:</b> DNS también se utiliza para resolver nombres de dominio en
+                    direcciones de correo electrónico, lo que permite el envío y recepción de mensajes.
+                </li>
+                <br>
+            </ul>
+            <p style="text-align: end;"> (Amazon, 2016) </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Servicios WINS (Windows Internet Name Service)</b> <br><br>
+                &nbsp;&nbsp;&nbsp;WINS es un servicio utilizado en entornos de red Windows que desempeña un papel
+                similar al DNS, pero se centra en la resolución de nombres NetBIOS (Network Basic Input/Output System).
+                NetBIOS es un conjunto de protocolos que permite la comunicación en redes locales, y WINS resuelve los
+                nombres NetBIOS en direcciones IP.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;Los servicios WINS mantienen una base de datos que asocia nombres NetBIOS a
+                direcciones IP. Cuando un dispositivo Windows necesita resolver un nombre NetBIOS en una dirección IP,
+                consulta el servidor WINS de la red. Si el servidor WINS tiene la información, la devuelve al
+                dispositivo.
+                <br>
+                <br>
+                <b>&nbsp;&nbsp;&nbsp;Importancia de los Servicios WINS</b>
+            </p>
+            <ul>
+                <li>
+                    Compatibilidad con Aplicaciones Antiguas: WINS es especialmente útil en redes que ejecutan
+                    aplicaciones heredadas que dependen de nombres NetBIOS en lugar de nombres DNS.
+                </li>
+                <br>
+                <li>
+                    Resolución de Nombres para Comunicación de Red: WINS permite la resolución de nombres para la
+                    comunicación entre dispositivos en una red Windows, facilitando el acceso a recursos compartidos,
+                    impresoras y otros servicios de red.
+                </li>
+            </ul>
+            <p style="text-align: end;">(Microsoft, 2023)</p>
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/t2-img1.jpg" alt="">
+                <img class="ajustePng" src="../imagenes/te2-img15.png" alt="">
             </nav>
 
             <br>
@@ -159,14 +357,123 @@
             <h2 id="ArchiImpre" class="subtitulo">2.6.3 Servidores de archivos e impresión</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Intro..
-            <p style="text-align: end;">(Cisco, 2022)</p>
-
-
-
+                &nbsp;&nbsp;&nbsp;Los servicios de Servidores de Archivos e Impresión son componentes críticos en las
+                redes informáticas que permiten a los usuarios compartir recursos como archivos y dispositivos de
+                impresión de manera eficiente. Estos servicios se utilizan para centralizar y gestionar el acceso a
+                recursos compartidos en la red, lo que mejora la colaboración y la productividad en un entorno
+                empresarial.
+            <p style="text-align: end;"> (IBM, 2021)</p>
             </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;Un servidor de archivos es un dispositivo o software dedicado que almacena, organiza y
+                gestiona archivos y carpetas compartidos para que los usuarios puedan acceder a ellos desde múltiples
+                dispositivos en la red.
+                <br><br>&nbsp;&nbsp;&nbsp;<b>A continuación se describen aspectos destacados:</b>
+            </p>
+            <ul>
+                <li>
+                    <b>Almacenamiento Centralizado:</b> Los servidores de archivos almacenan archivos de manera
+                    centralizada, lo que facilita la copia de seguridad y la gestión de datos.
+                </li>
+                <br>
+                <li>
+                    <b> Control de Acceso:</b> Los administradores pueden configurar permisos de acceso para restringir
+                    quién puede ver, modificar o eliminar archivos específicos.
+                </li>
+                <br>
+                <li>
+                    <b>Acceso Remoto:</b> Los usuarios pueden acceder a archivos desde ubicaciones remotas a través de
+                    conexiones seguras (por ejemplo, VPN o FTP).
+                </li>
+                <br>
+                <li>
+                    <b>Recuperación de Datos:</b> Los servidores de archivos suelen ofrecer funciones de recuperación de
+                    datos en caso de pérdida accidental.
+                </li>
+
+            </ul>
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Servidor de Impresión</b>
+                <br><br>
+                &nbsp;&nbsp;&nbsp;Un servidor de impresión es un dispositivo o software que administra impresoras y
+                permite que varios usuarios compartan impresoras en una red.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;A continuación se describen aspectos destacados:
+            </p>
+            <ul>
+                <li>
+                    <b>Gestión Centralizada:</b> Los servidores de impresión permiten administrar y configurar todas las
+                    impresoras en una red desde un solo punto.
+                </li>
+                <br>
+                <li>
+                    <b>Colas de Impresión:</b> Las impresiones se pueden gestionar a través de colas de impresión, lo
+                    que garantiza un flujo de trabajo ordenado y evita bloqueos de impresión.
+                </li>
+                <br>
+                <li>
+                    <b>Control de Impresión:</b> Los administradores pueden establecer políticas de impresión, como
+                    límites de impresión en color o acceso restringido a ciertas impresoras.
+                </li>
+                <br>
+                <li>
+                    <b>Monitoreo y Diagnóstico:</b> Los servidores de impresión pueden monitorear el estado de las
+                    impresoras, detectar problemas y proporcionar información de diagnóstico.
+                </li>
+
+            </ul>
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Ventajas de Servidores de Archivos e Impresión</b>
+            </p>
+            <ul>
+                <li>
+                    <b>Mejora de la Colaboración:</b> Facilitan el intercambio de archivos y la colaboración entre
+                    usuarios, lo que aumenta la eficiencia en un entorno de trabajo.
+                </li>
+                <br>
+                <li>
+                    <b>Control de Seguridad:</b> Los administradores pueden controlar quién tiene acceso a qué recursos,
+                    lo que garantiza la seguridad de los datos.
+                </li>
+                <br>
+                <li>
+                    <b>Administración Centralizada:</b> Simplifican la administración y el mantenimiento de archivos y
+                    dispositivos de impresión en toda la red.
+                </li>
+                <br>
+                <li>
+                    <b>Optimización de Recursos:</b> Permite utilizar las impresoras de manera más eficiente y reducir
+                    costos al evitar la duplicación de dispositivos.
+                </li>
+
+            </ul>
+            <p>
+                <b>
+                    &nbsp;&nbsp;&nbsp;Consideraciones de Implementación
+                </b>
+            </p>
+            <ul>
+                <li>
+                    <b>Seguridad:</b> Es crucial asegurar que los recursos compartidos estén protegidos adecuadamente
+                    para evitar accesos no autorizados.
+                </li>
+                <br>
+                <li>
+                    <b> Escalabilidad: </b>La infraestructura de servidores de archivos e impresión debe ser escalable
+                    para satisfacer las necesidades futuras de la organización.
+                </li>
+                <br>
+                <li>
+                    <b>Respaldo:</b> Se deben implementar estrategias de respaldo sólidas para garantizar la integridad
+                    de los datos almacenados en servidores de archivos. 
+                </li>
+            </ul>
+            <p style="text-align: end;"> (Microsoft, 2023b)</p>
+
+
+
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/t2-img1.jpg" alt="">
+                <img class="ajustePng" src="../imagenes/te2-img16.png" alt="">
             </nav>
 
             <br>
@@ -186,6 +493,19 @@
 
             </li>
             <br>
+            <li>Amazon. (2016, 21 diciembre). ¿Qué es DNS? – Introducción a DNS - AWS. Amazon Web Services, Inc.
+                Recuperado 6 de octubre de 2023, de 
+                <a href="https://aws.amazon.com/es/route53/what-is-dns/">
+                    https://aws.amazon.com/es/route53/what-is-dns/
+                </a>
+            </li>
+            <br>
+            <li>Anderson Rick. (2023, 19 julio). Conexiones de configuración . Microsoft Learn. Recuperado 5 de octubre de 2023, de 
+                <a href="https://learn.microsoft.com/es-es/iis/configuration/system.applicationhost/sites/sitedefaults/ftpserver/connections ">
+                    https://learn.microsoft.com/es-es/iis/configuration/system.applicationhost/sites/sitedefaults/ftpserver/connections 
+                </a>
+            </li>
+            <br>
             <li>Arboledas Brihuega, D. (2015). Administración de redes telemáticas. Madrid, ra-ma editorial. Recuperado
                 de
                 <a href="https://elibro.net/es/ereader/tecuruapan/106471?page=144">
@@ -193,23 +513,64 @@
                 </a>
             </li>
             <br>
-            <li>Cisco. (2022, 15 marzo). Sistema de administración de red: informe oficial de mejores prácticas.
-                Recuperado 31 de agosto de 2023, de
+            <li> Cisco Systems. (2023). Ethernet. Cisco. Recuperado 03 de octubre de 2023, de
+                <a href="https://www.cisco.com/c/es_mx/tech/lan-switching/ethernet/index.html">
+                    https://www.cisco.com/c/es_mx/tech/lan-switching/ethernet/index.html
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2019, 20 agosto). Ethernet (IEEE 802.3). Cisco. Recuperado 04 de octubre de 2023, de
+                <a href="https://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/network/3-8/reference/guide/ethrnt.pdf ">
+                    https://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/network/3-8/reference/guide/ethrnt.pdf 
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2022, 12 marzo). Configurar NAT para habilitar la comunicación entre redes superpuestas. Recuperado 5 de octubre de 2023, de 
+                <a href="https://www.cisco.com/c/es_mx/support/docs/ip/network-address-translation-nat/200726-Configure-NAT-to-Enable-Communication-Be.html  ">
+                    https://www.cisco.com/c/es_mx/support/docs/ip/network-address-translation-nat/200726-Configure-NAT-to-Enable-Communication-Be.html 
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2022, 15 marzo). Sistema de administración de red: informe oficial de mejores prácticas. Recuperado 31 de agosto de 2023, de 
+                <a href="https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage">
+                    https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2022, 25 marzo). Fundamentals of (IPS) Intrusion Prevention System.
+                Recuperado 06 de octubre de 2023, de
                 <a
                     href="https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage ">https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage
                 </a>
             </li>
             <br>
-            <li>Cisco Systems. “sistema de administración de red: informe oficial de mejores prácticas.” cisco, 10
-                August 2018,
+            <li>Cisco. (2022c, marzo 13). Ejemplo de configuración de las funciones de seguridad de capa 2 en los switches de configuración fija de capa 3 de Cisco Catalyst. Recuperado 6 de octubre de 2023, de 
                 <a
-                    href="https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage">
-                    https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage
+                    href="https://www.cisco.com/c/es_mx/support/docs/switches/catalyst-3750-series-switches/72846-layer2-secftrs-catl3fixed.html ">
+                    https://www.cisco.com/c/es_mx/support/docs/switches/catalyst-3750-series-switches/72846-layer2-secftrs-catl3fixed.html
+                </a>
+            </li>
+
+            <br>
+            <li>Fernández, Y. (2017, 1 junio). Qué es un proxy y cómo puedes utilizarlo para navegar de forma más anónima. Xataka. Recuperado 5 de octubre de 2023, de 
+                <a
+                    href="https://www.xataka.com/basics/que-es-un-proxy-y-como-puedes-utilizarlo-para-navegar-de-forma-mas-anonima  ">
+                    https://www.xataka.com/basics/que-es-un-proxy-y-como-puedes-utilizarlo-para-navegar-de-forma-mas-anonima 
                 </a>
             </li>
             <br>
+            <li>Fernández, Y. (2021, 15 julio). FTP: qué es y cómo funciona. Xataka. Recuperado 5 de octubre de 2023, de 
+                <a
+                    href="https://www.xataka.com/basics/ftp-que-como-funciona ">
+                    https://www.xataka.com/basics/ftp-que-como-funciona 
+                </a>
+            </li>
+
+            <br>
+
             <li>Franganillo, J., & Catalán-Vega, M. A. (2005). Bitácoras y sindicación de contenidos: dos herramientas
                 para difundir información. BiD: textos universitaris de biblioteconomia y documentación, (15).
+                Recuperado 2 de septiembre de 2023, de
                 <a href="http://eprints.rclis.org/8397/">
                     http://eprints.rclis.org/8397/
                 </a>
@@ -222,37 +583,154 @@
                 </a>
             </li>
             <br>
+            <li>Fumero Reverón, A. (2011). IRC 2.0. Medios para la información, la relación y la comunicación en la web 2.0. El profesional de la información, 20(6), 605-609. Recuperado 5 de
+                octubree de 2023, de
+                <a href="https://oa.upm.es/11707/1/INVE_MEM_2011_106708.pdf">
+                    https://oa.upm.es/11707/1/INVE_MEM_2011_106708.pdf
+                </a>
+            </li>
+            <br>
+            <li>Gerend, J. (2023, 3 agosto). Protocolo de Configuración Dinámica de Host (DHCP). Microsoft Learn. Recuperado 6 de octubre de 2023, de 
+                <a href="https://learn.microsoft.com/es-es/windows-server/networking/technologies/dhcp/dhcp-top ">
+                    https://learn.microsoft.com/es-es/windows-server/networking/technologies/dhcp/dhcp-top  
+                </a>
+            </li>
+            <br>
+            <li>Gutierrez, W. (2023, 11 marzo). ¿Qué es NAT y cómo funciona? ManageEngine. Recuperado 5 de octubre de 2023, de 
+                <a href="https://blogs.manageengine.com/espanol/2023/03/11/nat-como-funciona.html ">
+                    https://blogs.manageengine.com/espanol/2023/03/11/nat-como-funciona.html 
+                </a>
+            </li>
+            <br>
+            <li>Herrera, A. (2022, August 30). SISTEMA DE COMUNICACION MEDIANTE PROTOCOLO ETHERNET (ESTÁNDAR 802.3(. YouTube. Consultado en 04 de Octubre 2023 en: 
+                <a href="https://repositorio.utp.edu.co/server/api/core/bitstreams/73bbedd9-33ba-4c36-a34e-7d8d01d68fb3/content">
+                    https://repositorio.utp.edu.co/server/api/core/bitstreams/73bbedd9-33ba-4c36-a34e-7d8d01d68fb3/content   
+                </a>
+            </li>
+            <br>
             <li>IBM. (2021, 20 abril). Redes y planificación de redes. Recuperado 31 de agosto de 2023, de
                 <a href="https://www.ibm.com/docs/es/ibm-mq/7.5?topic=ssfksj-7-5-0-com-ibm-mq-pla-doc-q004730--htm">
                     https://www.ibm.com/docs/es/ibm-mq/7.5?topic=ssfksj-7-5-0-com-ibm-mq-pla-doc-q004730--htm </a>
             </li>
             <br>
+            <li>IBM. (2021, 21 marzo). Servidor de impresión de red. Recuperado 6 de octubre de 2023, de 
+                <a href="https://www.ibm.com/docs/es/i/7.3?topic=programs-network-print-server">
+                    https://www.ibm.com/docs/es/i/7.3?topic=programs-network-print-server </a>
+            </li>
+            <br>
+            <li>IBM. (2023a, enero 23). IBM documentation. Introducción: servidores web. Recuperado 5 de octubre de 2023, de 
+                <a href="https://www.ibm.com/docs/es/was/9.0.5?topic=servers-introduction-web ">
+                    https://www.ibm.com/docs/es/was/9.0.5?topic=servers-introduction-web </a>
+            </li>
+            <br>
+            <li>IBM. (2023b, enero 26). IBM documentation. Configuración del servidor Web. Recuperado 5 de octubre de 2023, de 
+                <a href="https://www.ibm.com/docs/es/was/9.0.5?topic=console-web-server-configuration  ">
+                    https://www.ibm.com/docs/es/was/9.0.5?topic=console-web-server-configuration </a>
+            </li>
+            <br>
+            <li>IBM. (2023c, abril 4). IBM Documentación. Configuración del servidor proxy. Recuperado 5 de octubre de 2023, de 
+                <a href="https://www.ibm.com/docs/es/was-zos/9.0.5?topic=services-setting-up-proxy-server ">
+                    https://www.ibm.com/docs/es/was-zos/9.0.5?topic=services-setting-up-proxy-server</a>
+            </li>
+            <br>
+            <li>Juan Carlos. (2022, 18 febrero). Guía de Redes WAN: configuración y características. Tokio School. Recuperado 4 de octubre de 2023, de 
+                <a href="https://www.tokioschool.com/noticias/guia-de-redes-wan-configuracion-y-caracteristicas/ ">
+                    https://www.tokioschool.com/noticias/guia-de-redes-wan-configuracion-y-caracteristicas/ </a>
+
+            </li>
+            <br>
+            <li>Microsoft. (2023a, abril 12). Servicio de nombres internet de Windows (WINS). Microsoft Learn. Recuperado 6 de octubre de 2023, de 
+                <a href="https://learn.microsoft.com/es-es/windows-server/networking/technologies/wins/wins-top ">
+                    https://learn.microsoft.com/es-es/windows-server/networking/technologies/wins/wins-top </a>
+
+            </li>
+            <br>
+            <li>Microsoft. (2023b, julio 17). Instalación y configuración de un archivo y un servidor de impresión - Windows Server. Microsoft Learn. Recuperado 6 de octubre de 2023, de 
+                <a href="https://learn.microsoft.com/es-es/troubleshoot/windows-server/printing/install-configure-file-print-server ">
+                    https://learn.microsoft.com/es-es/troubleshoot/windows-server/printing/install-configure-file-print-server  </a>
+
+            </li>
+            <br>
             <li>Molina Robles, F. Planificación y administración de redes. ed. Madrid: ra-ma editorial, 2015. 632 p.
-                Disponible en:
-                <a href="https://elibro.net/es/ereader/tecuruapan/106392?page=586">
-                    https://elibro.net/es/ereader/tecuruapan/106392?page=586</a>
-                .Consultado en: 29 Aug 2023
+                Recuperado 29 de agosto de 2023, de
+                <a href="https://learn.microsoft.com/es-es/windows-server/networking/technologies/wins/wins-top ">
+                    https://learn.microsoft.com/es-es/windows-server/networking/technologies/wins/wins-top </a>
+
+            </li>
+            <br>
+            
+            <li>Oracle. (2011, 1 enero). Configuración de los servicios de correo - Guía de administración del sistema: Servicios de red. Recuperado 5 de octubre de 2023, de 
+                <a href="https://docs.oracle.com/cd/E24842_01/html/E22524/mailadmin-13.html ">
+                    https://docs.oracle.com/cd/E24842_01/html/E22524/mailadmin-13.html </a>
+
+            </li>
+            <br>
+            <li>Oracle. (2012, 1 enero). Configuración de contabilidad de red para el tráfico de red - uso de redes
+                virtuales en Oracle Solaris 11.1. Recuperado 1 de octubre de 2023, de
+                <a href="https://docs.oracle.com/cd/E37929_01/html/E36563/ghhde.html">
+                    https://docs.oracle.com/cd/E37929_01/html/E36563/ghhde.html</a>
+
+            </li>
+            <br>
+            <li>Oracle. (2023). Configuración de sistemas en la red local (Guía de Administración del Sistema: Servicios IP). Recuperado 6 de octubre de 2023, de
+                <a href="https://docs.oracle.com/cd/E19957-01/820-2981/ipconfig-63/index.html ">
+                    https://docs.oracle.com/cd/E19957-01/820-2981/ipconfig-63/index.html </a>
+
             </li>
             <br>
             <li>Quezada Castillo, A. Modelo de red para un centro de operaciones de seguridad (SOC). Recuperado 31 de
-                agosto de 2023, Disponible en: <a
+                agosto de 2023, de <a
                     href="https://tesis.ipn.mx/bitstream/handle/123456789/8543/112.pdf?sequence=1&isAllowed=y ">https://tesis.ipn.mx/bitstream/handle/123456789/8543/112.pdf?sequence=1&isAllowed=y
                 </a>
             </li>
             <br>
 
-            <li>Robles F., Molina. Planificación y administración de redes. Madrid, Molina Robles, F, 2015. Elibro,
+            <li>Robles F., Molina. Planificación y administración de redes. Madrid, Molina Robles, F, (2015). Elibro,
+                Recuperado 29 de agosto de 2023, de
                 <a href="https://elibro.net/es/ereader/tecuruapan/106392?page=586">
                     https://elibro.net/es/ereader/tecuruapan/106392?page=586
                 </a>
-                Accessed 29 agosto 2023
+            </li>
+            <br>
+            <li>Sánchez Rubio, M. Barchino Plata, R. y Martínez Herráiz, J. J. (2020). Redes de computadores. Alcalá de
+                Henares, editorial universidad de Alcalá. Recuperado 4 de octubre de 2023, de
+                <a href="https://elibro.net/es/ereader/tecuruapan/131606?page=107">
+                    https://elibro.net/es/ereader/tecuruapan/131606?page=107
+                </a>
+
+            </li>
+            <br>
+            <li>Servidor DHCP | Introducción al Protocolo de Configuración Dinámica de Host (DHCP). Recuperado 6 de octubre de 2023, de 
+                <a href="https://www.manageengine.com/latam/oputils/servidor-dhcp.html ">
+                    https://www.manageengine.com/latam/oputils/servidor-dhcp.html 
+                </a>
+
+            </li>
+            <br>
+            <li>Universidad Veracruzana. (2014, noviembre). Correo electrónico. UV MX. Recuperado 5 de octubre de 2023, de 
+                <a href="https://www.uv.mx/personal/rcordoba/files/2014/11/Correo_electronico.pdf  ">
+                    https://www.uv.mx/personal/rcordoba/files/2014/11/Correo_electronico.pdf 
+                </a>
+
             </li>
             <br>
 
             <li>Villacrés García, N. J. (2018). Esquema de seguridad perimetral para el monitoreo de eventos en el
-                Instituto Tecnológico Bolivariano (Bachelor's thesis).
+                Instituto Tecnológico Bolivariano (Bachelor's thesis). Recuperado 30 de agosto de 2023, de
                 <a href="https://dspace.uniandes.edu.ec/handle/123456789/8160">
                     https://dspace.uniandes.edu.ec/handle/123456789/8160
+                </a>
+            </li>
+            <br>
+            <li>Zoho Corporation. (2023). ¿Cómo configurar Switch Cisco? | Pasos para configurar Switch Cisco | Configuración básica de un Switch - ManageEngine Network Configuration Manager.  Recuperado 5 de octubre de 2023, de
+                <a href="https://www.manageengine.com/latam/network-configuration-manager/configuracion-de-cisco-switch.html ">
+                    https://www.manageengine.com/latam/network-configuration-manager/configuracion-de-cisco-switch.html 
+                </a>
+            </li>
+            <br>
+            <li>Zoho Corporation. (2022, 2 septiembre). Manage engine. Recuperado 1 de octubre de 2023, de
+                <a href="https://www.manageengine.com/es/network-monitoring/network-management.html ">
+                    https://www.manageengine.com/es/network-monitoring/network-management.html
                 </a>
             </li>
             <br>
