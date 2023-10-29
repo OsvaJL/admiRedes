@@ -37,8 +37,8 @@
                         T1 </a>
                 </div>
                 <div>
-                    <a style="font-size: 13px;" href="#" class="arrow-button">
-                        T3 </a>
+                    <a style="font-size: 13px;" href="../Tema 2/introduccion.html" class="arrow-button">
+                        T2 </a>
                 </div>
                 <div>
                     <a style="font-size: 13px;" href="#" class="arrow-button">
@@ -53,21 +53,25 @@
 
             </div>
             <br><br>
-            <a href="#intro" style="font-style: italic;font-size: large;"><b>2.1- Introducción</b></a>
+            <a href="#topologia" style="font-style: italic;font-size: large;"><b>&nbsp;3.3- Topología WLAN</b></a>
             <br>
 
 
             <div style="display: flex; justify-content: space-between;">
                 <div>
                     <nav>
-                        <a href="introduccion.htm"><img class="ajustePngInicio" src="../imagenes/inicio2.png"
+                        <a href="DefinicionWLAN.html"><img class="ajustePngInicio" src="../imagenes/inicio2.png"
                                 alt="Imagen de inicio"></a>
                     </nav>
 
                 </div>
                 <div style="margin-top: 15px;">
-                    <a style="font-size: 13px; text-align: center;" href="introLan.html" class="arrow-button">
-                        2.2 >>
+                    <a style="font-size: 13px; text-align: center;" href="componentes.html" class="arrow-button">
+                        << 3.2 </a>
+                </div>
+                <div style="margin-top: 15px;">
+                    <a style="font-size: 13px; text-align: center;" href="redes802.html" class="arrow-button">
+                        3.4 >>
                     </a>
                 </div>
             </div>
@@ -98,45 +102,93 @@
 
         <div class="container">
             <hr>
-            <h2 id="intro" class="subtitulo">2 Conceptos básicos y configuración del switch</h2>
-            <h2 class="subtitulo">2.1 Introducción</h2>
+            <h2 id="topologia" class="subtitulo">3.3 Topología WLAN</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;La red de área local (LAN) Ethernet es una tecnología de red ampliamente utilizada que
-                forma la base de la conectividad en muchas empresas, hogares e instituciones educativas. El estándar que
-                define las especificaciones técnicas para Ethernet es conocido como IEEE 802.3, desarrollado por el
-                Instituto de Ingenieros Eléctricos y Electrónicos (IEEE).
-                <br><br>
-                &nbsp;&nbsp;&nbsp;Ethernet se introdujo por primera vez en la década de 1970 y ha evolucionado con el tiempo para
-                satisfacer las crecientes demandas de velocidad y rendimiento. El estándar IEEE 802.3 define aspectos
-                clave de la tecnología Ethernet, como el formato de trama, los métodos de acceso al medio, la velocidad
-                de transmisión y la gestión de colisiones. 
-                <p style="text-align: end;">(Herrera, 2022)</p>
+
+                &nbsp;&nbsp;&nbsp;Existen 2 topologías WLAN lógicas que se basan en el estándar 802.11:
+            <p style="text-align: end;">(Castaño y López, 2013)</p>
             </p>
-                <p>
-                    &nbsp;&nbsp;&nbsp;Una característica fundamental de Ethernet es el método de acceso al medio conocido como CSMA/CD
-                (Carrier Sense Multiple Access with Collision Detection). Este método permite que múltiples dispositivos
-                compartan el mismo medio de transmisión, como un cable, y evita colisiones mediante la detección
-                temprana de colisiones y la implementación de un proceso de retransmisión.
-                <br><br>
-                &nbsp;&nbsp;&nbsp;Con el tiempo, IEEE 802.3 ha experimentado mejoras significativas en términos de velocidad de
-                transmisión, desde los modestos 10 Mbps (megabits por segundo) hasta velocidades de varios Gbps
-                (gigabits por segundo) con el tiempo. Además, han surgido variantes como Gigabit Ethernet y 10 Gigabit
-                Ethernet para satisfacer las necesidades de redes de alta velocidad.
-                <p style="text-align: end;">(Herrera, 2022)</p>
 
-                </p>
-                
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Topología de Red Ad Hoc (Ad Hoc Network):</b>
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;Una red ad hoc es una topología de red inalámbrica donde los dispositivos inalámbricos
+                se conectan directamente entre sí sin la necesidad de un punto central, como un punto de acceso (AP) o
+                un router. Cada dispositivo actúa como un nodo y es capaz de comunicarse directamente con otros
+                dispositivos dentro de su rango de alcance. Algunas características clave de una red ad hoc son:
+            </p>
+            <ul>
+                <li>
+                    <b>Autonomía:</b> Cada dispositivo es autónomo y puede unirse o abandonar la red ad hoc en cualquier
+                    momento.
+                </li>
+                <br>
+                <li>
+                    <b>Escalabilidad:</b> Las redes ad hoc pueden crecer o disminuir en tamaño según la cantidad de
+                    dispositivos disponibles.
+                </li>
+                <br>
+                <li>
+                    <b>Flexibilidad:</b> Son adecuadas para situaciones donde no hay infraestructura de red previamente
+                    establecida, como en entornos de emergencia o en redes de dispositivos móviles.
+                </li>
+                <br>
+                <li>
+                    <b>Implementación Rápida:</b> Las redes ad hoc se pueden configurar rápidamente sin requerir
+                    configuración centralizada.
+                </li>
+                <br>
+                <li>
+                    <b>Limitaciones de Cobertura:</b> Debido a que la comunicación se basa en el alcance de los
+                    dispositivos individuales, las redes ad hoc suelen tener un alcance limitado.
+                </li>
 
-                
+            </ul>
 
-
-
-            
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/te2-img4.png" alt="">
+                <img class="ajustePng" src="../imagenes/topologia.png" alt="">
             </nav>
+            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Topología de Red de Infraestructura (Infrastructure Network):</b>
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;Una red de infraestructura es una topología de red inalámbrica más común, en la que
+                los dispositivos inalámbricos se conectan a través de un punto central, como un punto de acceso (AP) o
+                un router. En esta topología:
+            </p>
+            <ul>
+                <li>
+                    <b>Punto de Acceso (AP):</b> El punto de acceso actúa como un concentrador central al que se
+                    conectan los
+                    dispositivos inalámbricos. Coordina y gestiona la comunicación entre los dispositivos.
+                </li>
+                <br>
+                <li>
+                    <b>Conexión a la Red Cableada:</b> El punto de acceso se conecta a la red cableada, lo que permite
+                    que los dispositivos inalámbricos accedan a recursos en la red alámbrica y a Internet.
+                </li>
+                <br>
+                <li>
+                    <b>Amplia Cobertura:</b> Los puntos de acceso pueden proporcionar una cobertura más amplia en
+                    comparación
+                    con una red ad hoc debido a su capacidad para amplificar la señal y conectar múltiples dispositivos
+                    de manera centralizada.
+                </li>
+                <br>
+                <li>
+                    <b>Seguridad Mejorada:</b> La infraestructura de red ofrece un mayor control y seguridad, ya que se
+                    pueden aplicar medidas de seguridad en un punto central, como cifrado y autenticación.
+                </li>
 
+
+            </ul>
+            <br>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/topologia2.jpg" alt="">
+            </nav>
 
             <br>
             <hr>
@@ -174,6 +226,18 @@
                 </a>
             </li>
             <br>
+            <li> Castaño Ribes, R. & López, J. (2013). Redes locales. Madrid, spain: macmillan iberia, S.A. Recuperado 15 de octubre de 2023, de
+                <a href="https://elibro.net/es/ereader/tecuruapan/43257?page=253">
+                    https://elibro.net/es/ereader/tecuruapan/43257?page=253
+                </a>
+            </li>
+            <br>
+            <li> CID. (2022). Elementos básicos de una red Wi-Fi | internet y la web.conexiones. Universidad de alicante. Recuperado 15 de octubre de 2023, de
+                <a href="https://moodle2021-22.ua.es/moodle/pluginfile.php/10741/mod_resource/content/15/tema/elementos_bsicos_de_una_red_wifi.html">
+                    https://moodle2021-22.ua.es/moodle/pluginfile.php/10741/mod_resource/content/15/tema/elementos_bsicos_de_una_red_wifi.html
+                </a>
+            </li>
+            <br>
             <li> Cisco Systems. (2023). Ethernet. Cisco. Recuperado 03 de octubre de 2023, de
                 <a href="https://www.cisco.com/c/es_mx/tech/lan-switching/ethernet/index.html">
                     https://www.cisco.com/c/es_mx/tech/lan-switching/ethernet/index.html
@@ -183,6 +247,12 @@
             <li>Cisco. (2019, 20 agosto). Ethernet (IEEE 802.3). Cisco. Recuperado 04 de octubre de 2023, de
                 <a href="https://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/network/3-8/reference/guide/ethrnt.pdf ">
                     https://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/network/3-8/reference/guide/ethrnt.pdf 
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2021, 1 octubre). Wireless, LAN (WLAN). Recuperado 14 de octubre de 2023, de
+                <a href="https://www.cisco.com/c/es_mx/tech/wireless-2f-mobility/wireless-lan-wlan/index.html">
+                    https://www.cisco.com/c/es_mx/tech/wireless-2f-mobility/wireless-lan-wlan/index.html 
                 </a>
             </li>
             <br>
@@ -209,6 +279,14 @@
                 <a
                     href="https://www.cisco.com/c/es_mx/support/docs/switches/catalyst-3750-series-switches/72846-layer2-secftrs-catl3fixed.html ">
                     https://www.cisco.com/c/es_mx/support/docs/switches/catalyst-3750-series-switches/72846-layer2-secftrs-catl3fixed.html
+                </a>
+            </li>
+
+            <br>
+            <li>Escuela de Tokio. (2023, 28 junio). Red WLAN: ¿Qué es, para qué sirve y por qué es importante? Tokio School. Recuperado 15 de octubre de 2023, de 
+                <a
+                    href="https://www.tokioschool.com/noticias/red-wlan/">
+                    https://www.tokioschool.com/noticias/red-wlan/
                 </a>
             </li>
 
@@ -292,6 +370,11 @@
             <li>IBM. (2023c, abril 4). IBM Documentación. Configuración del servidor proxy. Recuperado 5 de octubre de 2023, de 
                 <a href="https://www.ibm.com/docs/es/was-zos/9.0.5?topic=services-setting-up-proxy-server ">
                     https://www.ibm.com/docs/es/was-zos/9.0.5?topic=services-setting-up-proxy-server</a>
+            </li>
+            <br>
+            <li>Jara Werchau, P., & Nazar, P. (2006). Estándar IEEE 802.11 X de las WLAN. edUTecNe. Recuperado 15 de octubre de 2023, de 
+                <a href="http://www.edutecne.utn.edu.ar/inicio.html.">
+                    http://www.edutecne.utn.edu.ar/inicio.html</a>
             </li>
             <br>
             <li>Juan Carlos. (2022, 18 febrero). Guía de Redes WAN: configuración y características. Tokio School. Recuperado 4 de octubre de 2023, de 

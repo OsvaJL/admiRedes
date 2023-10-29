@@ -37,8 +37,8 @@
                         T1 </a>
                 </div>
                 <div>
-                    <a style="font-size: 13px;" href="../Tema 3/DefinicionWLAN.html" class="arrow-button">
-                        T3 </a>
+                    <a style="font-size: 13px;" href="../Tema 2/introduccion.html" class="arrow-button">
+                        T2 </a>
                 </div>
                 <div>
                     <a style="font-size: 13px;" href="#" class="arrow-button">
@@ -53,31 +53,24 @@
 
             </div>
             <br><br>
+            <a href="#topologia" style="font-style: italic;font-size: large;"><b>&nbsp;3.4- Redes locales inalámbricas
+                    802.11x</b></a>
+            <br>
 
-            <a href="#configSwitches" style="font-style: italic;font-size: large;"><b>2.5 Configuración de la seguridad
-                    de un switch
-                </b></a>
-            <br>
-            <br>
 
             <div style="display: flex; justify-content: space-between;">
                 <div>
                     <nav>
-                        <a href="introduccion.html"><img class="ajustePngInicio" src="../imagenes/inicio2.png"
+                        <a href="DefinicionWLAN.html"><img class="ajustePngInicio" src="../imagenes/inicio2.png"
                                 alt="Imagen de inicio"></a>
                     </nav>
 
                 </div>
                 <div style="margin-top: 15px;">
-                    <a style="font-size: 13px;" href="configSwitches.html" class="arrow-button">
-                        << 2.4 </a>
+                    <a style="font-size: 13px; text-align: center;" href="topologia.html" class="arrow-button">
+                        << 3.3 </a>
+                </div>
 
-                </div>
-                <div style="margin-top: 15px;">
-                    <a style="font-size: 13px;" href="configServidores.html" class="arrow-button">
-                        2.6 >>
-                    </a>
-                </div>
             </div>
 
 
@@ -106,155 +99,95 @@
 
         <div class="container">
             <hr>
-            <h2 id="configSwitches" class="subtitulo">2.5 Configuración de la seguridad de un switch</h2>
+            <h2 id="topologia" class="subtitulo">3.4 Redes locales inalámbricas 802.11x</h2>
             <hr>
+
             <p>
-                &nbsp;&nbsp;&nbsp;Los switches se usan para conectar varios dispositivos en la misma red. En una red
-                diseñada correctamente, los switches LAN son responsables de controlar el flujo de datos en la capa de
-                acceso y de dirigirlo a los recursos conectados en red.
-                Los switches de Cisco son de configuración automática y no necesitan ninguna configuración adicional
-                para comenzar a funcionar. Sin embargo, los switches Cisco ejecutan Cisco IOS y se pueden configurar
-                manualmente para satisfacer mejor las necesidades de la red. Esto incluye el ajuste de los requisitos de
-                velocidad, de ancho de banda y de seguridad de los puertos.
-
-                <br>
-                <br>
-                &nbsp;&nbsp;&nbsp;<b>Comandos usados para configurar un switch genérico (de la marca Cisco):</b>
+                &nbsp;&nbsp;&nbsp;Según el Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) Los estándares
+                tecnológicos más importantes de 802.11 se resumen en la siguiente tabla:
+            <p style="text-align: end;">(Castaño y López, 2013)</p>
             </p>
+
             <br>
+            <nav class="bodypng">
+                <img class="ajustePng" style="width: 600px; height: auto;" src="../imagenes/tabla.jpg" alt="">
+            </nav>
+            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;Las redes locales inalámbricas (WLAN) han experimentado una evolución constante desde
+                su inicio. Una parte esencial de esta evolución ha sido la introducción de estándares de comunicación
+                que han mejorado la velocidad, el alcance y la seguridad de las conexiones inalámbricas. Uno de los
+                estándares más destacados en este contexto es la serie 802.11x.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;La serie 802.11x se refiere a una familia de estándares desarrollados por el Instituto
+                de Ingenieros Eléctricos y Electrónicos (IEEE) que establecen las especificaciones técnicas para las
+                redes WLAN. Cada versión de 802.11x introduce mejoras significativas en términos de velocidad y
+                características.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>A lo largo de los años, varios estándares de la serie 802.11x se han convertido en
+                    pilares fundamentales de las WLAN. Algunos de los más destacados incluyen:</b>
+            </p>
 
             <ul>
                 <li>
-                    Accedo al modo de configuración privilegiada (enable):
-                    enable
+                    <b>802.11b:</b> Introducido en 1999, este fue uno de los primeros estándares populares de WLAN.
+                    Operaba en
+                    la banda de frecuencia de 2.4 GHz y ofrecía velocidades de hasta 11 Mbps.
                 </li>
-            </ul>
-            <ul>
+                <br>
                 <li>
-                    Entro al modo de configuración global: configure terminal
+                    <b>802.11a:</b> Lanzado también en 1999, operaba en la banda de frecuencia de 5 GHz y proporcionaba
+                    velocidades de hasta 54 Mbps.
                 </li>
-            </ul>
-            <ul>
+                <br>
                 <li>
-                    Establecer una contraseña para el acceso al modo privilegiado:
-                    enable secret aquicontraseña
+                    <b>802.11g:</b> Introducido en 2003, este estándar funcionaba en la banda de 2.4 GHz y ofrecía
+                    velocidades
+                    de hasta 54 Mbps, lo que lo convirtió en una mejora significativa respecto a 802.11b.
                 </li>
-            </ul>
-            <ul>
+                <br>
                 <li>
-                    Configurar contraseñas para el acceso a la línea de consola:
-                    line con 0 <br>
-                    password: contraseña
-                    login
+                    <b>802.11n:</b> Lanzado en 2009, 802.11n permite velocidades de hasta 600 Mbps y mejoró la capacidad
+                    de las
+                    redes inalámbricas al introducir la tecnología MIMO (Multiple Input, Multiple Output).
                 </li>
-            </ul>
-
-            <ul>
+                <br>
                 <li>
-                    Configurar contraseñas para el acceso SSH:
-                    line vty 0 15 <br>
-                    password: contraseña
-                    login
+                    <b>802.11ac:</b> Introducido en 2013, 802.11ac representó un gran avance en la velocidad y
+                    rendimiento de
+                    las WLAN, ofreciendo velocidades de hasta 1 Gbps.
                 </li>
-            </ul>
-            <ul>
+                <br>
                 <li>
-                    Crear una nueva VLAN:
-            vlan numero_de_vlan <br>
-            name nombre_de_la_vlan
+                    <b>802.11ax (Wi-Fi 6):</b> Este estándar, lanzado en 2019, se centró en la eficiencia y la gestión
+                    de
+                    dispositivos, lo que lo hizo ideal para entornos con una gran cantidad de dispositivos conectados
+                    simultáneamente.
                 </li>
+
             </ul>
-           
-            <ul>
-                <li>
-                    Asignar una VLAN a un puerto:
-            interface range gigabitethernet0/1 - 10 <br>
-            switchport mode access <br>
-            switchport access vlan numero_de_vlan
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Establecer un nombre para el switch:
-            hostname nombre_de_mi_switch
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Guardar la configuración en la memoria flash:
-            write memory
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Habilitar el filtrado de direcciones MAC (port security) en un puerto:
-            interface gigabitethernet0/1 <br>
-            switchport port-security <br>
-            switchport port-security maximum 5 # Número máximo de direcciones MAC permitidas <br>
-            switchport port-security violation restrict # Acción en caso de violación
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Configurar SNMP (Simple Network Management Protocol):
-            snmp-server community mi_comunidad RO
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar el protocolo de seguridad SSH:
-            crypto key generate rsa
-
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar el control de acceso (ACL) en una interfaz:
-            access-list numero_de_acl permit/deny tcp/ip any host destino eq/puerto <br>
-            interface gigabitethernet0/1 <br>
-            ip access-group numero_de_acl in/out
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Habilitar la encriptación de contraseñas en la configuración:
-            service password-encryption
-                </li>
-            </ul>
-            
-
-
-            
-
-            
-
-            
-
-
-            
-
-
-            
-
-
-            
-            
-
-            
-
-
-            <p style="text-align: end;"> (Cisco, 2022c)</p>
-
-
-
 
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/te2-img13.png" alt="">
+                <img class="ajustePng" style="width: 500px; height: auto;" src="../imagenes/tabla2.jpg" alt="">
             </nav>
+            <br>
 
+            <p>
+                &nbsp;&nbsp;&nbsp;Los estándares de la serie 802.11x son fundamentales para el funcionamiento de las
+                WLAN, ya que establecen las reglas y especificaciones que los dispositivos deben seguir para comunicarse
+                de manera efectiva. Esto asegura la interoperabilidad entre diferentes dispositivos y facilita la
+                expansión y el desarrollo de las redes inalámbricas.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;La evolución de los estándares 802.11x continúa con la aparición de nuevas versiones
+                que prometen velocidades aún más rápidas y una mayor eficiencia en la gestión de dispositivos. Es
+                importante estar al tanto de las últimas novedades en esta serie de estándares para aprovechar al máximo
+                el potencial de las WLAN en un mundo cada vez más conectado. 
+                <p style="text-align: end;">(Jara Werchau & Nazar, 2006)</p>
+            </p>
+           
 
             <br>
             <hr>
@@ -547,6 +480,7 @@
 
         </ol>
     </footer>
+
 
 </body>
 

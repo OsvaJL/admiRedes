@@ -37,8 +37,8 @@
                         T1 </a>
                 </div>
                 <div>
-                    <a style="font-size: 13px;" href="../Tema 3/DefinicionWLAN.html" class="arrow-button">
-                        T3 </a>
+                    <a style="font-size: 13px;" href="../Tema 2/introduccion.html" class="arrow-button">
+                        T2 </a>
                 </div>
                 <div>
                     <a style="font-size: 13px;" href="#" class="arrow-button">
@@ -53,29 +53,22 @@
 
             </div>
             <br><br>
+            <h3 style="font-style: italic; font-size: large">3 - WLAN</h3>
+            <a href="#WLAN" style="font-style: italic;font-size: large;"><b>&nbsp;3.1- Definición de WLAN</b></a>
+            <br>
 
-            <a href="#configSwitches" style="font-style: italic;font-size: large;"><b>2.5 Configuración de la seguridad
-                    de un switch
-                </b></a>
-            <br>
-            <br>
 
             <div style="display: flex; justify-content: space-between;">
                 <div>
                     <nav>
-                        <a href="introduccion.html"><img class="ajustePngInicio" src="../imagenes/inicio2.png"
+                        <a href="DefinicionWLAN.html"><img class="ajustePngInicio" src="../imagenes/inicio2.png"
                                 alt="Imagen de inicio"></a>
                     </nav>
 
                 </div>
                 <div style="margin-top: 15px;">
-                    <a style="font-size: 13px;" href="configSwitches.html" class="arrow-button">
-                        << 2.4 </a>
-
-                </div>
-                <div style="margin-top: 15px;">
-                    <a style="font-size: 13px;" href="configServidores.html" class="arrow-button">
-                        2.6 >>
+                    <a style="font-size: 13px; text-align: center;" href="componentes.html" class="arrow-button">
+                        3.2 >>
                     </a>
                 </div>
             </div>
@@ -106,153 +99,90 @@
 
         <div class="container">
             <hr>
-            <h2 id="configSwitches" class="subtitulo">2.5 Configuración de la seguridad de un switch</h2>
+            <h2 id="WLAN" class="subtitulo">3 WLAN</h2>
+            <h2 class="subtitulo">3.1 Definición de WLAN</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Los switches se usan para conectar varios dispositivos en la misma red. En una red
-                diseñada correctamente, los switches LAN son responsables de controlar el flujo de datos en la capa de
-                acceso y de dirigirlo a los recursos conectados en red.
-                Los switches de Cisco son de configuración automática y no necesitan ninguna configuración adicional
-                para comenzar a funcionar. Sin embargo, los switches Cisco ejecutan Cisco IOS y se pueden configurar
-                manualmente para satisfacer mejor las necesidades de la red. Esto incluye el ajuste de los requisitos de
-                velocidad, de ancho de banda y de seguridad de los puertos.
 
-                <br>
-                <br>
-                &nbsp;&nbsp;&nbsp;<b>Comandos usados para configurar un switch genérico (de la marca Cisco):</b>
+                &nbsp;&nbsp;&nbsp;Una WLAN (Wireless Local Area Network) es una red de comunicación inalámbrica que
+                permite la conexión de dispositivos, como computadoras, teléfonos móviles, tabletas y otros
+                dispositivos, dentro de un área geográfica limitada, como una oficina, un hogar o un campus, utilizando
+                señales electromagnéticas en lugar de cables físicos. Estas redes inalámbricas permiten la transferencia
+                de datos y el acceso a recursos compartidos, como Internet o impresoras, sin la necesidad de conexiones
+                cableadas, lo que brinda flexibilidad y movilidad a los usuarios.
+            <p style="text-align: end;">(Escuela de Tokio, 2023)</p>
             </p>
-            <br>
+
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Las principales características de las redes WLAN son las siguientes:</b>
+
+            </p>
 
             <ul>
                 <li>
-                    Accedo al modo de configuración privilegiada (enable):
-                    enable
+                    <b>Tipo de señal:</b> Las redes inalámbricas emplean señales electromagnéticas para la transmisión
+                    de datos.
+
                 </li>
-            </ul>
-            <ul>
+                <br>
                 <li>
-                    Entro al modo de configuración global: configure terminal
+                    <b>Medio de transmisión:</b> A diferencia de las conexiones con cables, las WLAN no dependen de
+                    cables
+                    físicos, ya que las señales se propagan por el espacio y pueden atravesar diversos materiales.
                 </li>
-            </ul>
-            <ul>
+                <br>
                 <li>
-                    Establecer una contraseña para el acceso al modo privilegiado:
-                    enable secret aquicontraseña
+                    <b>Necesidad de antenas:</b> Todos los dispositivos inalámbricos deben estar equipados con antenas.
                 </li>
-            </ul>
-            <ul>
+                <br>
                 <li>
-                    Configurar contraseñas para el acceso a la línea de consola:
-                    line con 0 <br>
-                    password: contraseña
-                    login
+                    <b> Alcance limitado:</b> Las WLAN tienen un alcance restringido debido a la atenuación de las
+                    señales
+                    electromagnéticas a medida que atraviesan materiales y el aire. El alcance depende de factores como
+                    el tipo de onda, la potencia de emisión, la tecnología de modulación y el tipo y sensibilidad de las
+                    antenas.
                 </li>
-            </ul>
-
-            <ul>
+                <br>
                 <li>
-                    Configurar contraseñas para el acceso SSH:
-                    line vty 0 15 <br>
-                    password: contraseña
-                    login
+                    <b>Capacidad limitada:</b> En una zona determinada, solo puede haber una señal que utilice el mismo
+                    tipo de
+                    onda, ya que la superposición causaría interferencias.
                 </li>
-            </ul>
-            <ul>
+                <br>
                 <li>
-                    Crear una nueva VLAN:
-            vlan numero_de_vlan <br>
-            name nombre_de_la_vlan
+                    <b>Velocidad de transmisión limitada:</b> La capacidad limitada también influye en la velocidad de
+                    transmisión, ya que solo puede haber una transmisión activa a la vez. Otros factores que afectan la
+                    velocidad son el ruido, las interferencias y la pérdida de intensidad de la señal.
                 </li>
-            </ul>
-           
-            <ul>
+                <br>
                 <li>
-                    Asignar una VLAN a un puerto:
-            interface range gigabitethernet0/1 - 10 <br>
-            switchport mode access <br>
-            switchport access vlan numero_de_vlan
+                    <b>Movilidad:</b> Las WLAN permiten dispositivos móviles, ya que no están conectados por cables y
+                    pueden
+                    moverse libremente dentro de la zona de cobertura.
                 </li>
-            </ul>
-
-            <ul>
+                <br>
                 <li>
-                    Establecer un nombre para el switch:
-            hostname nombre_de_mi_switch
+                    <b>Escalabilidad:</b> Las redes inalámbricas son fácilmente ampliables; agregar más puntos de acceso
+                    es una tarea sencilla cuando es necesario.
                 </li>
-            </ul>
-            <ul>
+                <br>
                 <li>
-                    Guardar la configuración en la memoria flash:
-            write memory
+                    <b>Requerimientos de seguridad:</b> Las redes inalámbricas necesitan protocolos de seguridad para proteger
+                    la información y el acceso a la red debido a la posibilidad de intentos de acceso no autorizados.
+                    Estos sistemas de seguridad básicos incluyen autenticación y cifrado.
                 </li>
+
             </ul>
-
-            <ul>
-                <li>
-                    Habilitar el filtrado de direcciones MAC (port security) en un puerto:
-            interface gigabitethernet0/1 <br>
-            switchport port-security <br>
-            switchport port-security maximum 5 # Número máximo de direcciones MAC permitidas <br>
-            switchport port-security violation restrict # Acción en caso de violación
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Configurar SNMP (Simple Network Management Protocol):
-            snmp-server community mi_comunidad RO
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar el protocolo de seguridad SSH:
-            crypto key generate rsa
-
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar el control de acceso (ACL) en una interfaz:
-            access-list numero_de_acl permit/deny tcp/ip any host destino eq/puerto <br>
-            interface gigabitethernet0/1 <br>
-            ip access-group numero_de_acl in/out
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Habilitar la encriptación de contraseñas en la configuración:
-            service password-encryption
-                </li>
-            </ul>
-            
+            <p style="text-align: end;">(Castaño y López, 2013)</p>
 
 
-            
 
-            
-
-            
-
-
-            
-
-
-            
-
-
-            
-            
-
-            
-
-
-            <p style="text-align: end;"> (Cisco, 2022c)</p>
 
 
 
 
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/te2-img13.png" alt="">
+                <img class="ajustePng" src="../imagenes/tt3-img5.jpg" alt="">
             </nav>
 
 
@@ -264,7 +194,7 @@
         </div>
     </div>
 
-    <footer>
+   <footer>
         <p id="referencias">Referencias bibliográficas:</p>
         <ol>
             <li>Altamirano Vicente ., C. A. V. A. (2019). Un modelo funcional para la administración de redes. UNAM -
@@ -547,6 +477,7 @@
 
         </ol>
     </footer>
+
 
 </body>
 

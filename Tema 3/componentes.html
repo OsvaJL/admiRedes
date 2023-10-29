@@ -37,8 +37,8 @@
                         T1 </a>
                 </div>
                 <div>
-                    <a style="font-size: 13px;" href="../Tema 3/DefinicionWLAN.html" class="arrow-button">
-                        T3 </a>
+                    <a style="font-size: 13px;" href="../Tema 2/introduccion.html" class="arrow-button">
+                        T2 </a>
                 </div>
                 <div>
                     <a style="font-size: 13px;" href="#" class="arrow-button">
@@ -53,31 +53,41 @@
 
             </div>
             <br><br>
+            <a href="#WLAN" style="font-style: italic;font-size: large;"><b>&nbsp;3.2- Componentes de una WLAN</b></a>
+            <br><br>
+            <a href="#modem" style="margin-top: -20px">&nbsp;&nbsp;- Módem</a>
+            <br><br>
+            <a href="#routers" style="margin-top: -20px">&nbsp;&nbsp;- Router</a>
+            <br><br>
+            <a href="#puntoacceso" style="margin-top: -20px">&nbsp;&nbsp;- Puntos de acceso</a>
+            <br><br>
+            <a href="#switch" style="margin-top: -20px">&nbsp;&nbsp;- Switch</a>
+            
+            <br>
 
-            <a href="#configSwitches" style="font-style: italic;font-size: large;"><b>2.5 Configuración de la seguridad
-                    de un switch
-                </b></a>
-            <br>
-            <br>
+
 
             <div style="display: flex; justify-content: space-between;">
                 <div>
                     <nav>
-                        <a href="introduccion.html"><img class="ajustePngInicio" src="../imagenes/inicio2.png"
+                        <a href="DefinicionWLAN.html"><img class="ajustePngInicio" src="../imagenes/inicio2.png"
                                 alt="Imagen de inicio"></a>
                     </nav>
 
                 </div>
-                <div style="margin-top: 15px;">
-                    <a style="font-size: 13px;" href="configSwitches.html" class="arrow-button">
-                        << 2.4 </a>
 
-                </div>
                 <div style="margin-top: 15px;">
-                    <a style="font-size: 13px;" href="configServidores.html" class="arrow-button">
-                        2.6 >>
+                    <a style="font-size: 13px; text-align: center;" href="DefinicionWLAN.html" class="arrow-button">
+                        << 3.1
                     </a>
                 </div>
+                <div style="margin-top: 15px;">
+                    <a style="font-size: 13px; text-align: center;" href="topologia.html" class="arrow-button">
+                        3.3 >>
+                    </a>
+                    
+                </div>
+                
             </div>
 
 
@@ -106,160 +116,312 @@
 
         <div class="container">
             <hr>
-            <h2 id="configSwitches" class="subtitulo">2.5 Configuración de la seguridad de un switch</h2>
+            <h2 id="WLAN" class="subtitulo">3.2 Componentes de una WLAN</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Los switches se usan para conectar varios dispositivos en la misma red. En una red
-                diseñada correctamente, los switches LAN son responsables de controlar el flujo de datos en la capa de
-                acceso y de dirigirlo a los recursos conectados en red.
-                Los switches de Cisco son de configuración automática y no necesitan ninguna configuración adicional
-                para comenzar a funcionar. Sin embargo, los switches Cisco ejecutan Cisco IOS y se pueden configurar
-                manualmente para satisfacer mejor las necesidades de la red. Esto incluye el ajuste de los requisitos de
-                velocidad, de ancho de banda y de seguridad de los puertos.
 
-                <br>
-                <br>
-                &nbsp;&nbsp;&nbsp;<b>Comandos usados para configurar un switch genérico (de la marca Cisco):</b>
+                &nbsp;&nbsp;&nbsp;Según el CID (Competencias en Información Digital) de la Universidad de Alicante se
+                tiene al Módem, Router, Puntos de acceso y Switch como elementos básicos de una WLAN, mismos que se
+                definirán a continuación.
+            <p style="text-align: end;">(CID, 2022)</p>
+            </p>
+            <div id="modem" style="margin-left: 10em; margin-right: 10em; border-top: 3px solid #000; scroll-margin-top: 170px;">
+
+            </div>
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Módem </b>(abreviatura de "modulador-demodulador"): Es un dispositivo de hardware
+                que
+                cumple una función esencial en las redes de comunicación. Su función principal es modular y demodular
+                señales de datos digitales para su transmisión y recepción a través de líneas de comunicación. En otras
+                palabras, convierte datos digitales en señales analógicas para transmitirlas y las convierte de nuevo en
+                datos digitales en el extremo receptor.
+
             </p>
             <br>
-
-            <ul>
-                <li>
-                    Accedo al modo de configuración privilegiada (enable):
-                    enable
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Entro al modo de configuración global: configure terminal
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Establecer una contraseña para el acceso al modo privilegiado:
-                    enable secret aquicontraseña
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar contraseñas para el acceso a la línea de consola:
-                    line con 0 <br>
-                    password: contraseña
-                    login
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Configurar contraseñas para el acceso SSH:
-                    line vty 0 15 <br>
-                    password: contraseña
-                    login
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Crear una nueva VLAN:
-            vlan numero_de_vlan <br>
-            name nombre_de_la_vlan
-                </li>
-            </ul>
-           
-            <ul>
-                <li>
-                    Asignar una VLAN a un puerto:
-            interface range gigabitethernet0/1 - 10 <br>
-            switchport mode access <br>
-            switchport access vlan numero_de_vlan
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Establecer un nombre para el switch:
-            hostname nombre_de_mi_switch
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Guardar la configuración en la memoria flash:
-            write memory
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Habilitar el filtrado de direcciones MAC (port security) en un puerto:
-            interface gigabitethernet0/1 <br>
-            switchport port-security <br>
-            switchport port-security maximum 5 # Número máximo de direcciones MAC permitidas <br>
-            switchport port-security violation restrict # Acción en caso de violación
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Configurar SNMP (Simple Network Management Protocol):
-            snmp-server community mi_comunidad RO
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar el protocolo de seguridad SSH:
-            crypto key generate rsa
-
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar el control de acceso (ACL) en una interfaz:
-            access-list numero_de_acl permit/deny tcp/ip any host destino eq/puerto <br>
-            interface gigabitethernet0/1 <br>
-            ip access-group numero_de_acl in/out
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Habilitar la encriptación de contraseñas en la configuración:
-            service password-encryption
-                </li>
-            </ul>
-            
-
-
-            
-
-            
-
-            
-
-
-            
-
-
-            
-
-
-            
-            
-
-            
-
-
-            <p style="text-align: end;"> (Cisco, 2022c)</p>
-
-
-
-
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/te2-img13.png" alt="">
+                <img class="ajustePng" src="../imagenes/moden.jpg" alt="">
             </nav>
-
-
             <br>
+            <p>
+            <ul>
+                <li>
+                    Los módems desempeñan un papel crucial en la conectividad a Internet al permitir que
+                    los dispositivos se
+                    conecten a la red global a través de diversas tecnologías. Estos dispositivos vienen en varias
+                    variedades, cada una adaptada a diferentes tecnologías de acceso.
+                </li>
+            </ul>
+            <br>
+            &nbsp;&nbsp;&nbsp;Los <b>módems Dial-Up</b>, que fueron populares en la década de 1990, se utilizaban en
+            conexiones telefónicas
+            tradicionales, pero han quedado obsoletos en la mayoría de las áreas.
+            </p>
+            <br>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/dialup.jpg" alt="">
+            </nav>
+            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;Por otro lado, los <b>módems DSL</b> facilitan conexiones de banda ancha a través de
+                líneas
+                telefónicas, mientras que los módems por cable se especializan en conexiones de banda ancha mediante
+                líneas de cable coaxial.
+
+            </p>
+            <br>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/DSL.jpg" alt="">
+            </nav>
+            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;Los <b>módems de Fibra Óptica</b> permiten acceso de banda ancha a través de redes de
+                fibra
+                óptica. En áreas remotas, los módems Satelitales posibilitan conexiones vía satélite, mientras que los
+                módems de Banda Ancha Móvil permiten conexiones inalámbricas 4G y 5G para dispositivos móviles.
+
+            </p>
+            <br>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/fibra.jpg" alt="">
+            </nav>
+            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;La velocidad y el rendimiento de un módem son fundamentales para la calidad y la
+                velocidad de la conexión a Internet, y se miden en bits por segundo (bps), ya sea en múltiplos como Mbps
+                o Gbps. Además, los módems están equipados con varios puertos, como RJ-45 para Ethernet, RJ-11 para
+                teléfono, o puertos coaxiales, y algunos ofrecen opciones de conectividad inalámbrica a través de
+                puertos USB o Wi-Fi integrado.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;Los proveedores de servicios de Internet (ISP) suelen proporcionar módems específicos
+                para su red como parte del servicio, y estos dispositivos a menudo incluyen medidas de seguridad, como
+                cortafuegos y filtrado de direcciones MAC, para proteger la red y los dispositivos. A medida que los
+                estándares de conectividad evolucionan, los módems pueden requerir actualizaciones o reemplazos, como la
+                transición de DOCSIS 3.0 a DOCSIS 3.1 en los módems por cable.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;La compatibilidad con el servicio de Internet y la red del proveedor es esencial para
+                garantizar un rendimiento óptimo, y algunos dispositivos avanzados combinan las funciones de un módem y
+                un enrutador en un solo dispositivo, lo que simplifica la conectividad a Internet y la gestión de la red
+                doméstica.
+            </p>
+            <br>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/router.jpg" alt="">
+            </nav>
+            <br>
+            <br>
+            <div id="routers" style="margin-left: 10em; margin-right: 10em; border-top: 3px solid #000; scroll-margin-top: 170px;">
+
+            </div>
+            <br>
+
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Routers:</b> Son componentes esenciales en redes de todo tipo, desempeñan un rol
+                vital en
+                la gestión de las redes, incluyendo las WLAN (Wireless Local Area Networks).
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;En cuanto a su función primordial, un router se presenta como el dispositivo encargado
+                de dirigir el flujo de datos entre diversos dispositivos en una red, ya sea esta cableada o inalámbrica.
+                Su cometido fundamental consiste en dirigir paquetes de datos entre redes, asegurando su llegada a su
+                destino de manera precisa.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;En lo que respecta a su relación con las WLAN, un router se convierte en el epicentro
+                de la red, orquestando el tráfico de información entre los dispositivos inalámbricos y la red cableada,
+                incluso la conexión a la World Wide Web. Es mediante el router que los dispositivos inalámbricos
+                establecen su conexión a la red, a través de una WLAN.
+            </p>
+            <br>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/router2.png" alt="">
+            </nav>
+            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;Adicionalmente, los routers son empleados de forma habitual para enlazar una red local
+                con Internet, actuando como el nexo entre la red interna y el proveedor de servicios de Internet (ISP),
+                permitiendo que los dispositivos de la red accedan a la vastedad de la web global. Este proceso se apoya
+                en tablas de enrutamiento, que permiten a los routers determinar la ruta óptima para los paquetes de
+                datos, un elemento esencial para el flujo eficiente de información en una red.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;Por otra parte, la mayoría de los routers implementan NAT (Network Address
+                Translation), lo que autoriza a múltiples dispositivos a compartir una única dirección IP pública para
+                acceder a Internet, lo que mejora la seguridad y permite que varias computadoras o dispositivos se
+                conecten a la red local. La seguridad, un aspecto crítico en las redes, es respaldada por funciones de
+                firewall integradas en los routers, que filtran y resguardan el tráfico no deseado, estableciendo una
+                base de seguridad en la red.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;En el caso de los routers inalámbricos, frecuentemente denominados "routers Wi-Fi",
+                poseen la capacidad de gestionar la red inalámbrica, abarcando la configuración de la WLAN, que
+                comprende la asignación de direcciones IP, el nombre de la red o SSID, y la clave de acceso para los
+                dispositivos inalámbricos. Algunos routers avanzados ofrecen características de QoS (Calidad de
+                Servicio) que permiten la priorización de tipos específicos de tráfico, como el streaming de video o las
+                llamadas VoIP, con el objetivo de optimizar la experiencia del usuario.
+            </p>
+            <br>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/router3.jpg" alt="">
+            </nav>
+            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;Los routers requieren de actualizaciones regulares de su firmware para mantenerse
+                seguros y funcionar a su máxima capacidad, pues estas actualizaciones pueden abordar vulnerabilidades de
+                seguridad y potenciar el rendimiento. Por último, en el ámbito de la seguridad WLAN, los routers
+                desempeñan un rol protagónico, contribuyendo a configurar una WLAN segura a través de la utilización de
+                cifrado avanzado, como WPA3, la implementación de contraseñas sólidas y otras salvaguardias en el
+                router.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;Adicionalmente, algunos modelos avanzados de routers permiten la gestión y
+                monitorización de los dispositivos conectados a la red. Estas funciones avanzadas pueden abarcar la
+                limitación del acceso a la red, la programación de horarios de conexión y la supervisión del tráfico, lo
+                que concede un mayor control sobre la red doméstica.
+            </p>
+            <br>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/router4.jpg" alt="">
+            </nav>
+            <br>
+            <br>
+            <div id="puntoacceso" style="margin-left: 10em; margin-right: 10em; border-top: 3px solid #000; scroll-margin-top: 170px;">
+            </div>
+            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Punto de acceso (Access Point):</b> Dispositivo de red esencial que desempeña un
+                papel
+                crucial en la creación y expansión de redes inalámbricas, como las WLAN (Wireless Local Area Networks).
+            </p>
+            <br>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/accesPoint3.jpg" alt="">
+            </nav>
+            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;El rol principal de un punto de acceso reside en su capacidad para actuar como un
+                puente entre dispositivos inalámbricos, como computadoras, teléfonos inteligentes o tabletas, y la red
+                cableada. Su función fundamental radica en posibilitar que estos dispositivos se conecten de manera
+                inalámbrica a la red, permitiéndoles acceder a recursos compartidos, como la conexión a Internet y
+                recursos dentro de la red local.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;En el contexto de la creación de una WLAN, los puntos de acceso desempeñan un papel
+                crítico al posibilitar la configuración de una red inalámbrica en un espacio específico. Esta tarea se
+                logra mediante la configuración del punto de acceso con un nombre de red (SSID) y una clave de acceso
+                (contraseña) para garantizar la seguridad de la red.
+
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;La capacidad de extender la cobertura de una red inalámbrica ya existente es otra
+                función esencial de los puntos de acceso. Al incorporar puntos de acceso adicionales en lugares
+                estratégicos, es factible ampliar la cobertura de la WLAN, lo que resulta particularmente valioso en
+                edificios extensos o en áreas con obstáculos que pueden obstaculizar la señal.
+
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;La conexión con la red cableada es un elemento crucial en el funcionamiento de los
+                puntos de acceso. Estos dispositivos se enlazan con la red cableada, generalmente a través de un puerto
+                Ethernet, lo que posibilita que los dispositivos inalámbricos se conecten a la red con cable.
+
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;Los puntos de acceso también desempeñan un papel significativo en la seguridad de la
+                WLAN. La configuración adecuada de medidas de seguridad en el punto de acceso, como la implementación de
+                cifrado (como WPA3) y el uso de contraseñas robustas, es esencial para salvaguardar la red inalámbrica
+                de accesos no autorizados.
+
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;En el ámbito de la administración y supervisión de la red inalámbrica, muchos puntos
+                de acceso proporcionan interfaces de gestión que permiten configurar, controlar y supervisar la WLAN.
+                Esto abarca la capacidad de visualizar los dispositivos conectados, regular el ancho de banda y aplicar
+                políticas de seguridad.
+
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;Además, los puntos de acceso pueden operar en diversos modos, incluyendo su función
+                principal como punto de acceso, pero también pueden desempeñar roles alternativos, como actuar como
+                repetidores para expandir la señal de otros puntos de acceso o funcionar como puntos de acceso cliente
+                que se conectan a otro punto de acceso.
+
+            </p>
+            <br>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/accesPoint2.jpg" alt="">
+            </nav>
+            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;En redes que exigen un alto rendimiento, como aquellas destinadas a la transmisión de
+                video o llamadas VoIP, algunos puntos de acceso avanzados ofrecen funciones de Calidad de Servicio (QoS)
+                para priorizar tipos específicos de tráfico.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;La compatibilidad con estándares inalámbricos es un aspecto clave en la elección de un
+                punto de acceso. Estos dispositivos pueden ser compatibles con una variedad de estándares, como
+                802.11ac, 802.11n o 802.11ax (Wi-Fi 6), y la elección del estándar depende de las necesidades de
+                velocidad y capacidad de la red.
+
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;Por último, la escalabilidad es una característica distintiva de los sistemas de
+                puntos de acceso. Esto significa que es posible agregar más puntos de acceso a medida que las
+                necesidades de la red inalámbrica crecen, permitiendo que la infraestructura se ajuste a un mayor número
+                de usuarios y dispositivos de manera eficaz.
+
+            </p>
+            <br>
+            <div id="switch" style="margin-left: 10em; margin-right: 10em; border-top: 3px solid #000; scroll-margin-top: 170px;">
+            </div>
+            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Switch:</b> Dispositivo central en la gestión de redes de computadoras y desempeña
+                un
+                papel crucial en la organización y eficiencia de una red, incluyendo las WLAN (Wireless Local Area
+                Networks). Su función principal radica en dirigir el tráfico de datos entre diferentes dispositivos en
+                una red local, tanto alámbrica como inalámbrica. En el contexto de las WLAN, el switch juega un papel
+                fundamental al conectar múltiples puntos de acceso inalámbricos y asegurarse de que los datos se
+                transmitan de manera eficiente entre los dispositivos inalámbricos y los componentes de la red cableada.
+
+            </p>
+            <br>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/switch.png" alt="">
+            </nav>
+            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;Los switches operan principalmente en la capa 2 del modelo OSI, lo que significa que
+                utilizan direcciones MAC para determinar cómo deben encaminarse los paquetes de datos. Esto es
+                especialmente relevante en una WLAN, donde dispositivos inalámbricos, como computadoras portátiles y
+                teléfonos móviles, se comunican a través de direcciones MAC al conectarse a puntos de acceso
+                inalámbricos. El switch mantiene una tabla de direcciones MAC que almacena información sobre los
+                dispositivos conectados a través de puertos específicos, lo que facilita la toma de decisiones sobre
+                cómo se deben transmitir los datos.
+
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;La segmentación de la red es otro aspecto crucial relacionado con los switches, ya que
+                dividen la red en dominios de colisión más pequeños. Esto es beneficioso tanto en redes alámbricas como
+                inalámbricas, ya que evita conflictos y mejora el rendimiento. Los switches también son esenciales en la
+                gestión de la calidad de servicio (QoS) en una WLAN, permitiendo la priorización del tráfico, lo que es
+                especialmente relevante cuando se trata de aplicaciones sensibles al retardo, como la transmisión de
+                video o llamadas VoIP en una red inalámbrica.
+
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;Además, la creación de VLAN se relaciona directamente con los switches, ya que permite
+                la segmentación lógica de la red en función de criterios específicos. En una WLAN, esto puede significar
+                la separación de departamentos o grupos de usuarios en redes virtuales separadas, lo que mejora la
+                organización y la seguridad de la red inalámbrica. La escalabilidad es otro aspecto crítico en la
+                relación entre los switches y las WLAN, ya que ambos deben ser capaces de adaptarse a un mayor número de
+                dispositivos y usuarios a medida que la red crece.
+
+            </p>
+            <p style="text-align: end;">(CID, 2022)</p>
+
+            
             <hr>
-
-
 
         </div>
     </div>
@@ -547,6 +709,7 @@
 
         </ol>
     </footer>
+
 
 </body>
 

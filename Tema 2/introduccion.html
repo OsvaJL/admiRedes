@@ -53,12 +53,9 @@
 
             </div>
             <br><br>
+            <a href="#intro" style="font-style: italic;font-size: large;"><b>2.1- Introducción</b></a>
+            <br>
 
-            <a href="#configSwitches" style="font-style: italic;font-size: large;"><b>2.5 Configuración de la seguridad
-                    de un switch
-                </b></a>
-            <br>
-            <br>
 
             <div style="display: flex; justify-content: space-between;">
                 <div>
@@ -69,13 +66,8 @@
 
                 </div>
                 <div style="margin-top: 15px;">
-                    <a style="font-size: 13px;" href="configSwitches.html" class="arrow-button">
-                        << 2.4 </a>
-
-                </div>
-                <div style="margin-top: 15px;">
-                    <a style="font-size: 13px;" href="configServidores.html" class="arrow-button">
-                        2.6 >>
+                    <a style="font-size: 13px; text-align: center;" href="introLan.html" class="arrow-button">
+                        2.2 >>
                     </a>
                 </div>
             </div>
@@ -106,153 +98,43 @@
 
         <div class="container">
             <hr>
-            <h2 id="configSwitches" class="subtitulo">2.5 Configuración de la seguridad de un switch</h2>
+            <h2 id="intro" class="subtitulo">2 Conceptos básicos y configuración del switch</h2>
+            <h2 class="subtitulo">2.1 Introducción</h2>
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Los switches se usan para conectar varios dispositivos en la misma red. En una red
-                diseñada correctamente, los switches LAN son responsables de controlar el flujo de datos en la capa de
-                acceso y de dirigirlo a los recursos conectados en red.
-                Los switches de Cisco son de configuración automática y no necesitan ninguna configuración adicional
-                para comenzar a funcionar. Sin embargo, los switches Cisco ejecutan Cisco IOS y se pueden configurar
-                manualmente para satisfacer mejor las necesidades de la red. Esto incluye el ajuste de los requisitos de
-                velocidad, de ancho de banda y de seguridad de los puertos.
-
-                <br>
-                <br>
-                &nbsp;&nbsp;&nbsp;<b>Comandos usados para configurar un switch genérico (de la marca Cisco):</b>
+                &nbsp;&nbsp;&nbsp;La red de área local (LAN) Ethernet es una tecnología de red ampliamente utilizada que
+                forma la base de la conectividad en muchas empresas, hogares e instituciones educativas. El estándar que
+                define las especificaciones técnicas para Ethernet es conocido como IEEE 802.3, desarrollado por el
+                Instituto de Ingenieros Eléctricos y Electrónicos (IEEE).
+                <br><br>
+                &nbsp;&nbsp;&nbsp;Ethernet se introdujo por primera vez en la década de 1970 y ha evolucionado con el tiempo para
+                satisfacer las crecientes demandas de velocidad y rendimiento. El estándar IEEE 802.3 define aspectos
+                clave de la tecnología Ethernet, como el formato de trama, los métodos de acceso al medio, la velocidad
+                de transmisión y la gestión de colisiones. 
+                <p style="text-align: end;">(Herrera, 2022)</p>
             </p>
-            <br>
+                <p>
+                    &nbsp;&nbsp;&nbsp;Una característica fundamental de Ethernet es el método de acceso al medio conocido como CSMA/CD
+                (Carrier Sense Multiple Access with Collision Detection). Este método permite que múltiples dispositivos
+                compartan el mismo medio de transmisión, como un cable, y evita colisiones mediante la detección
+                temprana de colisiones y la implementación de un proceso de retransmisión.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;Con el tiempo, IEEE 802.3 ha experimentado mejoras significativas en términos de velocidad de
+                transmisión, desde los modestos 10 Mbps (megabits por segundo) hasta velocidades de varios Gbps
+                (gigabits por segundo) con el tiempo. Además, han surgido variantes como Gigabit Ethernet y 10 Gigabit
+                Ethernet para satisfacer las necesidades de redes de alta velocidad.
+                <p style="text-align: end;">(Herrera, 2022)</p>
 
-            <ul>
-                <li>
-                    Accedo al modo de configuración privilegiada (enable):
-                    enable
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Entro al modo de configuración global: configure terminal
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Establecer una contraseña para el acceso al modo privilegiado:
-                    enable secret aquicontraseña
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar contraseñas para el acceso a la línea de consola:
-                    line con 0 <br>
-                    password: contraseña
-                    login
-                </li>
-            </ul>
+                </p>
+                
 
-            <ul>
-                <li>
-                    Configurar contraseñas para el acceso SSH:
-                    line vty 0 15 <br>
-                    password: contraseña
-                    login
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Crear una nueva VLAN:
-            vlan numero_de_vlan <br>
-            name nombre_de_la_vlan
-                </li>
-            </ul>
-           
-            <ul>
-                <li>
-                    Asignar una VLAN a un puerto:
-            interface range gigabitethernet0/1 - 10 <br>
-            switchport mode access <br>
-            switchport access vlan numero_de_vlan
-                </li>
-            </ul>
+                
 
-            <ul>
-                <li>
-                    Establecer un nombre para el switch:
-            hostname nombre_de_mi_switch
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Guardar la configuración en la memoria flash:
-            write memory
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Habilitar el filtrado de direcciones MAC (port security) en un puerto:
-            interface gigabitethernet0/1 <br>
-            switchport port-security <br>
-            switchport port-security maximum 5 # Número máximo de direcciones MAC permitidas <br>
-            switchport port-security violation restrict # Acción en caso de violación
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Configurar SNMP (Simple Network Management Protocol):
-            snmp-server community mi_comunidad RO
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar el protocolo de seguridad SSH:
-            crypto key generate rsa
-
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar el control de acceso (ACL) en una interfaz:
-            access-list numero_de_acl permit/deny tcp/ip any host destino eq/puerto <br>
-            interface gigabitethernet0/1 <br>
-            ip access-group numero_de_acl in/out
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Habilitar la encriptación de contraseñas en la configuración:
-            service password-encryption
-                </li>
-            </ul>
-            
 
 
             
-
-            
-
-            
-
-
-            
-
-
-            
-
-
-            
-            
-
-            
-
-
-            <p style="text-align: end;"> (Cisco, 2022c)</p>
-
-
-
-
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/te2-img13.png" alt="">
+                <img class="ajustePng" src="../imagenes/te2-img4.png" alt="">
             </nav>
 
 
@@ -547,6 +429,7 @@
 
         </ol>
     </footer>
+
 
 </body>
 
