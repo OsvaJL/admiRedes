@@ -37,8 +37,8 @@
                         T1 </a>
                 </div>
                 <div>
-                    <a style="font-size: 13px;" href="../Tema 3/DefinicionWLAN.html" class="arrow-button">
-                        T3 </a>
+                    <a style="font-size: 13px;" href="../Tema 2/introduccion.html" class="arrow-button">
+                        T2 </a>
                 </div>
                 <div>
                     <a style="font-size: 13px;" href="../Tema 4/topologiasWlan.html" class="arrow-button">
@@ -53,31 +53,24 @@
 
             </div>
             <br><br>
+            <a href="#vulnerabilidades" style="font-style: italic;font-size: large;"><b>4.3 Vulnerabilidades
+                    WLAN</b></a>
+            <br>
 
-            <a href="#configSwitches" style="font-style: italic;font-size: large;"><b>2.5 Configuración de la seguridad
-                    de un switch
-                </b></a>
-            <br>
-            <br>
 
             <div style="display: flex; justify-content: space-between;">
                 <div>
                     <nav>
-                        <a href="introduccion.html"><img class="ajustePngInicio" src="../imagenes/inicio2.png"
+                        <a href="DefinicionWLAN.html"><img class="ajustePngInicio" src="../imagenes/inicio2.png"
                                 alt="Imagen de inicio"></a>
                     </nav>
 
                 </div>
                 <div style="margin-top: 15px;">
-                    <a style="font-size: 13px;" href="configSwitches.html" class="arrow-button">
-                        << 2.4 </a>
+                    <a style="font-size: 13px; text-align: center;" href="roaming.html" class="arrow-button">
+                        << 4.2 </a>
+                </div>
 
-                </div>
-                <div style="margin-top: 15px;">
-                    <a style="font-size: 13px;" href="configServidores.html" class="arrow-button">
-                        2.6 >>
-                    </a>
-                </div>
             </div>
 
 
@@ -106,153 +99,175 @@
 
         <div class="container">
             <hr>
-            <h2 id="configSwitches" class="subtitulo">2.5 Configuración de la seguridad de un switch</h2>
+            <h2 id="vulnerabilidades" class="subtitulo">4.3 Vulnerabilidades WLAN</h2>
+
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Los switches se usan para conectar varios dispositivos en la misma red. En una red
-                diseñada correctamente, los switches LAN son responsables de controlar el flujo de datos en la capa de
-                acceso y de dirigirlo a los recursos conectados en red.
-                Los switches de Cisco son de configuración automática y no necesitan ninguna configuración adicional
-                para comenzar a funcionar. Sin embargo, los switches Cisco ejecutan Cisco IOS y se pueden configurar
-                manualmente para satisfacer mejor las necesidades de la red. Esto incluye el ajuste de los requisitos de
-                velocidad, de ancho de banda y de seguridad de los puertos.
 
-                <br>
-                <br>
-                &nbsp;&nbsp;&nbsp;<b>Comandos usados para configurar un switch genérico (de la marca Cisco):</b>
+                &nbsp;&nbsp;&nbsp;La palabra vulnerabilidad hace referencia a una debilidad en un sistema permitiendo a
+                un atacante violar la confidencialidad, integridad, disponibilidad, control de acceso y consistencia del
+                sistema o de sus datos y aplicaciones.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;Las redes inalámbricas son aún más vulnerables que las redes con cables, debido a la
+                propagación de la señal en todas direcciones.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;Las redes inalámbricas son particularmente vulnerables a los ataques porque es difícil
+                evitar el acceso físico a ellas. Este tipo de redes están sujetas a ataques pasivos y activos. Por lo
+                tanto, el propósito es que los administradores de red tengan conocimiento sobre los ataques que se
+                pueden generar para que puedan enfrentarlo de la manera correcta.
+
             </p>
-            <br>
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Principales amenazas que pueden afectar las redes inalámbricas:</b>
+            </p>
+            <ul>
+                <li><b>WLAN muy transitada:</b> Cuando una red Wi-Fi es utilizada por varios
+                    usuarios y ese número va creciendo también crece el riesgo de que alguien
+                    introduzca un virus que afecte al resto de usuarios.
+                </li>
+                <br>
+                <li><b>Accesos no permitidos:</b> Las contraseñas de las redes inalámbricas puede que usen protocolos de
+                    seguridad
+                    antiguos y fáciles de crackear como los WEB (World Wide Web).enviar y recibir mensajes de texto al o
+                    desde el país de origen, el país que se visita o
+                    países
+                    terceros, mientras se está en el extranjero. </li>
+                <br>
+                <li><b>Red sin seguridad:</b> En muchas ocasiones, las personas se conectan a redes
+                    inalámbricas sin saber quién es el propietario o incluso redes que no tienen
+                    contraseña ni protección.
 
-            <ul>
-                <li>
-                    Accedo al modo de configuración privilegiada (enable):
-                    enable
                 </li>
-            </ul>
-            <ul>
-                <li>
-                    Entro al modo de configuración global: configure terminal
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Establecer una contraseña para el acceso al modo privilegiado:
-                    enable secret aquicontraseña
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar contraseñas para el acceso a la línea de consola:
-                    line con 0 <br>
-                    password: contraseña
-                    login
-                </li>
-            </ul>
+                <br>
+                <li><b>Inicios de sesión falsos:</b> Al conectarse a una red inalámbrica a veces hay una
+                    página de inicio o hotspot que solicita al usuario proporcionar ciertos datos para
+                    poder acceder a la red.
 
-            <ul>
-                <li>
-                    Configurar contraseñas para el acceso SSH:
-                    line vty 0 15 <br>
-                    password: contraseña
-                    login
                 </li>
-            </ul>
-            <ul>
-                <li>
-                    Crear una nueva VLAN:
-            vlan numero_de_vlan <br>
-            name nombre_de_la_vlan
-                </li>
-            </ul>
-           
-            <ul>
-                <li>
-                    Asignar una VLAN a un puerto:
-            interface range gigabitethernet0/1 - 10 <br>
-            switchport mode access <br>
-            switchport access vlan numero_de_vlan
-                </li>
-            </ul>
+                <br>
+                <li><b>Malware:</b> En otro escenario, alguien se conecta a una red inalámbrica en una
+                    cafetería y posteriormente se va a casa.
 
-            <ul>
-                <li>
-                    Establecer un nombre para el switch:
-            hostname nombre_de_mi_switch
                 </li>
-            </ul>
-            <ul>
-                <li>
-                    Guardar la configuración en la memoria flash:
-            write memory
-                </li>
-            </ul>
+                <br>
+                <li><b>Robo de datos mientras navegas:</b> Cuando te unes a una wifi te expones a perder documentos
+                    privados que compartas mientras navegas.
 
-            <ul>
-                <li>
-                    Habilitar el filtrado de direcciones MAC (port security) en un puerto:
-            interface gigabitethernet0/1 <br>
-            switchport port-security <br>
-            switchport port-security maximum 5 # Número máximo de direcciones MAC permitidas <br>
-            switchport port-security violation restrict # Acción en caso de violación
                 </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Configurar SNMP (Simple Network Management Protocol):
-            snmp-server community mi_comunidad RO
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar el protocolo de seguridad SSH:
-            crypto key generate rsa
+                <br>
+                <li><b>Demandas judiciales:</b> Si en el uso de una red wifi se accede a contenidos ilegales o
+                    inapropiados, el emisor de dicha red puede sufrir demandas judiciales por dicho uso.
 
                 </li>
             </ul>
+            <p style="text-align: end;">(Castillo et al., 2023)</p>
+
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Entre otras Vulnerabilidades de WLAN:</b>
+
+            </p>
             <ul>
-                <li>
-                    Configurar el control de acceso (ACL) en una interfaz:
-            access-list numero_de_acl permit/deny tcp/ip any host destino eq/puerto <br>
-            interface gigabitethernet0/1 <br>
-            ip access-group numero_de_acl in/out
+                <li><b>Abierta:</b> Sin contraseña. No hace falta decir que este tipo de redes están expuestas a todo el
+                    mundo.
+                </li>
+                <br>
+                <li><b>Contraseñas débiles o predeterminadas:</b> El uso de contraseñas débiles o contraseñas
+                    predeterminadas en los dispositivos de red, como en el enrutador Wi-Fi, puede permitir a los
+                    atacantes adivinar o crackear fácilmente la contraseña y acceder a la red WLAN. </li>
+                <br>
+                <li><b>Encriptación WPA PSK Personal:</b> Las protege una clave de 8 a 63 caracteres ASCII. Es de las
+                    más seguras debido a que sólo es posible (excepto en algunas ocasiones como cuando tienen WPS
+                    activado, tratado posteriormente) de descifrar mediante un ataque de diccionario, es decir,
+                    deberemos de generar un diccionario con varias claves y tener la suerte de que la clave de la red
+                    esté ahí.
+
                 </li>
             </ul>
+            <p style="text-align: end;">(Quero, 2014)</p>
+
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Vulnerabilidades en protocolos de seguridad WLAN.</b>
+
+            </p>
             <ul>
-                <li>
-                    Habilitar la encriptación de contraseñas en la configuración:
-            service password-encryption
+                <li><b>WEP:</b> Este mecanismo está considerado actualmente como poco robusto y relativamente fácil
+                    de romper, por lo que actualmente no se aconseja su uso.
+                </li>
+                <br>
+                <li><b>WPA:</b>Utiliza un nuevo protocolo de seguridad llamado TKIP
+                    (Temporal Key Integrity Protocol), que es el mismo que se utiliza en el estándar IEEE 802.11i. </li>
+                <br>
+                <li><b>WPA2:</b> Uno de los principales cambios es la utilización de AES (Advanced Encryption Standard,
+                    Estándar de encriptación avanzado) en lugar de usar RC4, aunque el uso de este estándar implica un
+                    cambio del hardware utilizado. Incluye además el uso de IEEE 802.1x con todas las características de
+                    WPA.
+
                 </li>
             </ul>
-            
+            <p style="text-align: end;">(Alcalá, 2018)</p>
+
+            <p>
+                &nbsp;&nbsp;&nbsp;Vulnerabilidades propias de las redes inalámbricas lo cual las hará doblemente en
+                peligro de un posible ataque.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;<b>Algunas en específico son las siguientes:</b>
+
+            </p>
+            <ul>
+                <li><b>Access Point Spoofing o "Asociación Maliciosa":</b> En este caso el atacante se hace pasar por un
+                    access point y el cliente piensa estar conectándose a una red WLAN verdadera. Ataque común en redes
+                    ad-hoc.
+                </li>
+                <br>
+                <li><b>ARP Poisoning o "Envenenamiento ARP":</b> Ataque al protocolo ARP (Address Resolution Protocol)
+                    como el caso de ataque denominado "Man in the Middle" o "hombre en medio". Una computadora invasora
+                    X envía un paquete de ARP reply para Y diciendo que la dirección IP de la computadora Z apunta hacia
+                    la dirección MAC de la computadora X, y de la misma forma envía un paquete de ARP reply para la
+                    computadora Z diciendo que la dirección IP de la computadora Y apunta hacia la dirección MAC de X.
+                    Como el protocolo ARP no guarda los estados, las computadoras Y y Z asumen que enviaron un paquete
+                    de ARP request solicitando esta información, y asumen los paquetes como verdaderos. A partir de este
+                    punto, todos los paquetes enviados y recibidos entre las computadoras Y y Z pasan por X (hombre en
+                    medio). </li>
+                <br>
+                <li><b>MAC spoofing o "enmascarar el MAC":</b> Ocurre cuando alguien roba una dirección MAC de una red
+                    haciéndose pasar por un cliente autorizado. En general, las placas de redes permiten el cambio de lo
+                    numero MAC por otro, lo que potencialmente posibilita este tipo de ataque.
+
+                </li>
+                <br>
+                <li><b>Denial of service o "Negativa de Servicio":</b> También conocido por D.O.S.
+                    Consiste en negar algún tipo de recurso o servicio. Puede ser utilizado para "inundar" la red con
+                    pedidos de disociación, imposibilitando así el acceso de los usuarios, pues los componentes de la
+                    red se asocian y disocian una y otra vez. Al rechazar algún servicio, también puede dar origen a
+                    interferencias por equipamientos de Bluetooth, hornos de microondas y teléfonos inalámbricos, debido
+                    a que estos equipamientos trabajan en la misma franja de frecuencia que las redes inalámbricas.
+
+                </li>
+                <br>
+                <li><b>WLAN escáners o "Ataque de Vigilancia":</b> Consiste en recorrer un local que se desea invadir
+                    para descubrir redes WLAN activas en dicho local, así como equipamientos físicos, para un posterior
+                    ataque o robo.
+
+                </li>
+                <br>
+                <li><b>Wardriving and warchalking:</b> Se llama de "Wardriving" a la actividad de encontrar puntos de
+                    acceso a redes inalámbricas, mientras uno se desplaza por la ciudad en un automóvil y haciendo uso
+                    de una notebook con una placa de red wireless para detectar señales. Después de localizar un punto
+                    de acceso a una determinada red inalámbrica, algunos individuos marcan el área con un símbolo hecho
+                    con tiza en la vereda o la pared, e informan a otros invasores -actividad que se denomina
+                    "warchalking".
+
+                </li>
+            </ul>
+            <p>
+                &nbsp;&nbsp;&nbsp;Por todo ello se deberá seguir un proceso para comprobar si nuestra red es segura y si no lo es,
+                asegurarnos de poner las suficientes barreras para que los intrusos se queden fuera.
+            </p>
 
 
-            
-
-            
-
-            
-
-
-            
-
-
-            
-
-
-            
-            
-
-            
-
-
-            <p style="text-align: end;"> (Cisco, 2022c)</p>
-
-
-
-
+            <p style="text-align: end;">(Fernández, 2020)</p>
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/te2-img13.png" alt="">
+                <img class="ajustePng" src="../imagenes/wlan10.png" alt="">
             </nav>
 
 
@@ -661,6 +676,7 @@
 
         </ol>
     </footer>
+
 
 </body>
 

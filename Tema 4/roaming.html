@@ -37,8 +37,8 @@
                         T1 </a>
                 </div>
                 <div>
-                    <a style="font-size: 13px;" href="../Tema 3/DefinicionWLAN.html" class="arrow-button">
-                        T3 </a>
+                    <a style="font-size: 13px;" href="../Tema 2/introduccion.html" class="arrow-button">
+                        T2 </a>
                 </div>
                 <div>
                     <a style="font-size: 13px;" href="../Tema 4/topologiasWlan.html" class="arrow-button">
@@ -53,29 +53,25 @@
 
             </div>
             <br><br>
+            <a href="#roaming" style="font-style: italic;font-size: large;"><b>4.2 Servicio de Roaming</b></a>
+            <br>
 
-            <a href="#configSwitches" style="font-style: italic;font-size: large;"><b>2.5 Configuración de la seguridad
-                    de un switch
-                </b></a>
-            <br>
-            <br>
 
             <div style="display: flex; justify-content: space-between;">
                 <div>
                     <nav>
-                        <a href="introduccion.html"><img class="ajustePngInicio" src="../imagenes/inicio2.png"
+                        <a href="DefinicionWLAN.html"><img class="ajustePngInicio" src="../imagenes/inicio2.png"
                                 alt="Imagen de inicio"></a>
                     </nav>
 
                 </div>
                 <div style="margin-top: 15px;">
-                    <a style="font-size: 13px;" href="configSwitches.html" class="arrow-button">
-                        << 2.4 </a>
-
+                    <a style="font-size: 13px; text-align: center;" href="topologiasWlan.html" class="arrow-button">
+                        << 4.1 </a>
                 </div>
                 <div style="margin-top: 15px;">
-                    <a style="font-size: 13px;" href="configServidores.html" class="arrow-button">
-                        2.6 >>
+                    <a style="font-size: 13px; text-align: center;" href="vulnerabilidad.html" class="arrow-button">
+                        4.3 >>
                     </a>
                 </div>
             </div>
@@ -106,153 +102,92 @@
 
         <div class="container">
             <hr>
-            <h2 id="configSwitches" class="subtitulo">2.5 Configuración de la seguridad de un switch</h2>
+            <h2 id="roaming" class="subtitulo">4.2 Servicio de Roaming</h2>
+
             <hr>
             <p>
-                &nbsp;&nbsp;&nbsp;Los switches se usan para conectar varios dispositivos en la misma red. En una red
-                diseñada correctamente, los switches LAN son responsables de controlar el flujo de datos en la capa de
-                acceso y de dirigirlo a los recursos conectados en red.
-                Los switches de Cisco son de configuración automática y no necesitan ninguna configuración adicional
-                para comenzar a funcionar. Sin embargo, los switches Cisco ejecutan Cisco IOS y se pueden configurar
-                manualmente para satisfacer mejor las necesidades de la red. Esto incluye el ajuste de los requisitos de
-                velocidad, de ancho de banda y de seguridad de los puertos.
 
-                <br>
-                <br>
-                &nbsp;&nbsp;&nbsp;<b>Comandos usados para configurar un switch genérico (de la marca Cisco):</b>
+                &nbsp;&nbsp;&nbsp;El roaming internacional para móviles es un servicio que permite a los usuarios
+                continuar usando sus teléfonos móviles u otros dispositivos móviles mientras visitan otro país, para
+                realizar y recibir llamadas de voz, enviar mensajes de texto, navegar por internet y enviar y recibir
+                correos electrónicos.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;El roaming extiende la cobertura de utilización de los servicios de voz y mensajería
+                del usuario de
+                móvil desde la operadora de su país, permitiendo al usuario continuar utilizando el número de teléfono
+                de su operadora local y los servicios de datos en cualquier otro país. La perfecta extensión de la
+                cobertura está facilitada por un acuerdo de roaming a gran escala entre la operadora móvil doméstica del
+                usuario y la red móvil de la operadora que se visita. En el acuerdo de roaming se tratan los aspectos
+                técnicos y comerciales que son necesarios para permitir este servicio, como son:
+
             </p>
-            <br>
+            <ul>
+                <li><b>Voz:</b> Realizar y recibir llamadas al o desde el país de origen, el visitado o países terceros,
+                    mientras se está en el extranjero.</li>
+                <br>
+                <li><b>SMS:</b> Enviar y recibir mensajes de texto al o desde el país de origen, el país que se visita o
+                    países
+                    terceros, mientras se está en el extranjero. </li>
+                <br>
+                <li><b>Correo electrónico:</b> Lectura y respuesta de correos electrónicos mientras se está en el extranjero.
+                </li>
+                <br>
+                <li><b>Banda ancha móvil:</b> Utilización de dispositivos móviles o dongles para acceder a internet,
+                    incluyendo
+                    la descarga de imágenes, MP3, películas y programas informáticos, mientras se está en el extranjero.
+                </li>
+                <br>
+                <li><b>Aplicaciones:</b> Utilización de las aplicaciones del móvil que requieren consumo de datos
+                    móviles,
+                    mientras se está en el extranjero; por ejemplo, servicios basados en la localización y traductores
+                    de idiomas.
+                    El roaming móvil internacional es uno de los servicios de comunicación más amplios que se ofrece a
+                    los usuarios de móvil mientras viajan al extranjero y también incluye los servicios de hoteles,
+                    WI-FI, SIMs nacionales “de viaje” y SIMs de las operadoras de los países que se visitan.
+                </li>
+            </ul>
+            <p style="text-align: end;">(GCFGlobal, 2020)</p>
 
-            <ul>
-                <li>
-                    Accedo al modo de configuración privilegiada (enable):
-                    enable
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Entro al modo de configuración global: configure terminal
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Establecer una contraseña para el acceso al modo privilegiado:
-                    enable secret aquicontraseña
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar contraseñas para el acceso a la línea de consola:
-                    line con 0 <br>
-                    password: contraseña
-                    login
-                </li>
-            </ul>
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Roaming móvil</b>
+                <br><br>
+                &nbsp;&nbsp;&nbsp;Cuando un usuario de móvil está en el extranjero y enciende su dispositivo móvil, este
+                dispositivo intenta comunicarse con la red móvil que se visita. Esta red recoge la conexión del móvil
+                del usuario,y reconoce si está registrado con su sistema e intenta identificar la red doméstica del
+                usuario. Si hay un acuerdo de roaming entre la red doméstica y alguna de las redes móviles en el país
+                que se visita, la llamada se dirige por parte de la red visitada hacia una red de gateways
+                internacional.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;La red de gateways internacional es responsable de hacer llegar la llamada a la red de
+                destino. Una vez hecho esto, la red de destino conectará la llamada. La red que se visita también
+                necesita información de servicio sobre el usuario de la red doméstica, como por ejemplo si el teléfono
+                que se está usando ha sido perdido o robado y si el dispositivo móvil está autorizado para su
+                utilización internacional. Si el teléfono está autorizado para esta utilización, la red visitada crea un
+                registro temporal de suscripción para el dispositivo y la red doméstica actualiza el registro de su
+                suscripción con la información de su localización, de tal manera que cuando se realiza una llamada a ese
+                número se pueda trazar correctamente.
 
-            <ul>
-                <li>
-                    Configurar contraseñas para el acceso SSH:
-                    line vty 0 15 <br>
-                    password: contraseña
-                    login
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Crear una nueva VLAN:
-            vlan numero_de_vlan <br>
-            name nombre_de_la_vlan
-                </li>
-            </ul>
-           
-            <ul>
-                <li>
-                    Asignar una VLAN a un puerto:
-            interface range gigabitethernet0/1 - 10 <br>
-            switchport mode access <br>
-            switchport access vlan numero_de_vlan
-                </li>
-            </ul>
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;<b>Roaming de datos</b>
+                <br><br>
+                &nbsp;&nbsp;&nbsp;Con el incremento de la popularidad de los teléfonos inteligentes, la utilización de
+                servicios de datos mientras el roaming está operativo continúa creciendo exponencialmente. Los servicios
+                de datos móviles se miden habitualmente en kilobytes (KB) o megabytes (MB), lo que hace referencia al
+                volumen de datos transmitidos por el servicio utilizado. Los volúmenes de tráfico de datos pueden variar
+                significativamente dependiendo del tipo y uso de distintos servicios de datos.
+                <br><br>
+                &nbsp;&nbsp;&nbsp;Hay diferencias significativas en las estimaciones de tamaño, ya que el tamaño del
+                archivo depende del tipo de datos, calidad y longitud. Por ejemplo, la calidad DVD y alta definición de
+                visionado en directo desde la red, consume cantidades mayores de datos que el visionado de vídeo
+                estándar o la escucha de audio.
 
-            <ul>
-                <li>
-                    Establecer un nombre para el switch:
-            hostname nombre_de_mi_switch
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Guardar la configuración en la memoria flash:
-            write memory
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Habilitar el filtrado de direcciones MAC (port security) en un puerto:
-            interface gigabitethernet0/1 <br>
-            switchport port-security <br>
-            switchport port-security maximum 5 # Número máximo de direcciones MAC permitidas <br>
-            switchport port-security violation restrict # Acción en caso de violación
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    Configurar SNMP (Simple Network Management Protocol):
-            snmp-server community mi_comunidad RO
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar el protocolo de seguridad SSH:
-            crypto key generate rsa
-
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Configurar el control de acceso (ACL) en una interfaz:
-            access-list numero_de_acl permit/deny tcp/ip any host destino eq/puerto <br>
-            interface gigabitethernet0/1 <br>
-            ip access-group numero_de_acl in/out
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    Habilitar la encriptación de contraseñas en la configuración:
-            service password-encryption
-                </li>
-            </ul>
-            
-
+            </p>
 
             
-
-            
-
-            
-
-
-            
-
-
-            
-
-
-            
-            
-
-            
-
-
-            <p style="text-align: end;"> (Cisco, 2022c)</p>
-
-
-
-
+            <p style="text-align: end;">(GSMA, 2018)</p>
             <nav class="bodypng">
-                <img class="ajustePng" src="../imagenes/te2-img13.png" alt="">
+                <img class="ajustePng" src="../imagenes/wlan9.jpg" alt="">
             </nav>
 
 
@@ -661,6 +596,7 @@
 
         </ol>
     </footer>
+
 
 </body>
 
