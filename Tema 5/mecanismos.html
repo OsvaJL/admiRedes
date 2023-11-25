@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/hoja.css">
+    <link rel="shortcut icon" href="../imagenes/logo.png" type="image/x-icon">
+    <title>Desarrollo de subtemas en formato digital</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="alineacion">
+            <div><img src="../imagenes/Encabezado.png" alt="Imagen con logos del TecNM" class="encabezado"></div>
+            <div><img src="../imagenes/logo.png" alt="Logo de ISC" class="LogoISC"></div>
+        </div>
+    </header>
+
+    <div class="content">
+
+        <div id="index">
+            <h2 class="colorIndice" style="margin-top: -20px">ÍNDICE</h2>
+            <div>
+                <hr>
+            </div>
+            <h2 style="color: white;">TEMAS</h2>
+            <div>
+                <hr>
+            </div>
+            <br>
+            <div style="display: flex; justify-content: space-between;">
+                <div>
+                    <a style="font-size: 13px;" href="../index.html" class="arrow-button">
+                        T1 </a>
+                </div>
+                <div>
+                    <a style="font-size: 13px;" href="../Tema 2/introduccion.html" class="arrow-button">
+                        T2 </a>
+                </div>
+                <div>
+                    <a style="font-size: 13px;" href="../Tema 3/DefinicionWLAN.html" class="arrow-button">
+                        T3
+                    </a>
+                </div>
+                <div>
+                    <a style="font-size: 13px;" href="../Tema 4/topologiasWlan.html" class="arrow-button">
+                        T4
+                    </a>
+                </div>
+
+            </div>
+            <br><br>
+
+            <a href="#mecanismos" style="font-style: italic;font-size: large;"><b>5.2 Mecanismos de protección en las
+                    redes</b></a>
+            <br><br>
+            <a href="#privacidad" style="margin-top: -20px">&nbsp;&nbsp;5.2.1 Privacidad equivalente al cableado
+                (WEP)</a>
+            <br><br>
+            <a href="#acceso" style="margin-top: -20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.2.2
+                acceso Wi-Fi protegido (WPA)</a>
+            <br><br>
+            <a href="#listas" style="margin-top: -20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.2.3 Listas de control de acceso
+                (Filtrado
+                MAC)</a>
+
+
+
+            <div style="display: flex; justify-content: space-between;">
+                <div>
+                    <nav>
+                        <a href="amenazas.html"><img class="ajustePngInicio" src="../imagenes/inicio2.png"
+                                alt="Imagen de inicio"></a>
+                    </nav>
+
+                </div>
+                <div style="margin-top: 15px;">
+                    <a style="font-size: 13px; text-align: center;" href="amenazas.html" class="arrow-button">
+                        << 5.1 </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="glosario">
+            <li>
+                <a class="glosariotxt" href="../temario.html"><b>Temario</b></a>
+            </li>
+            <br>
+            <li>
+                <a class="glosariotxt" href="../glosario.html"><b>Glosario</b></a>
+
+            </li>
+            <br>
+            <li>
+                <a class="glosariotxt" href="#referencias"><b>Referencias</b></a>
+            </li>
+        </div>
+
+
+
+
+        <div class="container">
+            <hr>
+            <h2 id="mecanismos" class="subtitulo">5.2 Mecanismos de protección en las redes</h2>
+            <hr>
+            <p>
+
+                &nbsp;&nbsp;&nbsp;Los mecanismos de seguridad en redes informáticas son fundamentales para proteger la
+                confidencialidad, integridad y disponibilidad de la información. Dicho esto, a continuación se
+                describirán los principales mecanismos de protección en las redes informáticas según IBM (2023):
+
+            </p>
+
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Firewalls:</b> Los firewalls son una parte fundamental de la seguridad de redes,
+                diseñados para
+                proteger los sistemas informáticos y la información de una organización al controlar el tráfico de red
+                entrante y saliente. Son una barrera defensiva crítica que ayuda a prevenir ataques cibernéticos y
+                salvaguardar la integridad, confidencialidad y disponibilidad de los datos.
+            </p>
+            <p><b>&nbsp;&nbsp;&nbsp;Funciones principales de un firewall:</b></p>
+            <ul>
+                <li>
+                    <b>Filtrado de tráfico:</b> El firewall examina los paquetes de datos que entran y salen de la red.
+                    Puede bloquear o permitir el tráfico en función de políticas de seguridad predefinidas, lo que
+                    impide la entrada de datos no deseados o peligrosos.
+                </li>
+                <br>
+                <li>
+                    <b>NAT (Traducción de Direcciones de Red):</b> Muchos firewalls realizan NAT, que oculta las
+                    direcciones IP internas y muestra una única dirección IP pública. Esto protege la topología interna
+                    de la red.
+                </li>
+                <br>
+                <li>
+                    <b>Inspección de estado:</b> Los firewalls modernos no solo miran paquetes individuales, sino que
+                    rastrean el estado de las conexiones. Esto permite permitir tráfico legítimo y evitar ataques que
+                    involucran múltiples paquetes.
+                </li>
+                <br>
+                <li>
+                    <b>Proxying y filtrado de contenido:</b> Algunos firewalls actúan como intermediarios (proxies)
+                    entre los usuarios y los recursos en línea. Esto permite la inspección y el filtrado de contenido
+                    web, previniendo el acceso a sitios maliciosos o inapropiados.
+                </li>
+            </ul>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;VPN:</b> Una VPN, o Red Privada Virtual, es una tecnología que permite crear una
+                conexión segura y cifrada entre dos puntos, generalmente a través de una red pública como Internet. Su
+                propósito principal es garantizar la confidencialidad, integridad y autenticidad de los datos
+                transmitidos, lo que la convierte en una herramienta esencial para proteger la privacidad y la seguridad
+                en un mundo cada vez más digitalizado.
+            </p>
+            <p><b>&nbsp;&nbsp;&nbsp;Funciones principales de una VPN:</b></p>
+            <ul>
+                <li>
+                    <b>Cifrado de datos:</b> La VPN cifra los datos antes de que se transmitan a través de la red
+                    pública. Esto significa que incluso si alguien intercepta los datos, no podrá leerlos sin la clave
+                    de cifrado adecuada.
+                </li>
+                <br>
+                <li>
+                    <b>Autenticación:</b> Las VPN suelen requerir una autenticación sólida, como contraseñas o
+                    certificados digitales, para garantizar que solo los usuarios autorizados puedan acceder a la red.
+                </li>
+                <br>
+                <li>
+                    <b>Túneles seguros:</b> Las conexiones VPN establecen túneles seguros que protegen los datos
+                    mientras viajan entre el dispositivo del usuario y el servidor VPN. Estos túneles pueden atravesar
+                    redes públicas, como Internet.
+                </li>
+                <br>
+                <li>
+                    <b>Ocultación de la dirección IP:</b> La VPN oculta la dirección IP real del usuario, reemplazándola
+                    por la dirección IP del servidor VPN. Esto mejora la privacidad y dificulta el seguimiento.
+                </li>
+            </ul>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Sistemas de Detección de Intrusiones (IDS):</b> Los Sistemas de Detección de
+                Intrusiones (IDS, por sus siglas en inglés) son componentes cruciales en la seguridad cibernética que se
+                encargan de monitorear y analizar el tráfico de red en busca de actividades maliciosas o comportamientos
+                inusuales. Su objetivo principal es identificar y alertar sobre posibles amenazas de seguridad con el
+                fin de tomar medidas para mitigarlas.
+            </p>
+            <p><b>&nbsp;&nbsp;&nbsp;Funciones principales de un IDS:</b></p>
+            <ul>
+                <li>
+                    <b>Detección de intrusiones:</b> Los IPS supervisan el tráfico de red y la actividad del sistema en
+                    busca de patrones sospechosos o amenazas conocidas. Utilizan firmas de ataques, heurísticas y
+                    análisis de comportamiento para identificar intrusiones.
+                </li>
+                <br>
+                <li>
+                    <b>Prevención de intrusiones:</b> A diferencia de los IDS, los IPS no solo alertan sobre amenazas,
+                    sino que también pueden tomar medidas para bloquear o detener activamente el tráfico malicioso. Esto
+                    se logra a través de la reconfiguración de reglas de firewall, la terminación de conexiones o la
+                    cuarentena de sistemas comprometidos.
+                </li>
+                <br>
+                <li>
+                    <b>Filtrado de tráfico:</b> Los IPS pueden bloquear o permitir el tráfico en función de políticas de
+                    seguridad predefinidas. Esto ayuda a prevenir ataques y asegura el cumplimiento de las políticas de
+                    seguridad.
+                </li>
+                <br>
+                <li>
+                    <b>Registro de eventos:</b> Al igual que los IDS, los IPS registran eventos y actividades de
+                    seguridad. Esto es esencial para la revisión posterior y la respuesta a incidentes.
+                </li>
+            </ul>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Antivirus:</b> Los programas antivirus y
+                antimalware son componentes fundamentales de la seguridad cibernética que se utilizan para detectar,
+                prevenir y eliminar software malicioso (malware) en sistemas informáticos. Su propósito principal es
+                proteger los dispositivos y datos de los usuarios al identificar y neutralizar amenazas como virus,
+                troyanos, gusanos, ransomware y spyware.
+            </p>
+            <p><b>&nbsp;&nbsp;&nbsp;Funciones principales de los antivirus y antimalware</b></p>
+            <ul>
+                <li>
+                    <b>Detección de malware:</b> Escanea archivos, programas y sistemas en busca de código malicioso y
+                    patrones de comportamiento sospechosos.
+                </li>
+                <br>
+                <li>
+                    <b>Prevención:</b> Los programas antivirus pueden prevenir la infección al bloquear el acceso a
+                    sitios web y archivos sospechosos, así como al detectar y eliminar malware antes de que se ejecute.
+                </li>
+                <br>
+                <li>
+                    <b>Eliminación de malware:</b> Si se detecta malware en un sistema, el antivirus o antimalware lo
+                    elimina o pone en cuarentena para evitar daños.
+                </li>
+                <br>
+                <li>
+                    <b>Actualizaciones de firmas:</b> Se mantienen actualizados con bases de datos de firmas y
+                    definiciones de malware para detectar nuevas amenazas.
+                </li>
+                <br>
+                <li>
+                    <b>Escaneos programados:</b> Realizan escaneos periódicos de archivos y sistemas para detectar y
+                    eliminar malware.
+                </li>
+            </ul>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Autenticación:</b> La autenticación es un proceso fundamental en la seguridad
+                cibernética que se utiliza para verificar la identidad de un usuario, dispositivo o entidad antes de
+                conceder acceso a sistemas, aplicaciones o datos. Es una medida esencial para proteger la
+                confidencialidad y la integridad de la información y para garantizar que solo las personas autorizadas
+                tengan acceso a recursos específicos.
+            </p>
+            <p><b>&nbsp;&nbsp;&nbsp;Principales métodos de autenticación:</b></p>
+            <ul>
+                <li>
+                    <b>Contraseñas:</b> El método más común, en el que los usuarios proporcionan una combinación de
+                    caracteres secretos para demostrar su identidad.
+                </li>
+                <br>
+                <li>
+                    <b>Biometría:</b> Utiliza características físicas o conductuales únicas, como huellas dactilares,
+                    reconocimiento facial, iris o voz, para verificar la identidad.
+                </li>
+                <br>
+                <li>
+                    <b>Tarjetas inteligentes:</b> Se basan en tarjetas de identificación con chips que almacenan
+                    información de autenticación.
+                </li>
+                <br>
+                <li>
+                    <b>Tokens de seguridad:</b> Dispositivos físicos que generan códigos temporales que deben coincidir
+                    para verificar la identidad.
+                </li>
+                <br>
+                <li>
+                    <b>Autenticación Multifactor (MFA):</b> Requiere dos o más métodos de autenticación para confirmar
+                    la identidad del usuario, lo que proporciona un nivel adicional de seguridad.
+                </li>
+                <br>
+                <li>
+                    <b>Autenticación de un Solo Uso (OTP):</b> Genera códigos temporales que se utilizan una sola vez
+                    para verificar la identidad.
+                </li>
+            </ul>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Control de acceso:</b> El control de acceso es un componente crítico de la
+                seguridad cibernética que se utiliza para regular y gestionar quién puede acceder a sistemas,
+                aplicaciones y datos en una red o entorno informático. Su función principal es garantizar que solo las
+                personas autorizadas tengan acceso a recursos específicos, lo que protege la confidencialidad,
+                integridad y disponibilidad de la información.
+            </p>
+            <p><b>&nbsp;&nbsp;&nbsp;Principales aspectos del control de acceso:</b></p>
+            <ul>
+                <li>
+                    <b>Autenticación:</b> El primer paso en el control de acceso implica verificar la identidad de un
+                    usuario, dispositivo o entidad que intenta acceder a un sistema. Se requieren credenciales, como
+                    contraseñas, biometría o tokens, para la autenticación.
+                </li>
+                <br>
+                <li>
+                    <b>Autorización:</b> Una vez que se verifica la identidad, se determina qué acciones o recursos se
+                    le permiten al usuario. Esto se basa en roles, privilegios y políticas de seguridad.
+                </li>
+                <br>
+                <li>
+                    <b>Auditoría:</b> El control de acceso a menudo incluye la capacidad de registrar eventos y
+                    actividades, lo que permite el seguimiento de quién ha accedido a qué recursos y qué ha hecho.
+                </li>
+                <br>
+                <li>
+                    <b>Gestión de Identidad y Acceso (IAM):</b> Las soluciones de IAM se utilizan para gestionar y
+                    administrar las identidades y permisos de los usuarios de manera centralizada.
+                </li>
+
+            </ul>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Cifrado de datos:</b> El cifrado de datos es una técnica fundamental en la
+                seguridad de la información que se utiliza para transformar datos legibles en un formato ilegible a
+                menos que se utilice una clave o contraseña adecuada para descifrarlos. Su objetivo principal es
+                proteger la confidencialidad e integridad de los datos, así como garantizar que solo las partes
+                autorizadas puedan acceder y comprender la información.
+            </p>
+            <p><b>&nbsp;&nbsp;&nbsp;Principales aspectos del cifrado de datos:</b></p>
+            <ul>
+                <li>
+                    <b>Cifrado simétrico:</b> En este enfoque, la misma clave se utiliza tanto para cifrar como para
+                    descifrar los datos. Es eficiente pero plantea desafíos para la gestión de claves y la distribución
+                    segura.
+                </li>
+                <br>
+                <li>
+                    <b>Cifrado asimétrico:</b> Emplea un par de claves: una clave pública para cifrar datos y una clave
+                    privada correspondiente para descifrarlos. Este método es ampliamente utilizado para establecer
+                    conexiones seguras en Internet, como en el protocolo HTTPS.
+                </li>
+                <br>
+                <li>
+                    <b>Algoritmos de cifrado:</b> Los algoritmos definen cómo se transforman los datos y las claves en
+                    el proceso de cifrado y descifrado. Ejemplos incluyen AES (Advanced Encryption Standard), RSA
+                    (Rivest-Shamir-Adleman) y ECC
+                    (Elliptic Curve Cryptography).
+                </li>
+                <br>
+                <li>
+                    <b>Tiempos de vigencia de clave:</b> La seguridad del cifrado depende de la longitud y la
+                    complejidad de la clave. Las claves más largas y complejas son más seguras pero pueden ser más
+                    difíciles de administrar.
+                </li>
+
+            </ul>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Segmentación de red:</b> La segmentación de red es una práctica en seguridad
+                cibernética que implica dividir una red en segmentos más pequeños o subredes para mejorar la seguridad,
+                el rendimiento y la gestión. Cada segmento o subred se aísla de los demás, lo que reduce el riesgo de
+                propagación de amenazas cibernéticas y mejora la administración de la red.
+            </p>
+            <p><b>&nbsp;&nbsp;&nbsp;Principales aspectos de la segmentación de red:</b></p>
+            <ul>
+                <li>
+                    <b>Subredes:</b> La red se divide en subredes o segmentos lógicos, lo que permite agrupar
+                    dispositivos en función de su función, departamento o nivel de seguridad.
+                </li>
+                <br>
+                <li>
+                    <b>Firewalls:</b> Se utilizan firewalls y dispositivos de seguridad para controlar el tráfico entre
+                    segmentos y aplicar políticas de seguridad específicas.
+                </li>
+                <br>
+                <li>
+                    <b>Control de acceso:</b> Se establecen políticas de acceso para determinar quién tiene permiso para
+                    comunicarse entre segmentos.
+                </li>
+                <br>
+                <li>
+                    <b>Aislamiento de amenazas:</b> La segmentación reduce la superficie de ataque y evita que las
+                    amenazas se propaguen
+                    fácilmente de un segmento a otro.
+                </li>
+                <br>
+                <li>
+                    <b>Reducción de la latencia:</b> Al reducir la cantidad de tráfico que cruza la red, la segmentación
+                    puede mejorar el rendimiento y reducir la latencia.
+                </li>
+
+            </ul>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Actualizaciones y parches:</b> Las actualizaciones y parches de seguridad son
+                componentes esenciales de la seguridad cibernética que se utilizan para mantener sistemas, aplicaciones
+                y dispositivos protegidos contra vulnerabilidades y amenazas. Estas actualizaciones incluyen
+                correcciones de errores, mejoras de rendimiento y, lo que es más importante, soluciones para
+                vulnerabilidades conocidas que podrían ser explotadas por atacantes.
+            </p>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Auditoría:</b> La auditoría y el registro de eventos son prácticas esenciales en la
+                seguridad cibernética que se utilizan para supervisar, rastrear y registrar actividades, eventos y
+                acciones en sistemas, redes y aplicaciones. Estos registros sirven para la detección de amenazas, la
+                investigación de incidentes, la conformidad normativa y la mejora de la seguridad y el rendimiento.
+            </p>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Protección contra DDoS:</b> Los ataques de denegación de servicio distribuido
+                (DDoS) son una amenaza común en la seguridad cibernética, donde los atacantes intentan sobrecargar un
+                sistema, red o servicio en línea con tráfico malicioso para interrumpir su disponibilidad. La protección
+                contra ataques DDoS es esencial para garantizar que las organizaciones puedan continuar operando sin
+                interrupciones debido a estos ataques.
+            </p>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Protección contra phishing:</b> El phishing es una forma de ataque cibernético en
+                la que los atacantes se hacen pasar por entidades legítimas para engañar a las personas y obtener
+                información confidencial, como contraseñas, información financiera y datos personales. La protección
+                contra phishing es esencial para prevenir este tipo de amenazas en la seguridad cibernética.
+            </p>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Filtrado de contenido:</b> El filtrado de contenido es una técnica que se utiliza
+                en seguridad cibernética y en la gestión de redes para controlar y limitar el acceso de los usuarios a
+                ciertos tipos de contenido en línea. Su objetivo es garantizar la seguridad de la red, proteger a los
+                usuarios de contenido inapropiado o malicioso, y mantener la productividad en entornos laborales.
+            </p>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Control de aplicaciones:</b> El control de aplicaciones, también conocido como
+                control de software, es una práctica en seguridad cibernética que se enfoca en gestionar y asegurar qué
+                aplicaciones y programas pueden ser ejecutados en sistemas, redes o dispositivos. Su objetivo es
+                prevenir amenazas y riesgos relacionados con el uso de software no autorizado o potencialmente
+                peligroso.
+            </p>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Seguridad en dispositivos:</b> La seguridad en dispositivos se refiere a las
+                prácticas y tecnologías utilizadas para proteger la información y la privacidad en dispositivos, como
+                computadoras, teléfonos móviles, tabletas y dispositivos IoT (Internet de las cosas). Garantizar la
+                seguridad de estos dispositivos es esencial en un entorno cibernético en constante evolución.
+            </p>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Monitorización de tráfico:</b> La monitorización de tráfico es una práctica
+                esencial en la seguridad cibernética que implica la supervisión y el análisis del tráfico de red,
+                incluyendo el tráfico de datos, para detectar anomalías, amenazas cibernéticas y para asegurarse de que
+                la red funcione de manera eficiente
+            </p>
+
+
+
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/t5-img2.png" alt="" style="width: 30em; height: auto;">
+            </nav>
+            <br>
+            <hr>
+            <h2 id="privacidad" class="subtitulo">5.2.1 Privacidad equivalente al cableado (WEP)</h2>
+            <hr>
+            <p>
+                &nbsp;&nbsp;&nbsp;Según Freda (2022), WEP (Wired Equivalent Privacy) es un protocolo de seguridad
+                diseñado para proporcionar un nivel básico de privacidad y autenticación en redes inalámbricas. A
+                continuación se abordarán aspectos relevantes señalados por el autor.
+            </p>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Relevancia para la privacidad:</b> WEP se diseñó para ofrecer un nivel de
+                privacidad en redes
+                inalámbricas que fuera equivalente al de las redes cableadas. Esto significa que la información
+                transmitida a través de una red Wi-Fi con WEP activado debería estar protegida y ser tan segura como si
+                se transmite a través de una red con cable.
+            </p>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Vulnerabilidades de WEP:</b> A pesar de su intención de proporcionar privacidad,
+                WEP sufrió
+                importantes vulnerabilidades que lo hicieron inseguro.
+            </p>
+            <ul>
+                <li>
+                    <b>Claves WEP fáciles de descifrar:</b> WEP utiliza claves estáticas (contraseñas) que, con
+                    suficiente tiempo y potencia de procesamiento, pueden ser descifradas por atacantes. Esto compromete
+                    la privacidad de la red.
+                </li>
+                <br>
+                <li>
+                    <b>Reutilización de Vectores de Inicialización (IVs):</b> WEP reutiliza IVs, un valor necesario para
+                    el proceso de cifrado, lo que facilita la decodificación de las comunicaciones.
+                </li>
+                <br>
+                <li>
+                    <b>Ataques de fuerza bruta:</b> Los atacantes pueden lanzar ataques de fuerza bruta para descifrar
+                    las claves WEP, lo que hace que la seguridad sea insuficiente.
+                </li>
+            </ul>
+            <p>
+                <b>&nbsp;&nbsp;&nbsp;Reemplazo de WEP:</b> Debido a sus vulnerabilidades conocidas, WEP ha sido
+                reemplazado por estándares de seguridad más fuertes, como WPA (Wi-Fi Protected Access) y WPA2. Estos
+                protocolos ofrecen una privacidad y autenticación significativamente mejoradas y son más seguros para
+                proteger las comunicaciones en redes inalámbricas.
+            </p>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/t5-img3.png" alt="">
+            </nav>
+            <br>
+            <hr>
+            <h2 id="acceso" class="subtitulo">5.2.2 Acceso Wi-Fi protegido (WPA)</h2>
+            <hr>
+            <p>
+                &nbsp;&nbsp;&nbsp;Según Intel (2021), El Acceso Wi-Fi Protegido (WPA, por sus siglas en inglés, Wi-Fi
+                Protected Access) es un estándar de seguridad diseñado para mejorar la privacidad y la autenticación
+                en redes inalámbricas (Wi-Fi) en comparación con su predecesor, WEP (Wired Equivalent Privacy). A
+                continuación, se mostrará información relevante basándonos en la información proporcionada por la
+                empresa antes mencionada:
+            </p>
+            <p>
+                <b>Principales características de WPA:</b>
+            </p>
+            <ul>
+                <li>
+                    <b>Encriptación mejorada:</b> WPA utiliza cifrado TKIP (Temporal Key Integrity Protocol) para
+                    proteger los datos transmitidos a través de la red Wi-Fi. Esto proporciona una capa adicional de
+                    seguridad en comparación con WEP.
+                </li>
+                <br>
+                <li>
+                    <b>Autenticación mejorada:</b> WPA mejora la autenticación con el uso de un sistema de autenticación
+                    llamado Pre-Shared Key (PSK) y también admite autenticación empresarial a través del estándar
+                    802.1X.
+                </li>
+                <br>
+                <li>
+                    <b>Administración de claves dinámicas:</b> WPA cambia automáticamente las claves de cifrado en
+                    intervalos regulares, lo que hace que sea más difícil para los atacantes descifrar los datos.
+                </li>
+                <br>
+                <li>
+                    <b>Mejor control de acceso:</b> WPA permite un mejor control de acceso, lo que significa que los
+                    dispositivos no autorizados tienen menos probabilidades de conectarse a la red.
+                </li>
+                <br>
+                <li>
+                    <b>Mejora de la integridad de datos:</b> WPA protege la integridad de los datos transmitidos, lo que
+                    evita la manipulación de paquetes por parte de atacantes.
+                </li>
+
+            </ul>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/t5-img4.jpg" alt="">
+            </nav>
+            <br>
+            <hr>
+            <h2 id="listas" class="subtitulo">5.2.3 Listas de control de acceso (Filtrado MAC)</h2>
+            <hr>
+            <p>
+                &nbsp;&nbsp;&nbsp;Según Cisco (2022), el filtrado de direcciones MAC es una función de seguridad que se
+                basa en las direcciones MAC (Media Access Control) únicas de los dispositivos Wi-Fi. Cada dispositivo
+                habilitado para Wi-Fi tiene una dirección MAC única, que se utiliza para identificarlo en una red. El
+                filtrado de direcciones MAC permite que sólo los dispositivos cuyas direcciones MAC están en una lista
+                autorizada puedan conectarse a la red Wi-Fi. Así mismo, se especificará más en detalle qué son en base a
+                la misma fuente:
+            </p>
+            <p>
+                <b>Principales componentes del filtrado de direcciones MAC:</b>
+            </p>
+            <ul>
+                <li>
+                    <b>Lista de direcciones MAC autorizadas:</b> El administrador de la red crea una lista de
+                    direcciones MAC de dispositivos que están autorizados para conectarse a la red. Estas direcciones
+                    MAC se denominan "direcciones MAC permitidas" o "direcciones MAC autorizadas."
+                </li>
+                <br>
+                <li>
+                    <b>Lista de direcciones MAC denegadas:</b> Opcionalmente, se puede crear una lista de direcciones
+                    MAC de dispositivos que no están autorizados para conectarse a la red. Estas direcciones MAC se
+                    denominan "direcciones MAC denegadas.”
+                </li>
+                <br>
+                <li>
+                    <b>Configuración del enrutador o punto de acceso:</b> La lista de direcciones MAC permitidas y, si
+                    se usa, la lista de direcciones MAC denegadas se configuran en el router o el punto de acceso Wi-Fi.
+                </li>
+                <br>
+                <li>
+                    <b>Proceso de autenticación:</b> Cuando un dispositivo intenta conectarse a la red, el router o
+                    punto de acceso verifica su dirección MAC en las listas de autorización y denegación. Si la
+                    dirección MAC está en la lista permitida, se permite la conexión; de lo contrario, se deniega.
+                </li>
+            </ul>
+            <nav class="bodypng">
+                <img class="ajustePng" src="../imagenes/t5-img5.jpg" alt="" style="width: 40em; height: auto;">
+            </nav>
+
+
+
+            <br>
+            <hr>
+        </div>
+    </div>
+
+    <footer>
+        <p id="referencias">Referencias bibliográficas:</p>
+        <ol>
+            <li>Alcalá García, M. (2018, agosto). Vulnerabilidades en una wlan.
+                Recuperado 14 de noviembre de 2023, de
+                <a
+                    href="https://www.repositorioinstitucionaluacm.mx/jspui/bitstream/123456789/1117/3/Alcalá%20García%2C%20Magnolia_Mitigación%20de%20vulnerabilidades%20en%20una%20WLAN%20con%20la%20implementación%20de%20hardening_unlocked.pdf">
+                    https://www.repositorioinstitucionaluacm.mx/jspui/bitstream
+                </a>
+            </li>
+            <br>
+            <li>Altamirano Vicente ., C. A. V. A. (2019). Un modelo funcional para la administración de redes. UNAM -
+                DGSCA.
+
+            </li>
+            <br>
+            <li>Amazon. (2016, 21 diciembre). ¿Qué es DNS? – Introducción a DNS - AWS. Amazon Web Services, Inc.
+                Recuperado 6 de octubre de 2023, de
+                <a href="https://aws.amazon.com/es/route53/what-is-dns/">
+                    https://aws.amazon.com/es/route53/what-is-dns/
+                </a>
+            </li>
+            <br>
+            <li>Anderson Rick. (2023, 19 julio). Conexiones de configuración . Microsoft Learn. Recuperado 5 de octubre
+                de 2023, de
+                <a
+                    href="https://learn.microsoft.com/es-es/iis/configuration/system.applicationhost/sites/sitedefaults/ftpserver/connections ">
+                    https://learn.microsoft.com/es-es/iis/configuration/system.applicationhost/sites/sitedefaults/ftpserver/connections
+                </a>
+            </li>
+            <br>
+            <li>Arboledas Brihuega, D. (2015). Administración de redes telemáticas. Madrid, ra-ma editorial. Recuperado
+                de
+                <a href="https://elibro.net/es/ereader/tecuruapan/106471?page=144">
+                    https://elibro.net/es/ereader/tecuruapan/106471?page=144
+                </a>
+            </li>
+            <br>
+            <li>Baraibar, A. R., & Rodriguez Alija, M. (2018). Redes Inalámbricas. Recuperado 14 de noviembre de 2023,
+                de
+                <a
+                    href="https://www.tlm.unavarra.es/~daniel/docencia/rba/rba06_07/trabajos/resumenes/gr01-RedesInalambricas.pdf">
+                    https://www.tlm.unavarra.es/~daniel/docencia/rba/rba06_07/trabajos/resumenes/gr01-RedesInalambricas.pdf
+                </a>
+            </li>
+            <br>
+            <li> Castaño Ribes, R. & López, J. (2013). Redes locales. Madrid, spain: macmillan iberia, S.A. Recuperado
+                15 de octubre de 2023, de
+                <a href="https://elibro.net/es/ereader/tecuruapan/43257?page=253">
+                    https://elibro.net/es/ereader/tecuruapan/43257?page=253
+                </a>
+            </li>
+            <br>
+            <li> Castillo, C., Vinicio, D., Calucho, C., & Maria Fabiola. (2023, marzo). Análisis de vulnerabilidades de
+                redes inalámbricas domésticas utilizando pentesting en tungurahua. Universidad técnica de Ambato.
+                Recuperado 12 de noviembre de 2023, de
+                <a href="https://repositorio.uta.edu.ec/jspui/bitstream/123456789/38304/1/t2197ti.pdf">
+                    https://repositorio.uta.edu.ec/jspui/bitstream/123456789/38304/1/t2197ti.pdf
+                </a>
+            </li>
+            <br>
+            <li> CID. (2022). Elementos básicos de una red Wi-Fi | internet y la web.conexiones. Universidad de
+                alicante. Recuperado 15 de octubre de 2023, de
+                <a
+                    href="https://moodle2021-22.ua.es/moodle/pluginfile.php/10741/mod_resource/content/15/tema/elementos_bsicos_de_una_red_wifi.html">
+                    https://moodle2021-22.ua.es/moodle/pluginfile.php/10741/mod_resource/content/15/tema/elementos_bsicos_de_una_red_wifi.html
+                </a>
+            </li>
+            <br>
+            <li> Cisco Systems. (2023). Ethernet. Cisco. Recuperado 03 de octubre de 2023, de
+                <a href="https://www.cisco.com/c/es_mx/tech/lan-switching/ethernet/index.html">
+                    https://www.cisco.com/c/es_mx/tech/lan-switching/ethernet/index.html
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2019, 20 agosto). Ethernet (IEEE 802.3). Cisco. Recuperado 04 de octubre de 2023, de
+                <a href="https://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/network/3-8/reference/guide/ethrnt.pdf ">
+                    https://www.cisco.com/c/en/us/td/docs/net_mgmt/prime/network/3-8/reference/guide/ethrnt.pdf
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2021, 1 octubre). Wireless, LAN (WLAN). Recuperado 14 de octubre de 2023, de
+                <a href="https://www.cisco.com/c/es_mx/tech/wireless-2f-mobility/wireless-lan-wlan/index.html">
+                    https://www.cisco.com/c/es_mx/tech/wireless-2f-mobility/wireless-lan-wlan/index.html
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2022). Configuración del filtrado de direcciones de control de acceso a medios (MAC) en un punto
+                de acceso inalámbrico (WAP). Recuperado 20 de octubre de 2023, de
+                <a
+                    href="https://www.cisco.com/c/es_mx/support/docs/smb/wireless/cisco-small-business-100-series-wireless-access-points/smb5081-configure-media-access-control-mac-address-filtering-on-a-wi.pdf">
+                    https://www.cisco.com/c/es_mx/support/docs/smb/wireless/cisco-small-business-100-series-wireless-access-points/smb5081-configure-media-access-control-mac-address-filtering-on-a-wi.pdf
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2022, 12 marzo). Configurar NAT para habilitar la comunicación entre redes superpuestas.
+                Recuperado 5 de octubre de 2023, de
+                <a
+                    href="https://www.cisco.com/c/es_mx/support/docs/ip/network-address-translation-nat/200726-Configure-NAT-to-Enable-Communication-Be.html  ">
+                    https://www.cisco.com/c/es_mx/support/docs/ip/network-address-translation-nat/200726-Configure-NAT-to-Enable-Communication-Be.html
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2022, 15 marzo). Sistema de administración de red: informe oficial de mejores prácticas.
+                Recuperado 31 de agosto de 2023, de
+                <a
+                    href="https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage">
+                    https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2022, 25 marzo). Fundamentals of (IPS) Intrusion Prevention System.
+                Recuperado 06 de octubre de 2023, de
+                <a
+                    href="https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage ">https://www.cisco.com/c/es_mx/support/docs/availability/high-availability/15114-NMS-bestpractice.html#networkmanage
+                </a>
+            </li>
+            <br>
+            <li>Cisco. (2022c, marzo 13). Ejemplo de configuración de las funciones de seguridad de capa 2 en los
+                switches de configuración fija de capa 3 de Cisco Catalyst. Recuperado 6 de octubre de 2023, de
+                <a
+                    href="https://www.cisco.com/c/es_mx/support/docs/switches/catalyst-3750-series-switches/72846-layer2-secftrs-catl3fixed.html ">
+                    https://www.cisco.com/c/es_mx/support/docs/switches/catalyst-3750-series-switches/72846-layer2-secftrs-catl3fixed.html
+                </a>
+            </li>
+            <br>
+            <li>Díaz, S. (2023, abril 27). Topologías de red. Recuperado 12 de noviembre de 2023, de
+                <a href="https://topologiasdered.com/red-punto-a-punto/">
+                    https://topologiasdered.com/red-punto-a-punto/
+                </a>
+
+            </li>
+            <br>
+            <li>Escuela de Tokio. (2023, 28 junio). Red WLAN: ¿Qué es, para qué sirve y por qué es importante? Tokio
+                School. Recuperado 15 de octubre de 2023, de
+                <a href="https://www.tokioschool.com/noticias/red-wlan/">
+                    https://www.tokioschool.com/noticias/red-wlan/
+                </a>
+            </li>
+
+            <br>
+            <li>Fernández, M. E. (2020, enero 7). Vulnerabilidades en redes Wifi. UOC. Recuperado 14 de noviembre de
+                2023, de
+                <a href="file:///C:/Users/user/Downloads/mfernandez-olivaTFM2020memoria%20(5).pdf">
+                    file:///C:/Users/user/Downloads/mfernandez-olivaTFM2020memoria%20(5).pdf
+                </a>
+            </li>
+            <br>
+            <li>Fernández, Y. (2017, 1 junio). Qué es un proxy y cómo puedes utilizarlo para navegar de forma más
+                anónima. Xataka. Recuperado 5 de octubre de 2023, de
+                <a
+                    href="https://www.xataka.com/basics/que-es-un-proxy-y-como-puedes-utilizarlo-para-navegar-de-forma-mas-anonima  ">
+                    https://www.xataka.com/basics/que-es-un-proxy-y-como-puedes-utilizarlo-para-navegar-de-forma-mas-anonima
+                </a>
+            </li>
+            <br>
+            <li>Fernández, Y. (2021, 15 julio). FTP: qué es y cómo funciona. Xataka. Recuperado 5 de octubre de 2023, de
+                <a href="https://www.xataka.com/basics/ftp-que-como-funciona ">
+                    https://www.xataka.com/basics/ftp-que-como-funciona
+                </a>
+            </li>
+
+            <br>
+
+            <li>Franganillo, J., & Catalán-Vega, M. A. (2005). Bitácoras y sindicación de contenidos: dos herramientas
+                para difundir información. BiD: textos universitaris de biblioteconomia y documentación, (15).
+                Recuperado 2 de septiembre de 2023, de
+                <a href="http://eprints.rclis.org/8397/">
+                    http://eprints.rclis.org/8397/
+                </a>
+            </li>
+            <br>
+            <li>Freda, A. (2022, 3 junio). WEP, WPA o WPA2 - ¿Qué protocolo de seguridad de Wi-Fi es mejor? AVG.
+                Recuperado 20 de octubre de 2023, de
+                <a href="https://www.avg.com/es/signal/wep-wpa-or-wpa2">
+                    https://www.avg.com/es/signal/wep-wpa-or-wpa2
+                </a>
+            </li>
+            <br>
+            <li>FTS - Facultad de trabajo social (UNLP). (2019, 11 marzo). Trabajo social UNLP EDU AR. Recuperado 3 de
+                septiembre de 2023, de
+                <a href="https://www.trabajosocial.unlp.edu.ar/uploads/docs/monitoreo_de_redes.pdf">
+                    https://www.trabajosocial.unlp.edu.ar/uploads/docs/monitoreo_de_redes.pdf
+                </a>
+            </li>
+            <br>
+            <li>Fumero Reverón, A. (2011). IRC 2.0. Medios para la información, la relación y la comunicación en la web
+                2.0. El profesional de la información, 20(6), 605-609. Recuperado 5 de
+                octubree de 2023, de
+                <a href="https://oa.upm.es/11707/1/INVE_MEM_2011_106708.pdf">
+                    https://oa.upm.es/11707/1/INVE_MEM_2011_106708.pdf
+                </a>
+            </li>
+            <br>
+            <li>GCFGlobal. (2020). Cultura tecnológica: roaming: sus ventajas, desventajas y alternativas.
+                GCFGlobal.org. Recuperado 12 de noviembre de 2023, de
+                <a href="https://edu.gcfglobal.org/es/cultura-tecnologica/que-es-la-nanotecnologia-y-para-que-sirve/1/">
+                    https://edu.gcfglobal.org/es/cultura-tecnologica/que-es-la-nanotecnologia-y-para-que-sirve/1/
+                </a>
+            </li>
+            <br>
+            <li>Gerend, J. (2023, 3 agosto). Protocolo de configuración dinámica de Host (DHCP). Microsoft learn.
+                Recuperado 6 de octubre de 2023, de
+                <a href="https://learn.microsoft.com/es-es/windows-server/networking/technologies/dhcp/dhcp-top ">
+                    https://learn.microsoft.com/es-es/windows-server/networking/technologies/dhcp/dhcp-top
+                </a>
+            </li>
+            <br>
+            <li>GSMA. (2018, julio). Explicación del roaming móvil. GSMA. Recuperado 12 de noviembre de 2023, de
+                <a
+                    href="https://www.gsma.com/latinamerica/wp-content/uploads/2012/08/GSMA-Mobile-roaming-web-Spanish.pdf">
+                    https://www.gsma.com/latinamerica/wp-content/uploads/2012/08/GSMA-Mobile-roaming-web-Spanish.pdf
+                </a>
+            </li>
+            <br>
+            <li>Gutierrez, W. (2023, 11 marzo). ¿Qué es NAT y cómo funciona? ManageEngine. Recuperado 5 de octubre de
+                2023, de
+                <a href="https://blogs.manageengine.com/espanol/2023/03/11/nat-como-funciona.html ">
+                    https://blogs.manageengine.com/espanol/2023/03/11/nat-como-funciona.html
+                </a>
+            </li>
+            <br>
+            <li>Herrera, A. (2022, August 30). sistema de comunicacion mediante protocolo ethernet (estandar 802.3(.
+                YouTube. Consultado en 04 de Octubre 2023 en:
+                <a
+                    href="https://repositorio.utp.edu.co/server/api/core/bitstreams/73bbedd9-33ba-4c36-a34e-7d8d01d68fb3/content">
+                    https://repositorio.utp.edu.co/server/api/core/bitstreams/73bbedd9-33ba-4c36-a34e-7d8d01d68fb3/content
+                </a>
+            </li>
+            <br>
+            <li>IBM. (2020). ¿Qué son las amenazas internas? | IBM. Recuperado 19 de octubre de 2023, de
+                <a href="https://www.ibm.com/mx-es/topics/insider-threats">
+                    https://www.ibm.com/mx-es/topics/insider-threats</a>
+            </li>
+            <br>
+            <li>IBM. (2021, 20 abril). Redes y planificación de redes. Recuperado 31 de agosto de 2023, de
+                <a href="https://www.ibm.com/docs/es/ibm-mq/7.5?topic=ssfksj-7-5-0-com-ibm-mq-pla-doc-q004730--htm">
+                    https://www.ibm.com/docs/es/ibm-mq/7.5?topic=ssfksj-7-5-0-com-ibm-mq-pla-doc-q004730--htm </a>
+            </li>
+            <br>
+            <li>IBM. (2021, 21 marzo). Servidor de impresión de red. Recuperado 6 de octubre de 2023, de
+                <a href="https://www.ibm.com/docs/es/i/7.3?topic=programs-network-print-server">
+                    https://www.ibm.com/docs/es/i/7.3?topic=programs-network-print-server </a>
+            </li>
+            <br>
+            <li>IBM. (2023a, enero 23). IBM documentation. Introducción: servidores web. Recuperado 5 de octubre de
+                2023, de
+                <a href="https://www.ibm.com/docs/es/was/9.0.5?topic=servers-introduction-web ">
+                    https://www.ibm.com/docs/es/was/9.0.5?topic=servers-introduction-web </a>
+            </li>
+            <br>
+            <li>IBM. (2023b, enero 26). IBM documentation. Configuración del servidor Web. Recuperado 5 de octubre de
+                2023, de
+                <a href="https://www.ibm.com/docs/es/was/9.0.5?topic=console-web-server-configuration  ">
+                    https://www.ibm.com/docs/es/was/9.0.5?topic=console-web-server-configuration </a>
+            </li>
+            <br>
+            <li>IBM. (2023c, abril 4). IBM Documentación. Configuración del servidor proxy. Recuperado 5 de octubre de
+                2023, de
+                <a href="https://www.ibm.com/docs/es/was-zos/9.0.5?topic=services-setting-up-proxy-server ">
+                    https://www.ibm.com/docs/es/was-zos/9.0.5?topic=services-setting-up-proxy-server</a>
+            </li>
+            <br>
+            <li>IBM. (2023d). ¿Qué es la seguridad de red? | IBM. Recuperado 19 de octubre de 2023, de
+                <a href="https://www.ibm.com/mx-es/topics/network-security">
+                    https://www.ibm.com/mx-es/topics/network-security</a>
+            </li>
+            <br>
+            <li>Intel. (2022). Comprender la asociación y autenticación de IEEE* 802.11. Recuperado 20 de octubre de 2023, de
+                <a href="https://www.intel.la/content/www/xl/es/support/articles/000006508/wireless/legacy-intel-wireless-products.html">
+                    https://www.intel.la/content/www/xl/es/support/articles/000006508/wireless/legacy-intel-wireless-products.html</a>
+            </li>
+            <br>
+            <li>Jara Werchau, P., & Nazar, P. (2006). Estándar IEEE 802.11 X de las WLAN. edUTecNe. Recuperado 15 de
+                octubre de 2023, de
+                <a href="http://www.edutecne.utn.edu.ar/inicio.html.">
+                    http://www.edutecne.utn.edu.ar/inicio.html</a>
+            </li>
+            <br>
+            <li>Juan Carlos. (2022, 18 febrero). Guía de Redes WAN: configuración y características. Tokio School.
+                Recuperado 4 de octubre de 2023, de
+                <a href="https://www.tokioschool.com/noticias/guia-de-redes-wan-configuracion-y-caracteristicas/ ">
+                    https://www.tokioschool.com/noticias/guia-de-redes-wan-configuracion-y-caracteristicas/ </a>
+
+            </li>
+            <br>
+            <li>Microsoft. (2023a, abril 12). Servicio de nombres internet de Windows (WINS). Microsoft Learn.
+                Recuperado 6 de octubre de 2023, de
+                <a href="https://learn.microsoft.com/es-es/windows-server/networking/technologies/wins/wins-top ">
+                    https://learn.microsoft.com/es-es/windows-server/networking/technologies/wins/wins-top </a>
+
+            </li>
+            <br>
+            <li>Microsoft. (2023b, julio 17). Instalación y configuración de un archivo y un servidor de impresión -
+                Windows Server. Microsoft Learn. Recuperado 6 de octubre de 2023, de
+                <a
+                    href="https://learn.microsoft.com/es-es/troubleshoot/windows-server/printing/install-configure-file-print-server ">
+                    https://learn.microsoft.com/es-es/troubleshoot/windows-server/printing/install-configure-file-print-server
+                </a>
+
+            </li>
+            <br>
+            <li>Molina Robles, F. Planificación y administración de redes. ed. Madrid: ra-ma editorial, 2015. 632 p.
+                Recuperado 29 de agosto de 2023, de
+                <a href="https://learn.microsoft.com/es-es/windows-server/networking/technologies/wins/wins-top ">
+                    https://learn.microsoft.com/es-es/windows-server/networking/technologies/wins/wins-top </a>
+
+            </li>
+            <br>
+            <li>Mora del Orbe, F. (2020, enero 20). Redes inalámbricas. uasd.
+                Recuperado 15 de noviembre de 2023, de
+                <a href="https://www.academia.edu/43206121/Redes_Inalámbricas">
+                    https://www.academia.edu/43206121/Redes_Inalámbricas</a>
+
+            </li>
+            <br>
+
+            <li>Oracle. (2011, 1 enero). Configuración de los servicios de correo - Guía de administración del sistema:
+                Servicios de red. Recuperado 5 de octubre de 2023, de
+                <a href="https://docs.oracle.com/cd/E24842_01/html/E22524/mailadmin-13.html ">
+                    https://docs.oracle.com/cd/E24842_01/html/E22524/mailadmin-13.html </a>
+
+            </li>
+            <br>
+            <li>Oracle. (2012, 1 enero). Configuración de contabilidad de red para el tráfico de red - uso de redes
+                virtuales en Oracle Solaris 11.1. Recuperado 1 de octubre de 2023, de
+                <a href="https://docs.oracle.com/cd/E37929_01/html/E36563/ghhde.html">
+                    https://docs.oracle.com/cd/E37929_01/html/E36563/ghhde.html</a>
+
+            </li>
+            <br>
+            <li>Oracle. (2023). Configuración de sistemas en la red local (Guía de Administración del Sistema: Servicios
+                IP). Recuperado 6 de octubre de 2023, de
+                <a href="https://docs.oracle.com/cd/E19957-01/820-2981/ipconfig-63/index.html ">
+                    https://docs.oracle.com/cd/E19957-01/820-2981/ipconfig-63/index.html </a>
+
+            </li>
+            <br>
+            <li>Pineda Sanchez, S., & Morales Delgadillo, H. (2020). Topología aplicada en redes ad hoc. Recuperado 12
+                de noviembre de 2023, de
+                <a href="https://elibro.net/es/ereader/tecuruapan/172433?page=1.">
+                    https://elibro.net/es/ereader/tecuruapan/172433?page=1.</a>
+
+            </li>
+            <br>
+            <li>Plácido, J. G., & Talma, E. S. (2022, marzo 22). Red multipunto. Studocu. Recuperado 14 de noviembre de
+                2023, de
+                <a
+                    href="https://www.studocu.com/cl/document/instituto-profesional-iacc/fundamentos-de-telecomunicaciones/red-multipunto-notas/38965516">
+                    https://www.studocu.com/cl/document/instituto-profesional-iacc/fundamentos-de-telecomunicaciones/red-multipunto-notas/38965516
+                </a>
+
+            </li>
+            <br>
+            <li>Quero, F. (2014, Febrero 24). Tipos de vulnerabilidad en una red inalámbrica Wi-Fi. Entre trastos.
+                Recuperado 12 de
+                noviembre de 2023, de <a
+                    href="https://www.entretrastos.net/tipos-de-vulnerabilidad-en-una-red-inalambrica-wi-fi/">
+                    https://www.entretrastos.net/tipos-de-vulnerabilidad-en-una-red-inalambrica-wi-fi/
+                </a>
+            </li>
+            <br>
+            <li>Quezada Castillo, A. Modelo de red para un centro de operaciones de seguridad (SOC). Recuperado 31 de
+                agosto de 2023, de <a
+                    href="https://tesis.ipn.mx/bitstream/handle/123456789/8543/112.pdf?sequence=1&isAllowed=y ">https://tesis.ipn.mx/bitstream/handle/123456789/8543/112.pdf?sequence=1&isAllowed=y
+                </a>
+            </li>
+            <br>
+
+            <li>Robles F., Molina. Planificación y administración de redes. Madrid, Molina Robles, F, (2015). Elibro,
+                Recuperado 29 de agosto de 2023, de
+                <a href="https://elibro.net/es/ereader/tecuruapan/106392?page=586">
+                    https://elibro.net/es/ereader/tecuruapan/106392?page=586
+                </a>
+            </li>
+            <br>
+            <li>Sánchez Rubio, M. Barchino Plata, R. y Martínez Herráiz, J. J. (2020). Redes de computadores. Alcalá de
+                Henares, editorial universidad de Alcalá. Recuperado 4 de octubre de 2023, de
+                <a href="https://elibro.net/es/ereader/tecuruapan/131606?page=107">
+                    https://elibro.net/es/ereader/tecuruapan/131606?page=107
+                </a>
+
+            </li>
+
+            <br>
+            <li>Servidor DHCP | Introducción al protocolo de configuración dinámica de host (DHCP). Recuperado 6 de
+                octubre de 2023, de
+                <a href="https://www.manageengine.com/latam/oputils/servidor-dhcp.html ">
+                    https://www.manageengine.com/latam/oputils/servidor-dhcp.html
+                </a>
+
+            </li>
+            <br>
+            <li>Servnet. (2023). Redes punto multipunto | conectividad servnet. Servnet. Recuperado 14 de noviembre de
+                2023, de
+                <a href="https://www.servnet.mx/redes-punto-multipunto">
+                    https://www.servnet.mx/redes-punto-multipunto
+                </a>
+
+            </li>
+
+            <br>
+            <li>Tocallos, R. (2018, octubre 31). Transmisión punto a punto. Radiocomunicaciones. Recuperado 03 de
+                noviembre de 2023, de
+                <a
+                    href="https://robertocallos2.wordpress.com/2018/10/25/1-6-transmision-punto-a-punto-y-punto-a-multipunto/">
+                    https://robertocallos2.wordpress.com/2018/10/25/1-6-transmision-punto-a-punto-y-punto-a-multipunto/
+                </a>
+
+            </li>
+
+            <br>
+            <li>Tokio School. (2023, 14 julio). ¿Cuáles son los principales tipos de amenazas informáticas? Recuperado 19 de octubre de 2023, de
+                <a
+                    href="https://www.tokioschool.com/noticias/tipos-amenazas-informaticas/">
+                    https://www.tokioschool.com/noticias/tipos-amenazas-informaticas/
+                </a>
+
+            </li>
+
+            <br>
+            <li>Universidad Carlemany. (2022, June 7). Infraestructura de red y cableado: ¿Por qué son tan importantes?
+                universidad carlemany. Recuperado 12 de noviembre de 2023, de
+                <a href="https://www.universitatcarlemany.com/actualidad/blog/infraestructura-red/">
+                    https://www.universitatcarlemany.com/actualidad/blog/infraestructura-red/
+                </a>
+
+            </li>
+            <br>
+            <li>Universidad Veracruzana. (2014, noviembre). Correo electrónico. UV MX. Recuperado 5 de octubre de 2023,
+                de
+                <a href="https://www.uv.mx/personal/rcordoba/files/2014/11/Correo_electronico.pdf  ">
+                    https://www.uv.mx/personal/rcordoba/files/2014/11/Correo_electronico.pdf
+                </a>
+
+            </li>
+            <br>
+
+            <li>Villacrés García, N. J. (2018). Esquema de seguridad perimetral para el monitoreo de eventos en el
+                Instituto Tecnológico Bolivariano (Bachelor's thesis). Recuperado 30 de agosto de 2023, de
+                <a href="https://dspace.uniandes.edu.ec/handle/123456789/8160">
+                    https://dspace.uniandes.edu.ec/handle/123456789/8160
+                </a>
+            </li>
+            <br>
+            <li>VMware. (2021). Configuración de red. Recuperado 02 de noviembre de 2023, de
+                <a
+                    href="https://www.vmware.com/es/topics/glossary/content/network-configuration.html#:~:text=La%20configuración%20de%20red%20es,mediante%20un%20tedioso%20proceso%20manual.">
+                    https://www.vmware.com/es/topics/glossary/content/network-configuration.html#:~:text=La%20configuración%20de%20red%20es,mediante%20un%20tedioso%20proceso%20manual.
+                </a>
+            </li>
+            <br>
+            <li>VMware. (2022, septiembre 20). Infraestructura. ¿Qué es la seguridad de la infraestructura de red?.
+                Recuperado 09 de noviembre de 2023, de
+                <a href="https://www.vmware.com/es/topics/glossary/content/network-infrastructure-security.html">
+                    https://www.vmware.com/es/topics/glossary/content/network-infrastructure-security.html
+                </a>
+            </li>
+            <br>
+            <li> Walton, A. (2019). Conceptos de LAN inalámbrica (WLAN). CCNA desde cero. Recuperado 03 de noviembre de
+                2023, de
+                <a href="https://ccnadesdecero.es/conceptos-lan-inalambrica-wlan/#32_Modo_infraestructura">
+                    https://ccnadesdecero.es/conceptos-lan-inalambrica-wlan/#32_Modo_infraestructura
+                </a>
+            </li>
+            <br>
+            <li>Zoho Corporation. (2023). ¿Cómo configurar Switch Cisco? | Pasos para configurar Switch Cisco |
+                Configuración básica de un Switch - ManageEngine Network Configuration Manager. Recuperado 5 de octubre
+                de 2023, de
+                <a
+                    href="https://www.manageengine.com/latam/network-configuration-manager/configuracion-de-cisco-switch.html ">
+                    https://www.manageengine.com/latam/network-configuration-manager/configuracion-de-cisco-switch.html
+                </a>
+            </li>
+            <br>
+            <li>Zoho Corporation. (2022, 2 septiembre). Manage engine. Recuperado 1 de octubre de 2023, de
+                <a href="https://www.manageengine.com/es/network-monitoring/network-management.html ">
+                    https://www.manageengine.com/es/network-monitoring/network-management.html
+                </a>
+            </li>
+            <br>
+
+        </ol>
+    </footer>
+
+
+</body>
+
+</html>
